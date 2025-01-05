@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python Environments
+title: Python Environment
 date: 2025-01-04 20:00 -0800
 description: Set up Python environments
 author: khoa_pham
@@ -17,7 +17,7 @@ comments: true
 
 I prefer using [Conda environments](https://kdpham-1002.github.io/mindpalace/posts/conda-environments/) for managing Python packages, but you can also use Python's built-in `venv` module or `pip` for package management.
 
-### Environment Management
+### Environments Management
 
 ```bash
 # Create a virtual environment in the current directory

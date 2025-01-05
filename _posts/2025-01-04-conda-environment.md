@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conda Environments
+title: Conda Environment
 date: 2025-01-04 20:30 -0800
 description: Set up Conda environments
 author: khoa_pham
@@ -18,7 +18,7 @@ comments: true
 [How to Install Anaconda on Mac - Dave Ebbelaar](https://youtu.be/RFeIn2ywxG4?si=nVfrjVQzsGtiu5Sg)  
 [Get Started wit Anaconda - Anaconda Cloud Freelearning](https://freelearning.anaconda.cloud/get-started-with-anaconda/18200)
 
-### Environment Management
+### Environments Management
 
 ```bash
 # Display general Conda information

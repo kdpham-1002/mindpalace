@@ -5,7 +5,7 @@ date: 2025-01-04 21:13 -0800
 description: Interview questions for MySQL
 author: khoa_pham
 categories: [Coding Workspace, Interview Preps]
-tags: [sql, interview]
+tags: [sql, interview, learning]
 pin: true
 math: true
 mermaid: true

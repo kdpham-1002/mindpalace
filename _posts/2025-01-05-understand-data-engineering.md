@@ -5,7 +5,7 @@ date: 2025-01-05 08:45 -0800
 description: What to learn in Data Engineering
 author: khoa_pham
 categories: [Study Workspace]
-tags: [study notes, data engineering]
+tags: [study notes, data engineering, coding]
 pin: true
 math: true
 mermaid: true

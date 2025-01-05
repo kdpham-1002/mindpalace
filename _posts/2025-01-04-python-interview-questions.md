@@ -5,7 +5,7 @@ date: 2025-01-04 21:13 -0800
 description: Interview questions for Python
 author: khoa_pham
 categories: [Coding Workspace, Interview Preps]
-tags: [python, interview]
+tags: [python, interview, learning]
 pin: true
 math: true
 mermaid: true

@@ -5,7 +5,7 @@ date: 2025-01-03 09:00 -0800
 description: Examples of using Jekyll
 authors: [cotes, khoa_pham]
 categories: [Coding Workspace, Using]
-tags: [jekyll, writing tools]
+tags: [jekyll, writing tools, blogging]
 pin: false
 math: true
 mermaid: true

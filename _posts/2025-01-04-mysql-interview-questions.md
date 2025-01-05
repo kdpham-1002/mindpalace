@@ -4,7 +4,7 @@ title: MySQL Interview Questions
 date: 2025-01-04 21:13 -0800
 description: Interview questions for MySQL
 author: khoa_pham
-categories: [Learning Workspace, Interview Preps]
+categories: [Learning Hub, Interview Preps]
 tags: [sql, interview, coding]
 pin: true
 math: true

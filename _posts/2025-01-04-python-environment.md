@@ -15,7 +15,7 @@ comments: true
 
 ## Python
 
-I prefer using [Conda environments](https://kdpham-1002.github.io/mindpalace/posts/conda-environment/) for managing Python packages, but you can also use Python's built-in `venv` module or `pip` for package management.
+I prefer using [Conda environment](https://kdpham-1002.github.io/mindpalace/posts/conda-environment/) for managing Python packages, but you can also use Python's built-in `venv` module or `pip` for package management.
 
 ### Environments Management
 

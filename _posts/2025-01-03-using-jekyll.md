@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Using Jekyll
-description: Examples of Jekyll
-authors: [cotes, khoa_pham]
 date: 2025-01-03 09:00 -0800
-categories: [Tutorials, Misc.]
-tags: [tutorials, notes, Jekyll, Markdown]
-pin: true
+description: Examples of using Jekyll
+authors: [cotes, khoa_pham]
+categories: [Coding Workspace, Using]
+tags: [jekyll]
+pin: false
 math: true
 mermaid: true
 toc: true

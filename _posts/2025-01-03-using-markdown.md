@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Using Markdown
-description: Examples of Markdown
+date: 2025-01-03 17:50 -0800
+description: Examples of using Markdown
 authors: [cotes, khoa_pham]
-date: 2025-01-04 17:50 -0800
-categories: [Tutorials, Misc.]
-tags: [tutorials, notes, Jekyll, Markdown]
-pin: true
+categories: [Coding Workspace, Using]
+tags: [markdown]
+pin: false
 math: true
 mermaid: true
 toc: true

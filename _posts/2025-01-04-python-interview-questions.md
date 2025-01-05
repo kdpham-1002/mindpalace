@@ -6,7 +6,7 @@ description: Interview questions for Python
 author: khoa_pham
 categories: [Coding Workspace, Interview Preps]
 tags: [python, interview]
-pin: false
+pin: true
 math: true
 mermaid: true
 toc: true

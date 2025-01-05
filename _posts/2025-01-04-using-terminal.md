@@ -13,7 +13,7 @@ toc: true
 comments: true
 ---
 
-> Link to [Using Git]()
+<!-- > Link to [Using Git]() -->
 
 ### Navigate Directories
 

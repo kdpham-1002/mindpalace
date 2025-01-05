@@ -6,7 +6,7 @@ description: Set up Conda environments
 author: khoa_pham
 categories: [Coding Workspace, Setups]
 tags: [conda, venv]
-pin: false
+pin: true
 math: true
 mermaid: true
 toc: true

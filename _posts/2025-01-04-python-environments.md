@@ -4,7 +4,7 @@ title: Python Environments
 date: 2025-01-04 20:00 -0800
 description: Set up Python environments
 author: khoa_pham
-categories: [Coding Workspace, Settings]
+categories: [Coding Workspace, Setups]
 tags: [python, venv]
 pin: false
 math: true

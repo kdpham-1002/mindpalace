@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Anaconda Environments
+title: Conda Environments
 date: 2025-01-04 20:30 -0800
-description: Set up Python environments
+description: Set up Conda environments
 author: khoa_pham
 categories: [Coding Workspace, Settings]
-tags: [python]
+tags: [conda, venv]
 pin: false
 math: true
 mermaid: true
@@ -13,7 +13,7 @@ toc: true
 comments: true
 ---
 
-## Anaconda
+## Anaconda/Conda
 
 [How to Install Anaconda on Mac - Dave Ebbelaar](https://youtu.be/RFeIn2ywxG4?si=nVfrjVQzsGtiu5Sg)
 [Get Started wit Anaconda - Anaconda Cloud Freelearning](https://freelearning.anaconda.cloud/get-started-with-anaconda/18200)

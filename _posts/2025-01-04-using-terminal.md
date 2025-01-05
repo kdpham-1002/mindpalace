@@ -5,7 +5,7 @@ date: 2025-01-04 19:18 -0800
 description: Examples of Terminal/Bash commands
 author: khoa_pham
 categories: [Coding Workspace, Using]
-tags: [terminal]
+tags: [terminal, workflows]
 pin: false
 math: true
 mermaid: true

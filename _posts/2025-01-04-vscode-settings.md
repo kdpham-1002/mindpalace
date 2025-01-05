@@ -5,7 +5,7 @@ date: 2025-01-04 20:32 -0800
 description: Set up Python environments
 author: khoa_pham
 categories: [Coding Workspace, Settings]
-tags: [python]
+tags: [vscode, workflows]
 pin: false
 math: true
 mermaid: true

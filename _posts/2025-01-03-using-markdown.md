@@ -5,7 +5,7 @@ date: 2025-01-03 17:50 -0800
 description: Examples of using Markdown
 authors: [cotes, khoa_pham]
 categories: [Coding Workspace, Using]
-tags: [markdown]
+tags: [markdown, writing tools]
 pin: false
 math: true
 mermaid: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: vscode-settings
+title: VSCode Settings
 date: 2025-01-04 20:32 -0800
 description: Set up Python environments
 author: khoa_pham

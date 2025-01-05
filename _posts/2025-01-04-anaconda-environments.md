@@ -1,6 +1,6 @@
 ---
 layout: post
-title: anaconda-environments
+title: Anaconda Environments
 date: 2025-01-04 20:30 -0800
 description: Set up Python environments
 author: khoa_pham

@@ -1,7 +1,4 @@
 ---
-
----
----
 layout: post
 title: Understand Data Engineering
 date: 2025-01-05 08:45 -0800
@@ -15,6 +12,7 @@ mermaid: true
 toc: true
 comments: true
 ---
+
 ## Understand Data Engineering
 
 ### Data Engineering Basic Concepts

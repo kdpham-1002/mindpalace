@@ -4,8 +4,8 @@ title: Understand Data Engineering
 date: 2025-01-05 08:45 -0800
 description: What to learn in Data Engineering
 author: khoa_pham
-categories: [Study Workspace]
-tags: [study notes, data engineering, coding]
+categories: [Learning Workspace]
+tags: [data engineering, interview, learning]
 pin: true
 math: true
 mermaid: true

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Using Jekyll
+title: Use Jekyll
 date: 2025-01-03 09:00 -0800
 description: Examples of using Jekyll
 authors: [cotes, khoa_pham]
-categories: [Coding Workspace, Using]
+categories: [Coding Workspace, How-to]
 tags: [jekyll, writing tools, blogging]
 pin: false
 math: true

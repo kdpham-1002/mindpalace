@@ -4,8 +4,8 @@ title: Python Interview Questions
 date: 2025-01-04 21:13 -0800
 description: Interview questions for Python
 author: khoa_pham
-categories: [Coding Workspace, Interview Preps]
-tags: [python, interview, learning]
+categories: [Learning Workspace, Interview Preps]
+tags: [python, interview, coding]
 pin: true
 math: true
 mermaid: true

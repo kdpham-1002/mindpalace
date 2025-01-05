@@ -4,7 +4,7 @@ title: Using Jekyll & Markdown
 description: Examples of Jekyll & Markdown
 authors: [cotes, khoa_pham]
 date: 2025-01-03 09:00 -0800
-categories: [Tutorials]
+categories: [Tutorials, Misc.]
 tags: [tutorials, notes, Jekyll, Markdown]
 pin: true
 math: true

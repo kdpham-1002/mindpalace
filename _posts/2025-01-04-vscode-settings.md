@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VSCode Settings
-date: 2025-01-04 20:32 -0800
+date: 2025-01-04 19:00 -0800
 description: Set up Python environments
 author: khoa_pham
 categories: [Coding Workspace, Setups]

@@ -17,7 +17,7 @@ comments: true
 
 ### Dock Animation
 
-[Show dock faster | StackExchange](https://apple.stackexchange.com/questions/33600/how-can-i-make-auto-hide-show-for-the-dock-faster)
+[Show dock faster_StackExchange](https://apple.stackexchange.com/questions/33600/how-can-i-make-auto-hide-show-for-the-dock-faster)
 
 ```bash
 # Customize
@@ -35,7 +35,7 @@ killall Dock
 
 ### Translucent Dock Icons
 
-[Translucent Hidden Apps in Dock | OSX Daily](https://osxdaily.com/2010/06/22/make-hidden-application-icons-translucent-in-the-dock/)
+[Translucent Hidden Apps in Dock_OSX Daily](https://osxdaily.com/2010/06/22/make-hidden-application-icons-translucent-in-the-dock/)
 
 ```bash
 # Enable
@@ -51,7 +51,7 @@ killall Dock
 
 ### Launchpad Grid Layout
 
-[Change Launchpad Grid Layout | Compsmag](https://www.compsmag.com/how-to/change-launchpad-layout/)
+[Change Launchpad Grid Layout_Compsmag](https://www.compsmag.com/how-to/change-launchpad-layout/)
 
 ```bash
 defaults write com.apple.dock springboard-columns -int 6
@@ -71,6 +71,7 @@ defaults write com.apple.finder QLEnableTextSelection -bool TRUE
 
 [Mac keyboard shortcuts](https://support.apple.com/en-us/102650)  
 [30 Terminal tips & tricks for Mac](https://www.macworld.com/article/671711/30-terminal-tips-tricks-and-projects-for-mac.html)
+
 
 ```bash
 caffeinate

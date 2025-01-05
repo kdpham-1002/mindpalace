@@ -32,6 +32,9 @@ ls -lh
 
 # View file permissions
 ls -l
+
+# List all files in a directory
+ls -R [path]
 ```
 
 ```bash

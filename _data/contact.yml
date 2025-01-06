@@ -7,14 +7,21 @@
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
   url:  'https://www.linkedin.com/in/kdpham1002/'   # Fill with your Linkedin homepage
 
-# - type: instagram
-#   icon: 'fa-brands fa-instagram'
-#   url: 'https://www.instagram.com/teenee_archives/' # Fill with your Instagram profile link
+- type: dance
+  icon: 'fa-solid fa-video'
+  url: 'https://www.instagram.com/teenee_archives/reels/'
+
+- type: photography
+  icon: 'fa-solid fa-camera'
+  url: 'https://vsco.co/teenee3051/gallery'
 
 - type: website
   icon: 'fa-solid fa-user'
-  url: 'https://kdpham-1002.github.io/' # Fill with your personal website or blog link
+  url: 'https://kdpham-1002.github.io/'
 
+# - type: instagram
+#   icon: 'fab fa-instagram'
+#   url: 'https://www.instagram.com/mdcdance/'
 
 # - type: email
 #   icon: "fas fa-envelope"

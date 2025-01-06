@@ -7,13 +7,13 @@
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
   url:  'https://www.linkedin.com/in/kdpham1002/'   # Fill with your Linkedin homepage
 
-- type: dance
-  icon: 'fa-solid fa-video'
-  url: 'https://www.instagram.com/teenee_archives/reels/'
-
 - type: photography
   icon: 'fa-solid fa-camera'
   url: 'https://vsco.co/teenee3051/gallery'
+  
+- type: dance
+  icon: 'fa-solid fa-video'
+  url: 'https://www.instagram.com/teenee_archives/reels/'
 
 - type: website
   icon: 'fa-solid fa-user'

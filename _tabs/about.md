@@ -12,10 +12,10 @@ order: 1
 > 💼 Looking for something work-related...? 💁‍♂️ Head over to my other website to see the ***[serious me](https://kdpham-1002.github.io/)***! 🤓
 {: .prompt-tip }
 
-![sherlock-meme1](assets/img/IMG_7086.jpeg){: width="700" height="400" }
+![sherlock-meme1](/assets/img/sherlock-get-out-mindpalace-meme.jpeg){: width="700" height="400" }
 *Sherlock S02E03*
 
-![sherlock-meme2](assets/img/IMG_7087.jpeg){: width="600" height="400" }
+![sherlock-meme2](assets/img/sherlock-use-your-mindpalace-meme.jpeg){: width="600" height="400" }
 *Sherlock S03E01*
 
 *A dance that inspired...*

@@ -47,7 +47,7 @@ comments: true
 - Data Types; CAST( - AS integer)
 * CREATE TABLE
     * ALTER TABLE - (ADD COLUMN, RENAME COLUMN, DROP COLUMN)
-    * ALTER TABLE - ALTER COLUMN - TYPE - (USING SUBSTRING firstname FROM 1 FOR 16))
+    * ALTER TABLE - ALTER COLUMN - TYPE - (USING SUBSTRING firstname FROM 1 FOR 16)
     * ALTER TABLE - ALTER COLUMN - (SET NOT NULL, DROP NOT NULL)
     * INSERT INTO - SELECT DISTINCT
     * CAST(fee AS integer)
@@ -152,12 +152,16 @@ from sqlalchemy import create_engine
     engine = create_engine(‘sqlite:///db.sqlite’)
 ```
 * HTTP requests
+```python
 from urllib.request import urlretrieve, urlopen, Request
 # --- or ---
 import requests
+```
 * Scraping the Web
+```python
 from bs4 import BeautifulSoup
 import requests
+```
 * JSONs, APIs -> practice Twitter API
 
 #### Data Ingestion with Pandas

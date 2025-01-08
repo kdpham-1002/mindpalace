@@ -2,7 +2,7 @@
 layout: post
 title: Understand Data Engineering
 date: 2025-01-05 08:45 -0800
-description: What to learn in Data Engineering
+description: Data Engineering Recap
 author: khoa_pham
 categories: [Learning Hub, Study Notes]
 tags: [data engineering, interview, learning]

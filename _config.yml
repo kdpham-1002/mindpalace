@@ -27,13 +27,13 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://kdpham-1002.github.io"
+url: "https://khoapham1002.github.io"
 
 # The base URL of your site
 baseurl: "/mindpalace"
 
 github:
-  username: kdpham-1002 # change to your GitHub username
+  username: khoapham1002 # change to your GitHub username
 # twitter:
 #   username: twitter_username # change to your Twitter username
 
@@ -44,8 +44,8 @@ social:
   email: teenee3051@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://kdpham-1002.github.io/
-    - https://github.com/kdpham-1002
+    - https://khoapham1002.github.io/
+    - https://github.com/khoapham1002
     - https://www.linkedin.com/in/kdpham1002
 
     # Uncomment below to add more social links

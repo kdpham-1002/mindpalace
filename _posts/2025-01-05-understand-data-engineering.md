@@ -149,7 +149,7 @@ comments: true
 * SQL querying in Python; with pandas
 ```python
 from sqlalchemy import create_engine 
-    engine = create_engine(‘sqlite:///db.sqlite’)
+    engine = create_engine('sqlite:///db.sqlite')
 ```
 * HTTP requests
 ```python

@@ -167,3 +167,10 @@ import requests
 ### Learning Git
 
 ### Learning Apache Airflow
+
+### Cloud Computing
+- On-premise vs Cloud (IaaS vs PaaS vs SaaS)
+- AWS (Cloud - S3, EC2, RDS; Data - Redshift, Kinesis, SageMaker)
+- Azure (Cloud - Blob Storage, VMs, SQL Db; Data - Data Lake Storage, Stream Analytics, Machine Learning)
+- Google (Cloud - GC Storage, GC Compute Engine, GC SQL; Data - Big Query, Dataflow, AutoML) 
+

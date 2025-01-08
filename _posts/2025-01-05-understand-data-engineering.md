@@ -72,7 +72,7 @@ comments: true
 - **Semi-Structured Data:** NoSQL, XML, JSON
 - **Unstructured Data:** Photos, MP3, chat logs
 - **Data Warehouses**
-    - denormalized schema, dimensional modeling, MPP) > Data Marts
+    - denormalized schema, dimensional modeling, MPP > Data Marts
     - Use AWS Redshift, Azure SQL DW, Gg Big Query
 - **Data Lakes** 
     - cheaper; all types data
@@ -89,7 +89,7 @@ comments: true
     * REVOKE INSERT ON films FROM db_user;
     * UPDATE - SET - WHERE
     * INSERT INTO - VALUES
-    * DROP VIEW - [CASCADE | RESTRICT]
+    * DROP VIEW - [CASCADE \| RESTRICT]
     * CREATE OR RPLACE VIEW - AS
     * ALTER VIEW [IF EXISTS] 
     * CREATE ROLE - WITH
@@ -173,4 +173,3 @@ import requests
 - AWS (Cloud - S3, EC2, RDS; Data - Redshift, Kinesis, SageMaker)
 - Azure (Cloud - Blob Storage, VMs, SQL Db; Data - Data Lake Storage, Stream Analytics, Machine Learning)
 - Google (Cloud - GC Storage, GC Compute Engine, GC SQL; Data - Big Query, Dataflow, AutoML) 
-

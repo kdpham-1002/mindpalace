@@ -21,7 +21,7 @@ I prefer using [Conda environment](https://khoapham1002.github.io/mindpalace/pos
 
 ```bash
 # Create a virtual environment in the current directory
-python3 -m venv .venv
+python3 -m venv py_env
 
 # Create a virtual environment with a specific Python version
 python3.9 -m venv my_py39_env
@@ -29,7 +29,7 @@ python3.9 -m venv my_py39_env
 
 ```bash
 # Activate the environment on macOS/Linux
-source .venv/bin/activate
+source py_env/bin/activate
 
 # View installed packages in the environment
 pip3 list
@@ -38,7 +38,7 @@ pip3 list
 deactivate
 
 # Delete the virtual environment folder (after deactivation)
-rm -rf .venv
+rm -rf py_env
 ```
 
 ```bash

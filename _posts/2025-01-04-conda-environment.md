@@ -73,22 +73,22 @@ dependencies:
 
 ```bash
 # Create a new environment
-conda create --name example
+conda create --name conda_env
 
 # Create a new environment with a specific Python version
 conda create -n my_project_env python=3.12.7
 
 # Rename an environment
-conda rename -n example my_env
+conda rename -n conda_env my_env
 
 # Activate an environment
-conda activate example
+conda activate conda_env
 
 # Deactivate the current environment
 conda deactivate
 
 # Remove an environment
-conda env remove --name example
+conda env remove --name conda_env
 ```
 
 #### Kernel and Jupyter Setup
@@ -98,7 +98,7 @@ conda env remove --name example
 conda install ipykernel
 
 # Add the environment as a Jupyter kernel
-python -m ipykernel install --user --name=example
+python -m ipykernel install --user --name=conda_env
 
 # Start Jupyter Notebook
 jupyter notebook
@@ -122,7 +122,7 @@ conda install jupyter jupyterlab notebook
 conda install scikit-learn numpy pandas matplotlib
 
 # Install a package in a specific environment
-conda install -n example seaborn
+conda install -n conda_env seaborn
 ```
 
 ```bash

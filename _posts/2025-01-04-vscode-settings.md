@@ -19,18 +19,26 @@ comments: true
 
 ### Navigating
 
-- Cmd + 0/1/B                       // Focus on sidebar, editor, hide sidebar
-- Cmd + Ctrl + right                // Move to the right editor
-- Opt + Cmd + left/rights           // Move between tabs
-- Opt + up/down                     // Move lines
+```
+- Cmd + 0/1/B                           // Focus on sidebar, editor, hide sidebar
+- Cmd + Ctrl + right                    // Move to the right editor
+- Opt + Cmd + left/rights               // Move between tabs
+- Opt + up/down                         // Move lines
 - Cmd + F -> "word" -> Opt + Enter      // Find all occurrences
+```
 
 ### Multi cursors
 
+```
 - Opt + Cmd + up/down         // Add cursors above/below
 - Opt + click                 // Add cursors with mouse
 - Cmd + D or Shift + Cmd + L  // Select next occurrence or all occurrences
+```
 
 ### Word wrap
 
+```
 - Opt + Z                    // Toggle word wrap
+
+
+```

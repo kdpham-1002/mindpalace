@@ -29,7 +29,7 @@ python3.9 -m venv my_py39_env
 
 ```bash
 # Activate the environment on macOS/Linux
-source my_project_env/bin/activate
+source .venv/bin/activate
 
 # View installed packages in the environment
 pip3 list

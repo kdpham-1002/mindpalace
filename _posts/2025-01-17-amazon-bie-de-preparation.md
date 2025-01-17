@@ -14,13 +14,16 @@ comments: true
 ---
 
 ## What does a BIE do at Amazon?
-- Our business intelligence engineers (BIEs) build out a variety of analytics. As a BIE, you’ll define key performance indicators (KPIs), automate data pipelines, and create reports, dashboards, and visualizations.
-- Our BIEs understand statistics, data warehousing, and Extract, Transform, and Load, (ETL), and they are proficient in SQL.
-- Our BIEs are able to work with ambiguous data, using advanced SQL and scripting to come up with answers that may not be immediately obvious.
-- Our BIEs are able to translate between business needs and data, and are able to create actionable insights for their stakeholders.
+Our business intelligence engineers (BIEs) build out a variety of analytics. As a BIE, you’ll define key performance indicators (KPIs), automate data pipelines, and create reports, dashboards, and visualizations.
+
+Our BIEs understand statistics, data warehousing, and Extract, Transform, and Load, (ETL), and they are proficient in SQL.
+
+Our BIEs are able to work with ambiguous data, using advanced SQL and scripting to come up with answers that may not be immediately obvious.
+
+Our BIEs are able to translate between business needs and data, and are able to create actionable insights for their stakeholders.
 
 ### Key job responsibilities
-As a Business Intelligence Engineer intern, you will/may:
+As a Business Intelligence Engineer intern, you will/may:  
 - Build smallto mid-size business intelligence (BI) solutions – data sets, queries, reports, dashboards, analyses – or components of larger solutions to answer business questions with data
 - Use well-defined requirements to build a solution that enables effective, data-driven business decisions. Deliver end product on schedule
 - Create and populate data structures using one or more schema definition languages (e.g. DDL, SDL, XSD, RDF)
@@ -61,7 +64,9 @@ Depending on the role, there will be one to two technical phone screenings. A te
 ### SQL
 You need to demonstrate a solid foundation in SQL. Always seek clarification and verify assumptions about the questions, even if you think they’re clear.
 
-Be prepared to write SQL queries and think about edge cases. You’ll need to understand different types of joins and how condition filters affect the joins. Be familiar with ways of simplifying a complex query and optimizing performance.
+Be prepared to write SQL queries and think about edge cases. You’ll need to understand different types of joins and how condition filters affect the joins. 
+
+Be familiar with ways of simplifying a complex query and optimizing performance.
 
 **Sample questions:**  
 - Give me a query that shows how many units I received per week, for the past year.
@@ -83,9 +88,11 @@ Be prepared to write SQL queries and think about edge cases. You’ll need to un
 - Highlight how your decisions or projects impacted customers and stakeholders, demonstrating customer obsession.
 
 ## Interview loop
-- Your loop will include five 55-minute interviews where you’ll meet with members of our business intelligence community.
-- You’ll have the chance to discuss your experiences and expertise in several areas that help us determine success at Amazon.
-- These areas include both technical competencies and non-technical competencies that are based off of our Leadership Principles, which different interviewers will be assigned to evaluate.
+Your loop will include five 55-minute interviews where you’ll meet with members of our business intelligence community.
+
+You’ll have the chance to discuss your experiences and expertise in several areas that help us determine success at Amazon.
+
+These areas include both technical competencies and non-technical competencies that are based off of our Leadership Principles, which different interviewers will be assigned to evaluate.
 
 ### SQL and Basic scripting
 - Be prepared to write SQL queries and think about edge cases. You’ll need to understand different types of joins and how condition filters affect the joins.
@@ -124,7 +131,9 @@ BIEs need to understand business requirements and how to translate them into mea
 - Demonstrate how you translate ambiguous problems into requirements and pull insights from analyzing data sets.
 
 ## Behavioral interview
-A significant portion of the conversation will focus on how you’ve demonstrated our Leadership Principles in your past jobs. This is because past behavior is an indicator of future success. We won’t ask brain teasers. Instead, we’ll focus on the ‘what’ and ‘how’ of your experiences, as well as the ‘why’ of your decisions. 
+A significant portion of the conversation will focus on how you’ve demonstrated our Leadership Principles in your past jobs. This is because past behavior is an indicator of future success. 
+
+We won’t ask brain teasers. Instead, we’ll focus on the ‘what’ and ‘how’ of your experiences, as well as the ‘why’ of your decisions. 
 
 Each interviewer will typically ask two or three behavioral-based questions about successes or challenges and how you handled them using our Leadership Principles.
 

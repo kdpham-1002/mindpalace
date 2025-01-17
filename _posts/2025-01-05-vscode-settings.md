@@ -1,11 +1,11 @@
 ---
 layout: post
 title: VSCode Settings
-date: 2025-01-04 19:00 -0800
+date: 2025-01-05 19:00 -0800
 description: VSCode shortcuts and settings
 author: khoa_pham
-categories: [Coding Workspace, Setups]
-tags: [workflows, settings]
+categories: [Coding Workspace, How-to]
+tags: [workflows, setups]
 pin: false
 math: true
 mermaid: true

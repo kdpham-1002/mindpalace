@@ -13,14 +13,17 @@ toc: true
 comments: true
 ---
 
+> Link to [Chirpy](https://chirpy.cotes.page)
+
+<!-- --- -->
+
+[Jekyll Compose](https://github.com/jekyll/jekyll-compose)
+
+[Jekyll & Ruby Setups](https://jekyllrb.com/docs/installation/)
+
+<!-- --- -->
+
 ## Running Locally
-
-> _Links to test locally_
-
-<http://127.0.0.1:4000/>
-
-<http://127.0.0.1:4000/mindpalace/>
-
 
 ```bash
 bundle install
@@ -30,6 +33,12 @@ bundle install
 bundle exec jekyll serve
 ```
 
+> _Links to test locally_
+
+<http://127.0.0.1:4000/>
+
+<http://127.0.0.1:4000/mindpalace/>
+
 ## Managing Posts
 
 ### Create a Post
@@ -37,6 +46,8 @@ bundle exec jekyll serve
 ```bash
 bundle exec jekyll post "My New Post"
 ```
+
+— or —
 
 ```bash
 bundle exec jekyll compose "My New Post"
@@ -60,24 +71,23 @@ bundle exec jekyll rename _posts/2012-03-04-my-old-post.md "My New Post" --now
 bundle exec jekyll rename _posts/2014-01-24-my-new-post.md "My Old Post" --date "2012-03-04"
 ```
 
-### Front Matter
+## Front Matter
 
 ```yaml
 
 ---
 layout: post
 title: TITLE
-authors: [<author1_id>, <author2_id>]
-description: Short summary of the post.
 date: YYYY-MM-DD HH:MM:SS +/-TTTT
+description: Short summary of the post.
 categories: [Top_Categ, Sub_Categ]
 tags: [tag1, tag2, tag3, tag4]
+authors: [<author1_id>, <author2_id>]
 toc: true
 comments: false
 pin: true
 math: true
 mermaid: true
-
 
 <author_id>:
   name: <full name>
@@ -87,19 +97,6 @@ mermaid: true
 image:
   path: /path/to/image
   alt: image with 1200 x 630 or "1.91 to 1" aspect ratio
-
 ---
 
 ```
-
-## Important Links
-
-> Link to [Chirpy](https://chirpy.cotes.page)
-
----
-
-[Jekyll Compose](https://github.com/jekyll/jekyll-compose)
-
-[Jekyll & Ruby Setups](https://jekyllrb.com/docs/installation/)
-
----

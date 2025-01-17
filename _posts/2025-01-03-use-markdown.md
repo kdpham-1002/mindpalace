@@ -184,15 +184,15 @@ This is an example of `Inline Code`.
 
 Using ```` ```{language} ```` you will get a code block with syntax highlight:
 
-```markdown
-\```python  #remove the backslash
+````markdown
+{% raw %}```python
 x = 10
 if x > 5:
     print("x is greater than 5")
 else:
-    print("x is not greater than 5")
-\```        #remove the backslash
-```
+    print("x is not greater than 5") 
+```{% endraw %}
+````
 
 ## Mathematics
 
@@ -243,15 +243,26 @@ $$
   cherry :active, c, after b a, 1d
 ```
 
-```markdown
-\```mermaid   #remove the backslash
+````markdown
+{% raw %}```mermaid
  gantt
   title  Adding GANTT diagram functionality to mermaid
   apple :a, 2017-07-20, 1w
   banana :crit, b, 2017-07-23, 1d
   cherry :active, c, after b a, 1d
-\```         #remove the backslash
+```{% endraw %}
+````
+
+
+````markdown
+{% raw %}
+```liquid
+{% if product.title contains 'Pack' %}
+  This product's title contains the word Pack.
+{% endif %}
 ```
+{% endraw %}
+````
 
 ## Links
 
@@ -264,7 +275,7 @@ Link to [Chirpy](https://chirpy.cotes.page)
 ![Doe_Patronus](assets/img/favicons/web-app-manifest-512x512.png)
 _Potter's Doe Patronous_
 
-![Doe_Patronus](assets/img/favicons/web-app-manifest-512x512.png){: w="500" h="500" }{: .normal }{: .shadow }
+![Doe_Patronus](assets/img/favicons/web-app-manifest-512x512.png){: w="300" h="300" }{: .normal }{: .shadow }
 
 <!-- ![Doe_Patronus](assets/img/favicons/web-app-manifest-512x512.png){: .left }
 ![Doe_Patronus](assets/img/favicons/web-app-manifest-512x512.png){: .right } -->
@@ -274,8 +285,7 @@ _Potter's Doe Patronous_
 _Potter's Doe Patronous_
 
 ![Doe_Patronus](assets/img/favicons/web-app-manifest-512x512.png){: width="700" height="400" }
-
-![Doe_Patronus](assets/img/favicons/web-app-manifest-512x512.png){: w="500" h="500" }{: .normal }{: .shadow }
+![Doe_Patronus](assets/img/favicons/web-app-manifest-512x512.png){: w="300" h="300" }{: .normal }{: .shadow }
 
 ![Doe_Patronus](assets/img/favicons/web-app-manifest-512x512.png){: .left }
 ![Doe_Patronus](assets/img/favicons/web-app-manifest-512x512.png){: .right }
@@ -291,14 +301,15 @@ _Potter's Doe Patronous_
 | [https://www.**youtube**.com/watch?v=**PsP2vsy_8ms**](https://www.youtube.com/watch?v=PsP2vsy_8ms)    | `youtube`        | `PsP2vsy_8ms`  |
 | [https://www.**twitch**.tv/videos/**1634779211**](https://www.twitch.tv/videos/1634779211)            | `twitch`         | `1634779211`   |
 
-```markdown
-remember to remove tickmarks of `%` in the following code snippets
+````markdown
+{% raw %}
+{% include embed/{Platform}.html id='{ID}' %}
+{% include embed/youtube.html id='PsP2vsy_8ms' %}
 
-{`%` include embed/youtube.html id='PsP2vsy_8ms' `%`}
+{% include embed/video.html src='{URL}' %}
+Where `URL` is a URL to a video file e.g. `/path/to/sample/video.mp4`.
 
-{`%` include embed/{Platform}.html id='{ID}' `%`}
-
-{`%`
+{%
   include embed/video.html
   src='/path/to/video.mp4'
   types='ogg|mov'
@@ -307,10 +318,18 @@ remember to remove tickmarks of `%` in the following code snippets
   autoplay=true
   loop=true
   muted=true
-`%`}
-```
+%}
 
-## Footnote
+- `poster='/path/to/poster.png'` — poster image for a video that is shown while video is downloading
+- `title='Text'` — title for a video that appears below the video and looks same as for images
+- `autoplay=true` — video automatically begins to play back as soon as it can
+- `loop=true` — automatically seek back to the start upon reaching the end of the video
+- `muted=true` — audio will be initially silenced
+- `types` — specify the extensions of additional video formats separated by `|`. Ensure these files exist in the same directory
+{% endraw %}
+````
+
+## Footnotes
 
 ```markdown
 Click the hook will locate the footnote[^footnote], and here is another footnote[^fn-nth-2].

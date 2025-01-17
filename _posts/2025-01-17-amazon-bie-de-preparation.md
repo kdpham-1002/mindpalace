@@ -6,7 +6,7 @@ description: Understand Amazon interview formats
 author: khoa_pham
 categories: [Learning Hub, Interview Preps]
 tags: [data engineering, interview]
-pin: false
+pin: true
 math: true
 mermaid: true
 toc: true

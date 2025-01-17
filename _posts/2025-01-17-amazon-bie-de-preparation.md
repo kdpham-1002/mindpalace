@@ -62,7 +62,7 @@ Always seek clarification and verify assumptions about the questions, even if yo
 
 Be prepared to write SQL queries and think about edge cases. You’ll need to understand different types of joins and how condition filters affect the joins. Be familiar with ways of simplifying a complex query and optimizing performance.
 
-Sample questions:
+**Sample questions:**
 
 Give me a query that shows how many units I received per week, for the past year.
 Give me a query that shows how long it takes these units to arrive.
@@ -114,7 +114,7 @@ We don’t have a preference for specific visualization tools; we’re more inte
 
 Speak through your thought process—this is very important!
 
-Expectations:
+**Expectations:**
 
 Demonstrate your ability to build highly leveraged reports ensuring optimal performance.
 Demonstrate your ability to perform deep dives on data on emerging business questions.
@@ -134,7 +134,8 @@ A significant portion of the conversation will focus on how you’ve demonstrate
 
 Each interviewer will typically ask two or three behavioral-based questions about successes or challenges and how you handled them using our Leadership Principles.
 
-Best practices
+**Best practices:**
+
 Prepare to go deep into the details about your previous work.
 Use the STAR model to structure your responses, making it clear what actions you took in each situation.
 Focus on what you owned and worked on rather than what your team did. ‘I’ is better than ‘we.’

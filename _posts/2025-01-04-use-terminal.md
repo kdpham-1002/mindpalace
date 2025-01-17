@@ -13,7 +13,8 @@ toc: true
 comments: true
 ---
 
-<!-- > Link to [Using Git]() -->
+> After learning some basic terminal commands, you can/should learn Git!  
+> Go to [Use Git](https://khoapham1002.github.io/mindpalace/posts/use-git/).
 
 ### Navigate Directories
 

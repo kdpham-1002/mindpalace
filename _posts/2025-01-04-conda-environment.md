@@ -18,6 +18,8 @@ comments: true
 [How to Install Anaconda on Mac - Dave Ebbelaar](https://youtu.be/RFeIn2ywxG4?si=nVfrjVQzsGtiu5Sg)  
 [Get Started wit Anaconda - Anaconda Cloud Freelearning](https://freelearning.anaconda.cloud/get-started-with-anaconda/18200)
 
+> Learn about [Python environment](https://khoapham1002.github.io/mindpalace/posts/python-environment/)
+
 ### Environments Management
 
 ```bash

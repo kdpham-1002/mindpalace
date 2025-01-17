@@ -1,11 +1,5 @@
 ---
 layout: post
-title: understand-music-theory
-date: 2025-01-17 15:45 -0800
----
-
----
-layout: post
 title: Understand Music Theory
 date: 2025-01-17 15:45 -0800
 description: Music Theory basics

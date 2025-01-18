@@ -115,16 +115,15 @@ LIMIT 3;
 - `Orders`: order_id, customer_id, order_date, delivery_date.
 - `Holiday`: holiday_date, holiday_name.
 
-### Last 7 Days
+### Last 7 Days (INTERVAL)
 **Q1:** Retrieve all sales from the last 7 days
 
 ```sql
-SELECT *
-FROM Sales s
+SELECT * FROM Sales s
 WHERE sale_date >= CURRENT_DATE - INTERVAL '7 days';
 ```
 
-### Group by Month
+### Group by Month (DATE_TRUNC, EXTRACT, DATE_PART)
 **Q2:** Find total sales for each month in 2024. Include the month and total sales.
 
 ```sql
@@ -191,7 +190,7 @@ WHERE delivery_date - order_date > INTERVAL '5 days';
 -- WHERE DATEDIFF(delivery_date, order_date) > 5; -- MySQL
 ```
 
-### Rolling Sales
+### Rolling Sales (OVER, ROWS, RANGE)
 **Q7:** Calculate the rolling 30-day average sales amount for each day in the past 3 months.
 
 ```sql
@@ -231,7 +230,7 @@ ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING
 RANGE BETWEEN CURRENT ROW AND INTERVAL '7 days' FOLLOWING
 ```
 
-### Monthly Growth Rate
+### Monthly Growth Rate (CTE, LAG)
 **Q8:** Calculate the month-over-month sales growth for the current year.
 
 ```sql

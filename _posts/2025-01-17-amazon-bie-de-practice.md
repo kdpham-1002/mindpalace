@@ -17,12 +17,16 @@ comments: true
 
 ## Joins
 
-### All Orders (Inner Joins)
-
-**Q1:** Write a query to find all orders placed by customers who live in New York.
 **Tables:**
 - `Orders`: order_id, customer_id, order_date.
 - `Customers`: customer_id, name, city.
+- `Sales`: sale_id, product_id, sale_amount.
+- `Suppliers`: supplier_id, supplier_name.
+- `Products`: product_id, product_name, supplier_id.
+- `Employees`: employee_id, name, manager_id.
+
+### All Orders (Inner Joins)
+**Q1:** Write a query to find all orders placed by customers who live in New York.
 
 ```sql
 SELECT o.order_id, o.customer_id, o.order_date, c.name
@@ -34,11 +38,7 @@ WHERE c.city = 'New York';
 > The INNER JOIN ensures only rows with matching customer_id in both tables are included.
 
 ### All Products (Left Joins)
-
 **Q2:** List all products, including those that have not been sold, with their total sales quantities.
-**Tables:**
-- `Products`: product_id, product_name.
-- `Sales`: sale_id, product_id, sale_amount.
 
 ```sql
 SELECT p.product_id, p.product_name,
@@ -53,9 +53,6 @@ GROUP BY p.product_id, p.product_name;
 
 ### All Suppliers & Products (Full Outer Join)
 **Q3:** Combine data from Suppliers and Products, showing all products and suppliers, even if there are no matches.
-**Tables:**
-- `Suppliers`: supplier_id, supplier_name.
-- `Products`: product_id, product_name, supplier_id.
 
 ```sql
 SELECT 
@@ -67,8 +64,6 @@ ON s.supplier_id = p.supplier_id;
 
 ### All Employees (Self Join)
 **Q4:** List all employees and their managers.
-**Tables:**
-- `Employees`: employee_id, name, manager_id.
 
 ```sql
 SELECT e.name AS employee, m.name AS manager
@@ -80,11 +75,14 @@ ON e.manager_id = m.employee_id;
 
 ### Join with Aggregation
 
+**Tables:**
+- `Sales`: sale_id, product_id, sale_amount, sale_date.
+- `Customers`: customer_id, name.
+- `Orders`: order_id, customer_id, order_date.
+- `Products`: product_id, product_name.
+
 #### Top 3 Products
 **Q5:** Find the top 3 products with the highest total sales quantities in the past month.
-**Tables:**
-- Sales: sale_id, product_id, sale_amount, sale_date.
-- Products: product_id, product_name.
 
 ```sql
 SELECT p.product_id, p.product_name, SUM(s.sale_amount) AS total_sales
@@ -112,8 +110,6 @@ LIMIT 3;
 
 #### Orders per Customer
 **Q6:** Calculate the number of orders placed by each customer per month.
-**Tables:**
-- `Orders`: order_id, customer_id, order_date.
 
 ```sql
 SELECT c.customer_id,
@@ -127,9 +123,6 @@ ORDER BY c.customer_id, order_month;
 
 #### Average Sales per Customer
 **Q7:** Find the average sales amount per customer for the last 6 months.
-**Tables:**
-- `Sales`: sale_id, product_id, sale_amount, sale_date.
-- `Customers`: customer_id, name.
 
 ```sql
 SELECT c.customer_name, ROUND(AVG(s.sale_amount), 2) AS avg_sales
@@ -151,34 +144,11 @@ GROUP BY sale_date
 ORDER BY sale_date;
 ```
 
-#### Percentage Contribution
-**Q9:** Calculate each product’s percentage contribution to total sales.
-
-```sql
--- Step 1: Calculate total sales and grand total
-WITH ProductSales AS (
-    SELECT p.product_id,
-        SUM(s.sale_amount) AS total_sales,
-        (SELECT SUM(sale_amount) FROM Sales) AS grand_total
-    FROM Products p
-    INNER JOIN Sales s
-    ON p.product_id = s.product_id
-    GROUP BY p.product_id
-)
--- Step 2: Calculate percentage contribution
-SELECT product_id, total_sales,
-    ROUND((total_sales * 100.0) / grand_total, 2) AS percentage_of_total
-FROM ProductSales;
-```
-
-```sql
-SELECT p.product_name, SUM(s.sale_amount) AS total_sales,
-    ROUND(SUM(s.sale_amount) * 100.0 / SUM(SUM(s.sale_amount)) OVER (), 2) AS percentage_of_total
-FROM Products p INNER JOIN Sales s
-ON p.product_id = s.product_id
-GROUP BY p.product_name
-ORDER BY percentage_of_total DESC;
-```
+**Output:**
+product_name | total_sales | percentage_of_total
+:--:|:---:|:--:
+Product A | 300 | 60
+Product B | 200 | 40
 
 ## Date and Time
 
@@ -409,5 +379,253 @@ FROM (SELECT p.category, p.product_name,
 WHERE rank = 1;
 ```
 
-# Python
-sdfsd
+```sql
+SELECT p.category, p.product_name,
+    SUM(s.sale_amount) AS total_sales
+FROM Products p INNER JOIN Sales s
+ON p.product_id = s.product_id
+GROUP BY p.category, p.product_name
+HAVING SUM(s.sale_amount) = (
+    SELECT MAX(total_sales)
+    FROM (SELECT p.category, SUM(s.sale_amount) AS total_sales
+            FROM Products p INNER JOIN Sales s
+            ON p.product_id = s.product_id
+            GROUP BY p.category) AS subquery
+    WHERE subquery.category = p.category
+);
+```
+
+### Customers with High Spending
+**Q6:** Find the top 5 customers by their total purchase amount.
+
+```sql
+SELECT customer_id, customer_name, total_purchases
+FROM (SELECT c.customer_id, c.customer_name,
+        SUM(s.sale_amount) as total_purchases,
+        RANK() OVER (ORDER BY SUM(s.sale_amount) DESC) AS rank
+        FROM Customers c INNER JOIN Sales s
+        ON c.customer_id = s.customer_id
+        GROUP BY c.customer_id, c.customer_name) AS ranked_customers
+WHERE rank <= 5;
+```
+
+```sql
+SELECT c.customer_id, c.customer_name,
+    SUM(s.sale_amount) AS total_purchases
+FROM Customers c INNER JOIN Sales s
+ON c.customer_id = s.customer_id
+GROUP BY c.customer_id, c.customer_name
+ORDER BY SUM(s.sale_amount) DESC
+LIMIT 5;
+```
+
+### Sales Across Categories
+**Q7:** Find categories where sales exceeded the average sales.
+
+```sql
+SELECT p.category, SUM(s.sale_amount) AS total_sales
+FROM Sales s INNER JOIN Products p
+ON s.product_id = p.product_id
+GROUP BY p.category
+HAVING SUM(s.sale_amount) > (
+    SELECT AVG(total_sales)
+    FROM (SELECT SUM(sale_amount) AS total_sales
+            FROM Sales
+            GROUP BY product_id) AS subquery
+);
+```
+
+```sql
+WITH CategorySales AS (
+    SELECT p.category, SUM(s.sale_amount) AS total_sales
+    FROM Sales s INNER JOIN Products p
+    ON s.product_id = p.product_id
+    GROUP BY p.category
+),
+AverageSales AS (
+    SELECT AVG(total_sales) AS avg_sales
+    FROM CategorySales
+)
+SELECT category, total_sales
+FROM CategorySales
+WHERE total_sales > (SELECT avg_sales FROM AverageSales);
+```
+
+## Window Functions
+
+**Tables:**
+- `Employees`: employee_id, emp_name, department_id, salary
+- `Sales`: sale_id, product_id, sale_amount, sale_date
+- `Orders`: order_id, customer_id, order_date
+
+### Rank Employees by Salary
+**Q1:** Find the rank of each employee by their salary within their department.
+
+```sql
+SELECT department_id, emp_name, salary,
+    RANK() OVER (PARTITION BY department_id ORDER BY salary DESC) AS salary_rank
+FROM Employees;
+```
+
+### Running Total Sales by Product
+**Q2:** For each product, calculate the cumulative sales over time.
+
+```sql
+SELECT product_id, sale_date, sale_amount,
+    SUM(sale_amount) OVER (PARTITION BY product_id ORDER BY sale_date) AS cumulative_sales
+FROM Sales;
+```
+
+### First and Last Orders
+**Q3:** Find the first and last order date for each customer.
+
+```sql
+SELECT customer_id, order_date,
+    FIRST_VALUE(order_date) OVER (PARTITION BY customer_id ORDER BY order_date) AS first_order,
+    LAST_VALUE(order_date) OVER (PARTITION BY customer_id ORDER BY order_date) AS last_order
+FROM Orders;
+```
+
+### Flag Highest Sales
+**Q4:** Add a column to flag the highest sale for each product.
+
+```sql
+SELECT product_id, sale_date, sale_amount,
+    CASE WHEN sale_amount = MAX(sale_amount) 
+        OVER (PARTITION BY product_id)
+        THEN 'Highest Sale' ELSE 'Regular Sale' 
+    END AS sale_flag
+FROM Sales;
+```
+
+```sql
+SELECT product_id, sale_date, sale_amount,
+    CASE WHEN sale_amount = MAX(sale_amount) 
+        OVER (PARTITION BY product_id) THEN 'Highest Sale' 
+        ELSE 'Regular Sale' 
+    END AS sale_flag
+FROM Sales;
+```
+
+### Median Sales Amount
+**Q5:** Find the median sales amount for each product.
+
+```sql
+SELECT product_id, sale_date, sale_amount,
+    PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY sale_amount) 
+    OVER (PARTITION BY product_id) AS median_sales
+FROM Sales;
+```
+
+### Percentage Contribution
+**Q6a:** Calculate each product’s sales as a percentage of total sales.
+
+```sql
+SELECT product_name, sale_amount,
+    -- ROUND(SUM(sale_amount) OVER (PARTITION BY product_name) * 100.0 / SUM(sale_amount) OVER (), 2) AS percent_of_total
+    ROUND(sale_amount * 100.0 / SUM(sale_amount) OVER (), 2) AS percent_of_total
+FROM Sales;
+```
+
+**Output:**
+product_name | sale_amount | percent_of_total
+:--:|:---:|:--:
+A | 100 | 20
+A | 200 | 40
+B | 150 | 30
+B | 50  | 10
+
+**Q6b:** Calculate each product’s percentage contribution to total sales.
+
+```sql
+SELECT p.product_name, SUM(s.sale_amount) AS total_sales,
+    ROUND(SUM(s.sale_amount) * 100.0 / SUM(SUM(s.sale_amount)) OVER (), 2) AS percentage_of_total
+FROM Products p INNER JOIN Sales s
+ON p.product_id = s.product_id
+GROUP BY p.product_name
+ORDER BY percentage_of_total DESC;
+```
+
+**Output:**
+product_name | total_sales | percentage_of_total
+:--:|:---:|:--:
+Product A | 300 | 60
+Product B | 200 | 40
+
+-- Q6b Method 2 --
+```sql
+-- Step 1: Calculate total sales and grand total
+WITH ProductSales AS (
+    SELECT p.product_id,
+        SUM(s.sale_amount) AS total_sales,
+        (SELECT SUM(sale_amount) FROM Sales) AS grand_total
+    FROM Products p
+    INNER JOIN Sales s
+    ON p.product_id = s.product_id
+    GROUP BY p.product_id
+)
+-- Step 2: Calculate percentage contribution
+SELECT product_id, total_sales,
+    ROUND((total_sales * 100.0) / grand_total, 2) AS percentage_of_total
+FROM ProductSales;
+```
+
+# Data Modeling
+
+## Star Schema Design
+You are tasked with designing a data warehouse for an online retail store. The business needs to track:
+1.	sales_amount, units_sold, and discount.
+2.	Products with attributes such as product_name and category.
+3.	Customers with attributes such as customer_name and region.
+4.	Dates with attributes such as day, month, and year.
+
+***Solution:*** 
+1.	Fact Table:  
+
+`Sales`    
+| sales_id | product_id | customer_id | date_id | sales_amount | units_sold | discount |
+
+2.	Dimension Tables:
+
+`Products`  
+| product_id | product_name | category |
+
+`Customers`  
+| customer_id | customer_name | region |
+
+`Date`
+| date_id | day | month | year |
+
+***Benefits of Star Schema:***
+•	Simplifies querying with fewer joins.
+•	Optimized for OLAP systems.
+
+## Snowflake Schema Design
+Normalize the Products dimension from the previous exercise into a snowflake schema.
+
+***Solution:*** 
+1.	Updated `Products` Dimension:
+
+`Products`  
+| product_id | product_name | category_id |
+
+2.	New Dimension Table:
+
+`Categories`
+| category_id | category_name |
+
+## Fact Table Design
+Design a fact table to track daily website traffic metrics, including:
+1.	page_views, unique_visitors, and average_session_duration.
+2.	Metrics should be tracked by date, page, and region.
+
+***Solution:***  
+1.	Fact Table:
+
+`Website_Traffic`
+| traffic_id | date_id | page_id | region_id | page_views | unique_visitors | avg_session_duration |
+
+2.	Dimension Tables:
+`Date`: date_id, day, month, year.
+`Pages`: page_id, page_name, category.
+`Region`: region_id, region_name, country.

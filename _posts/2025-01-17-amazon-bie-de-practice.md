@@ -17,7 +17,7 @@ comments: true
 
 ## Joins
 
-### Inner Joins
+### All Orders (Inner Joins)
 
 **Q1:** Write a query to find all orders placed by customers who live in New York.
 **Tables:**
@@ -33,7 +33,7 @@ WHERE c.city = 'New York';
 
 > The INNER JOIN ensures only rows with matching customer_id in both tables are included.
 
-### Left Joins
+### All Products (Left Joins)
 
 **Q2:** List all products, including those that have not been sold, with their total sales quantities.
 **Tables:**
@@ -51,7 +51,7 @@ GROUP BY p.product_id, p.product_name;
 > The LEFT JOIN includes all products, even those without matching sales.
 > COALESCE handles NULL values by replacing them with 0 for unsold products.
 
-### Full Outer Join
+### All Suppliers & Products (Full Outer Join)
 **Q3:** Combine data from Suppliers and Products, showing all products and suppliers, even if there are no matches.
 **Tables:**
 - `Suppliers`: supplier_id, supplier_name.
@@ -65,7 +65,7 @@ ON s.supplier_id = p.supplier_id;
 
 > The FULL OUTER JOIN ensures inclusion of all rows from both tables, with NULL where no matches exist.
 
-### Self Join
+### All Employees (Self Join)
 **Q4:** List all employees and their managers.
 **Tables:**
 - `Employees`: employee_id, name, manager_id.
@@ -79,6 +79,8 @@ ON e.manager_id = m.employee_id;
 > The LEFT JOIN ensures that even employees without managers (e.g., CEO) are included.
 
 ### Join with Aggregation
+
+#### Top 3 Products
 **Q5:** Find the top 3 products with the highest total sales quantities in the past month.
 **Tables:**
 - Sales: sale_id, product_id, sale_amount, sale_date.
@@ -108,6 +110,76 @@ ORDER BY rs.total_sale_amount DESC
 LIMIT 3;
 ```
 
+#### Orders per Customer
+**Q6:** Calculate the number of orders placed by each customer per month.
+**Tables:**
+- `Orders`: order_id, customer_id, order_date.
+
+```sql
+SELECT c.customer_id,
+    DATE_TRUNC('month', o.order_date) AS order_month,
+    COUNT(o.order_id) AS total_orders
+FROM Orders o INNER JOIN Customers c
+ON o.customer_id = c.customer_id
+GROUP BY c.customer_id, DATE_TRUNC('month', o.order_date)
+ORDER BY c.customer_id, order_month;
+```
+
+#### Average Sales per Customer
+**Q7:** Find the average sales amount per customer for the last 6 months.
+**Tables:**
+- `Sales`: sale_id, product_id, sale_amount, sale_date.
+- `Customers`: customer_id, name.
+
+```sql
+SELECT c.customer_name, ROUND(AVG(s.sale_amount), 2) AS avg_sales
+FROM Customers c INNER JOIN Sales s
+ON c.customer_id = s.customer_id
+WHERE s.sale_date >= CURRENT_DATE - INTERVAL '6 months'
+GROUP BY c.customer_name
+ORDER BY avg_sales DESC;
+```
+
+#### Max Daily Sales
+**Q8:** Find the highest sales amount recorded for each day in the last 30 days.
+
+```sql
+SELECT sale_date, MAX(sale_amount) AS max_daily_sale
+FROM Sales s
+WHERE sale_date >= CURRENT_DATE - INTERVAL '30 days'
+GROUP BY sale_date
+ORDER BY sale_date;
+```
+
+#### Percentage Contribution
+**Q9:** Calculate each product’s percentage contribution to total sales.
+
+```sql
+-- Step 1: Calculate total sales and grand total
+WITH ProductSales AS (
+    SELECT p.product_id,
+        SUM(s.sale_amount) AS total_sales,
+        (SELECT SUM(sale_amount) FROM Sales) AS grand_total
+    FROM Products p
+    INNER JOIN Sales s
+    ON p.product_id = s.product_id
+    GROUP BY p.product_id
+)
+-- Step 2: Calculate percentage contribution
+SELECT product_id, total_sales,
+    ROUND((total_sales * 100.0) / grand_total, 2) AS percentage_of_total
+FROM ProductSales;
+```
+
+```sql
+SELECT p.product_name, SUM(s.sale_amount) AS total_sales,
+    ROUND(SUM(s.sale_amount) * 100.0 / SUM(SUM(s.sale_amount)) OVER (), 2) AS percentage_of_total
+FROM Products p INNER JOIN Sales s
+ON p.product_id = s.product_id
+GROUP BY p.product_name
+ORDER BY percentage_of_total DESC;
+```
+
 ## Date and Time
 
 **Tables:**
@@ -124,7 +196,7 @@ WHERE sale_date >= CURRENT_DATE - INTERVAL '7 days';
 ```
 
 ### Group by Month (DATE_TRUNC, EXTRACT, DATE_PART)
-**Q2:** Find total sales for each month in 2024. Include the month and total sales.
+**Q2:** Find total sales for each month in 2024.
 
 ```sql
 SELECT 
@@ -151,8 +223,8 @@ GROUP BY DATE_TRUNC('month', order_date)
 ORDER BY order_month;
 ```
 
-### Day, Hour with Most Sales
-**Q4:** Identify the day in the past month with the highest sales quantity. Include the date and total sales.
+### Peak Day, Hour Sales
+**Q4:** Identify the day in the past month with the highest sales quantity.
 
 ```sql
 SELECT sale_date, SUM(sale_amount) AS total_sales
@@ -258,4 +330,81 @@ FROM Orders o LEFT JOIN Holiday h
 ON o.order_date = h.holiday_date
 WHERE EXTRACT(DOW FROM o.order_date) IN (0, 6) -- Sunday, Saturday
 OR h.holiday_date IS NOT NULL;
+```
+
+## Subqueries
+**Tables:**
+- `Sales`: sale_id, customer_id, product_id, sale_date, sale_amount
+- `Products`: product_id, product_name, category
+- `Customers`: customer_id, customer_name
+<!-- - `Orders`: order_id, customer_id, order_date -->
+
+### Top Selling Products
+**Q1:** Find the products whose total sales amount is greater than the average sales amount across all products.
+
+```sql
+SELECT p.product_name, SUM(s.sale_amount) AS total_sales
+FROM Products p INNER JOIN Sales s
+ON p.product_id = s.product_id
+GROUP BY p.product_name
+HAVING SUM(s.sale_amount) > (
+    SELECT AVG(total_sales)
+    FROM (SELECT SUM(sale_amount) AS total_sales
+            FROM Sales
+            GROUP BY product_id
+         ) subquery
+    );
+```
+
+### Customers with Repeat Purchases
+**Q2:** Find customers who have purchased more than one product in the last 6 months.
+
+```sql
+SELECT c.customer_id, c.customer_name
+FROM Customers c
+WHERE c.customer_id IN (
+    SELECT customer_id
+    FROM Sales
+    WHERE sale_date >= CURRENT_DATE - INTERVAL '6 months'
+    GROUP BY customer_id
+    HAVING COUNT(DISTINCT product_id) > 1
+    )
+ORDER BY c.customer_id, p.product_id;
+```
+
+### Products with No Sales
+**Q3:** List products that have not been sold in the last 30 days.
+
+```sql
+SELECT product_id, product_name
+FROM Products
+WHERE product_id NOT IN (
+    SELECT DISTINCT product_id
+    FROM Sales
+    WHERE sale_date >= CURRENT_DATE - INTERVAL '30 days'
+    );
+```
+
+**Q4:** List products with zero revenue in the last 3 months.
+
+```sql
+SELECT product_id, product_name
+FROM Products p INNER JOIN Sales s
+ON p.product_id = s.product_id
+WHERE s.sale_amount = 0;
+```
+
+### Best Selling Products per Category
+**Q5:** Find the best-selling product in each category based on total sales amount.
+
+```sql
+SELECT category, product_name, total_sales
+FROM (SELECT p.category, p.product_name,
+        SUM(s.sale_amount) AS total_sales,
+        RANK() OVER (PARTITION BY p.category ORDER BY SUM(s.sale_amount) DESC) AS rank
+    FROM Products p INNER JOIN Sales s
+    ON p.product_id = s.product_id
+    GROUP BY p.category, p.product_name
+) ranked_products
+WHERE rank = 1;
 ```

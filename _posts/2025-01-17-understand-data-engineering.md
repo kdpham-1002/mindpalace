@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understand Data Engineering
-date: 2025-01-17 20:45 -0800
+date: 2025-01-17 08:45 -0800
 description: Data Engineering Recap
 author: khoa_pham
 categories: [Coding Workspace, Interview Preps]

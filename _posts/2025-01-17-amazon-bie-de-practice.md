@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Amazon BIE/DE Practice
-date: 2025-01-18 14:31 -0800
+date: 2025-01-17 14:31 -0800
 description: Practice Amazon interview questions
 author: khoa_pham
 categories: [Coding Workspace, Interview Preps]

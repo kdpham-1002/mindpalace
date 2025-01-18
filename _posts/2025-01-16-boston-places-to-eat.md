@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Boston Places to Eat
-date: 2025-01-17 14:45 -0800
+date: 2025-01-16 14:45 -0800
 description: Top places to eat in Boston
 author: khoa_pham
 categories: [4Foodie, Where2Eat]

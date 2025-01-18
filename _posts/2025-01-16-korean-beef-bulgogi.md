@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Korean Beef Bulgogi
-date: 2025-01-17 15:03 -0800
+date: 2025-01-16 15:03 -0800
 description: Recipe for Korean beef bulgogi
 author: khoa_pham
 categories: [4Foodie, KoaCanCook]

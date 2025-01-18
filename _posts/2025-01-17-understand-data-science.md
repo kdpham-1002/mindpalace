@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understand Data Science
-date: 2025-01-17 09:00 -0800
+date: 2025-01-17 21:00 -0800
 description: Data Science Recap
 author: khoa_pham
 categories: [Coding Workspace, Interview Preps]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Learning Topik
+title: Journey to Topik
 date: 2025-01-16 15:50 -0800
 description: Journey to Topik
 author: khoa_pham

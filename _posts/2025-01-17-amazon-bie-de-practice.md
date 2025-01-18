@@ -408,3 +408,5 @@ FROM (SELECT p.category, p.product_name,
 ) ranked_products
 WHERE rank = 1;
 ```
+
+# Python

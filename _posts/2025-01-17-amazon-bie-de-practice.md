@@ -574,10 +574,10 @@ FROM ProductSales;
 
 ## Star Schema Design
 You are tasked with designing a data warehouse for an online retail store. The business needs to track:
-1.	sales_amount, units_sold, and discount.
-2.	Products with attributes such as product_name and category.
-3.	Customers with attributes such as customer_name and region.
-4.	Dates with attributes such as day, month, and year.
+1. sales_amount, units_sold, and discount.
+2. Products with attributes such as product_name and category.
+3. Customers with attributes such as customer_name and region.
+4. Dates with attributes such as day, month, and year.
 
 ***Solution:*** 
 1. Fact Table:  

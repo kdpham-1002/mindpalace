@@ -582,18 +582,18 @@ You are tasked with designing a data warehouse for an online retail store. The b
 ***Solution:*** 
 1.	Fact Table:  
 
-`Sales`    
+`Sales`     
 | sales_id | product_id | customer_id | date_id | sales_amount | units_sold | discount |
 
 2.	Dimension Tables:
 
-`Products`  
+`Products`   
 | product_id | product_name | category |
 
-`Customers`  
+`Customers`   
 | customer_id | customer_name | region |
 
-`Date`
+`Date`  
 | date_id | day | month | year |
 
 ***Benefits of Star Schema:***
@@ -604,28 +604,28 @@ You are tasked with designing a data warehouse for an online retail store. The b
 Normalize the Products dimension from the previous exercise into a snowflake schema.
 
 ***Solution:*** 
-1.	Updated `Products` Dimension:
+1. Updated `Products` Dimension:
 
-`Products`  
+`Products`   
 | product_id | product_name | category_id |
 
-2.	New Dimension Table:
+2. New Dimension Table:  
 
-`Categories`
+`Categories`  
 | category_id | category_name |
 
 ## Fact Table Design
 Design a fact table to track daily website traffic metrics, including:
-1.	page_views, unique_visitors, and average_session_duration.
-2.	Metrics should be tracked by date, page, and region.
+1. page_views, unique_visitors, and average_session_duration.  
+2. Metrics should be tracked by date, page, and region.  
 
 ***Solution:***  
-1.	Fact Table:
+1. Fact Table:
 
-`Website_Traffic`
+`Website_Traffic`  
 | traffic_id | date_id | page_id | region_id | page_views | unique_visitors | avg_session_duration |
 
-2.	Dimension Tables:
-`Date`: date_id, day, month, year.
-`Pages`: page_id, page_name, category.
+2. Dimension Tables:  
+`Date`: date_id, day, month, year.  
+`Pages`: page_id, page_name, category.  
 `Region`: region_id, region_name, country.

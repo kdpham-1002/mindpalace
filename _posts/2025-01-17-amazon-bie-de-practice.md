@@ -631,7 +631,7 @@ Design a fact table to track daily website traffic metrics, including:
 `Region`: region_id, region_name, country.
 
 
-## ETL
+## ETL Workflow
 
 ### Data Cleaning
 - Missing Values
@@ -640,7 +640,7 @@ Design a fact table to track daily website traffic metrics, including:
 ### Data Loading
 ### Data Transformation
 ### Error Handling
-### ETL Workflow
+
 
 ## AWS Tools
 

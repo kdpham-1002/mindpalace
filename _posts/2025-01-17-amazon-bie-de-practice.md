@@ -580,12 +580,12 @@ You are tasked with designing a data warehouse for an online retail store. The b
 4.	Dates with attributes such as day, month, and year.
 
 ***Solution:*** 
-1.	Fact Table:  
+1. Fact Table:  
 
 `Sales`     
 | sales_id | product_id | customer_id | date_id | sales_amount | units_sold | discount |
 
-2.	Dimension Tables:
+2. Dimension Tables:
 
 `Products`   
 | product_id | product_name | category |

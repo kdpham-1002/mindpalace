@@ -13,9 +13,9 @@ toc: true
 comments: true
 ---
 
-# SQL
+## SQL
 
-## Joins
+### Joins
 
 **Tables:**
 - `Orders`: order_id, customer_id, order_date.
@@ -25,7 +25,7 @@ comments: true
 - `Products`: product_id, product_name, supplier_id.
 - `Employees`: employee_id, name, manager_id.
 
-### All Orders (Inner Joins)
+#### All Orders (Inner Joins)
 **Q1:** Write a query to find all orders placed by customers who live in New York.
 
 ```sql
@@ -37,7 +37,7 @@ WHERE c.city = 'New York';
 
 > The INNER JOIN ensures only rows with matching customer_id in both tables are included.
 
-### All Products (Left Joins)
+#### All Products (Left Joins)
 **Q2:** List all products, including those that have not been sold, with their total sales quantities.
 
 ```sql
@@ -51,7 +51,7 @@ GROUP BY p.product_id, p.product_name;
 > The LEFT JOIN includes all products, even those without matching sales.
 > COALESCE handles NULL values by replacing them with 0 for unsold products.
 
-### All Suppliers & Products (Full Outer Join)
+#### All Suppliers & Products (Full Outer Join)
 **Q3:** Combine data from Suppliers and Products, showing all products and suppliers, even if there are no matches.
 
 ```sql
@@ -62,7 +62,7 @@ ON s.supplier_id = p.supplier_id;
 
 > The FULL OUTER JOIN ensures inclusion of all rows from both tables, with NULL where no matches exist.
 
-### All Employees (Self Join)
+#### All Employees (Self Join)
 **Q4:** List all employees and their managers.
 
 ```sql
@@ -73,7 +73,7 @@ ON e.manager_id = m.employee_id;
 
 > The LEFT JOIN ensures that even employees without managers (e.g., CEO) are included.
 
-### Join with Aggregation
+#### Join with Aggregation
 
 **Tables:**
 - `Sales`: sale_id, product_id, sale_amount, sale_date.
@@ -81,7 +81,7 @@ ON e.manager_id = m.employee_id;
 - `Orders`: order_id, customer_id, order_date.
 - `Products`: product_id, product_name.
 
-#### Top 3 Products
+##### Top 3 Products
 **Q5:** Find the top 3 products with the highest total sales quantities in the past month.
 
 ```sql
@@ -108,7 +108,7 @@ ORDER BY rs.total_sale_amount DESC
 LIMIT 3;
 ```
 
-#### Orders per Customer
+##### Orders per Customer
 **Q6:** Calculate the number of orders placed by each customer per month.
 
 ```sql
@@ -121,7 +121,7 @@ GROUP BY c.customer_id, DATE_TRUNC('month', o.order_date)
 ORDER BY c.customer_id, order_month;
 ```
 
-#### Average Sales per Customer
+##### Average Sales per Customer
 **Q7:** Find the average sales amount per customer for the last 6 months.
 
 ```sql
@@ -133,7 +133,7 @@ GROUP BY c.customer_name
 ORDER BY avg_sales DESC;
 ```
 
-#### Max Daily Sales
+##### Max Daily Sales
 **Q8:** Find the highest sales amount recorded for each day in the last 30 days.
 
 ```sql
@@ -150,14 +150,14 @@ product_name | total_sales | percentage_of_total
 Product A | 300 | 60
 Product B | 200 | 40
 
-## Date and Time
+### Date and Time
 
 **Tables:**
 - `Sales`: sale_id, product_id, sale_amount, sale_date.
 - `Orders`: order_id, customer_id, order_date, delivery_date.
 - `Holiday`: holiday_date, holiday_name.
 
-### Last 7 Days (INTERVAL)
+#### Last 7 Days (INTERVAL)
 **Q1:** Retrieve all sales from the last 7 days
 
 ```sql
@@ -165,7 +165,7 @@ SELECT * FROM Sales s
 WHERE sale_date >= CURRENT_DATE - INTERVAL '7 days';
 ```
 
-### Group by Month (DATE_TRUNC, EXTRACT, DATE_PART)
+#### Group by Month (DATE_TRUNC, EXTRACT, DATE_PART)
 **Q2:** Find total sales for each month in 2024.
 
 ```sql
@@ -193,7 +193,7 @@ GROUP BY DATE_TRUNC('month', order_date)
 ORDER BY order_month;
 ```
 
-### Peak Day, Hour Sales
+#### Peak Day, Hour Sales
 **Q4:** Identify the day in the past month with the highest sales quantity.
 
 ```sql
@@ -221,7 +221,7 @@ LIMIT 1;
 -- WHERE sale_date >= DATE_TRUNC('week', CURRENT_DATE) -- INTERVAL '7 days' -- WRONG because it took the start of the week then subtract 7 days
 ```
 
-### Late Deliveries
+#### Late Deliveries
 **Q6:** Find all orders where the delivery was late by more than 5 days.
 
 ```sql
@@ -232,7 +232,7 @@ WHERE delivery_date - order_date > INTERVAL '5 days';
 -- WHERE DATEDIFF(delivery_date, order_date) > 5; -- MySQL
 ```
 
-### Rolling Sales (OVER, ROWS, RANGE)
+#### Rolling Sales (OVER, ROWS, RANGE)
 **Q7:** Calculate the rolling 30-day average sales amount for each day in the past 3 months.
 
 ```sql
@@ -249,7 +249,7 @@ ORDER BY sale_date;
 > First, this groups the data by sale_date and calculates the total sales for each date.
 > Then, it computes the rolling average by averaging sales over a sliding 30-day window.
 
-#### RANGE vs ROWS
+######## RANGE vs ROWS
 
 ```sql
 SELECT sale_date,
@@ -272,7 +272,7 @@ ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING
 RANGE BETWEEN CURRENT ROW AND INTERVAL '7 days' FOLLOWING
 ```
 
-### Monthly Growth Rate (CTE, LAG)
+#### Monthly Growth Rate (CTE, LAG)
 **Q8:** Calculate the month-over-month sales growth for the current year.
 
 ```sql
@@ -291,7 +291,7 @@ FROM MonthlySales;
 
 > The LAG function retrieves the total_sales from the previous month, allowing the calculation of the growth rate.
 
-### Orders on Holidays
+#### Orders on Holidays
 **Q9:** Find all orders placed on holidays or on weekends.
 
 ```sql
@@ -302,14 +302,14 @@ WHERE EXTRACT(DOW FROM o.order_date) IN (0, 6) -- Sunday, Saturday
 OR h.holiday_date IS NOT NULL;
 ```
 
-## Subqueries
+### Subqueries
 **Tables:**
 - `Sales`: sale_id, customer_id, product_id, sale_date, sale_amount
 - `Products`: product_id, product_name, category
 - `Customers`: customer_id, customer_name
 <!-- - `Orders`: order_id, customer_id, order_date -->
 
-### Top Selling Products
+#### Top Selling Products
 **Q1:** Find the products whose total sales amount is greater than the average sales amount across all products.
 
 ```sql
@@ -326,7 +326,7 @@ HAVING SUM(s.sale_amount) > (
     );
 ```
 
-### Customers with Repeat Purchases
+#### Customers with Repeat Purchases
 **Q2:** Find customers who have purchased more than one product in the last 6 months.
 
 ```sql
@@ -342,7 +342,7 @@ WHERE c.customer_id IN (
 ORDER BY c.customer_id, p.product_id;
 ```
 
-### Products with No Sales
+#### Products with No Sales
 **Q3:** List products that have not been sold in the last 30 days.
 
 ```sql
@@ -364,7 +364,7 @@ ON p.product_id = s.product_id
 WHERE s.sale_amount = 0;
 ```
 
-### Best Selling Products per Category
+#### Best Selling Products per Category
 **Q5:** Find the best-selling product in each category based on total sales amount.
 
 ```sql
@@ -395,7 +395,7 @@ HAVING SUM(s.sale_amount) = (
 );
 ```
 
-### Customers with High Spending
+#### Customers with High Spending
 **Q6:** Find the top 5 customers by their total purchase amount.
 
 ```sql
@@ -419,7 +419,7 @@ ORDER BY SUM(s.sale_amount) DESC
 LIMIT 5;
 ```
 
-### Sales Across Categories
+#### Sales Across Categories
 **Q7:** Find categories where sales exceeded the average sales.
 
 ```sql
@@ -451,14 +451,14 @@ FROM CategorySales
 WHERE total_sales > (SELECT avg_sales FROM AverageSales);
 ```
 
-## Window Functions
+### Window Functions
 
 **Tables:**
 - `Employees`: employee_id, emp_name, department_id, salary
 - `Sales`: sale_id, product_id, sale_amount, sale_date
 - `Orders`: order_id, customer_id, order_date
 
-### Rank Employees by Salary
+#### Rank Employees by Salary
 **Q1:** Find the rank of each employee by their salary within their department.
 
 ```sql
@@ -467,7 +467,7 @@ SELECT department_id, emp_name, salary,
 FROM Employees;
 ```
 
-### Running Total Sales by Product
+#### Running Total Sales by Product
 **Q2:** For each product, calculate the cumulative sales over time.
 
 ```sql
@@ -476,7 +476,7 @@ SELECT product_id, sale_date, sale_amount,
 FROM Sales;
 ```
 
-### First and Last Orders
+#### First and Last Orders
 **Q3:** Find the first and last order date for each customer.
 
 ```sql
@@ -486,7 +486,7 @@ SELECT customer_id, order_date,
 FROM Orders;
 ```
 
-### Flag Highest Sales
+#### Flag Highest Sales
 **Q4:** Add a column to flag the highest sale for each product.
 
 ```sql
@@ -507,7 +507,7 @@ SELECT product_id, sale_date, sale_amount,
 FROM Sales;
 ```
 
-### Median Sales Amount
+#### Median Sales Amount
 **Q5:** Find the median sales amount for each product.
 
 ```sql
@@ -517,7 +517,7 @@ SELECT product_id, sale_date, sale_amount,
 FROM Sales;
 ```
 
-### Percentage Contribution
+#### Percentage Contribution
 **Q6a:** Calculate each product’s sales as a percentage of total sales.
 
 ```sql
@@ -570,9 +570,9 @@ SELECT product_id, total_sales,
 FROM ProductSales;
 ```
 
-# Data Modeling
+## Data Modeling
 
-## Star Schema Design
+### Star Schema Design
 You are tasked with designing a data warehouse for an online retail store. The business needs to track:
 1. sales_amount, units_sold, and discount.
 2. Products with attributes such as product_name and category.
@@ -600,7 +600,7 @@ You are tasked with designing a data warehouse for an online retail store. The b
 •	Simplifies querying with fewer joins.
 •	Optimized for OLAP systems.
 
-## Snowflake Schema Design
+### Snowflake Schema Design
 Normalize the Products dimension from the previous exercise into a snowflake schema.
 
 ***Solution:*** 
@@ -614,7 +614,7 @@ Normalize the Products dimension from the previous exercise into a snowflake sch
 `Categories`  
 | category_id | category_name |
 
-## Fact Table Design
+### Fact Table Design
 Design a fact table to track daily website traffic metrics, including:
 1. page_views, unique_visitors, and average_session_duration.  
 2. Metrics should be tracked by date, page, and region.  
@@ -629,3 +629,66 @@ Design a fact table to track daily website traffic metrics, including:
 `Date`: date_id, day, month, year.  
 `Pages`: page_id, page_name, category.  
 `Region`: region_id, region_name, country.
+
+
+## ETL
+
+### Data Cleaning
+- Missing Values
+- Duplicate Records
+
+### Data Loading
+### Data Transformation
+### Error Handling
+### ETL Workflow
+
+## AWS Tools
+
+### Amazon Redshift (Data Warehousing)
+- How to load data into Redshift using COPY commands from S3.
+- Writing queries in Redshift (optimized SQL for large datasets).
+- Distribution styles (key, all, even) and sort keys for performance.
+- Redshift Spectrum (querying S3 data without importing it into Redshift).
+
+    - How would you optimize a Redshift table for query performance?
+    - What’s the difference between distribution styles in Redshift?
+
+### Amazon S3 (Data Storage)
+- Uploading and managing data in S3 buckets.
+- Data formats: CSV, JSON, Parquet (important for analytics).
+- Integrating S3 with other tools like Redshift and Athena.
+
+    - How would you structure data in an S3 bucket for an ETL pipeline?
+    - Why might you choose Parquet over CSV for storing data in S3?
+
+### AWS Glue (ETL Service)
+- Creating Glue jobs to transform data (Python/Scala scripts).
+- Using Glue Data Catalog to define schemas for your datasets.
+- Crawlers to automatically detect data structure.
+- Connections to S3, Redshift, and other data sources.
+
+    - How would you use Glue to transform raw JSON data into a structured format?
+    - Explain the role of Glue Data Catalog in an ETL pipeline.
+
+### Amazon Athena (Querying S3 Data)
+- Writing queries to analyze data stored in S3.
+- Supported file formats (e.g., Parquet, ORC) for efficient queries.
+- Integration with Glue Data Catalog for metadata management.
+
+    - How would you query large CSV files in S3 without loading them into a database?
+    - What are the advantages of using Parquet with Athena?
+
+### Amazon Quicksight (BI Tool)
+- Creating data sources and datasets in QuickSight.
+- Building interactive dashboards and defining KPIs.
+- Embedding QuickSight dashboards in applications.
+
+    - How would you create a dashboard to show sales trends over time?
+    - What steps are involved in connecting QuickSight to Redshift?
+
+### AWS Lambda (Serverless Compute)
+- Writing Lambda functions for lightweight ETL tasks.
+- Triggering Lambda from S3 events or scheduled CloudWatch events.
+
+    - How would you use Lambda to process and clean data uploaded to an S3 bucket?
+    - Explain the benefits of using Lambda over a traditional ETL tool.

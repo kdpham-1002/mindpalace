@@ -9,7 +9,7 @@ order: 4
 > 👀 This site is my creative playground where I blog about cool stuff and experiment with fun ideas! 🌈
 {: .prompt-info }
 
-|  kdpham@umass.edu  | [LinkedIn][linkedin] |     714-858-7494    |
+|  kdpham1002@gmail.com  | [LinkedIn][linkedin] |     714-858-7494    |
 |:------------------:|:--------------------:|:-------------------:|
 | [Tableau][tableau] |  [GitHub][gh-repos]  |   [Kaggle][kaggle]  |
 |   [Dance][dance]   |     [Blog][blog]     | [Photography][vsco] |

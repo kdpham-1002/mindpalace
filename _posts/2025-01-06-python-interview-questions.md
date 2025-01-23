@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python Interview Questions
-date: 2025-01-04 21:13 -0800
+date: 2025-01-06 21:13 -0800
 description: Interview questions for Python
 author: khoa_pham
 categories: [Coding Workspace, Interview Preps]

@@ -4,11 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-# 🚨 Heads Up
-
-> 👀 This site is my creative playground where I blog about cool stuff and experiment with fun ideas! 🌈
-{: .prompt-info }
-
 |  kdpham1002@gmail.com  | [LinkedIn][linkedin] |     714-858-7494    |
 |:------------------:|:--------------------:|:-------------------:|
 | [Tableau][tableau] |  [GitHub][gh-repos]  |   [Kaggle][kaggle]  |
@@ -21,6 +16,12 @@ order: 4
 [vsco]: https://vsco.co/teenee3051/gallery
 [dance]: https://www.instagram.com/teenee_archives/reels/
 [blog]: https://isenbergmarketing.wordpress.com/2023/06/12/netflix-and-learn/?fbclid=IwZXh0bgNhZW0CMTEAAR1hEqlSY2sZx2p6ysM-EFkoQkFC4r9FBFxAKLc-z-wHuv3fW_YzuziMpSc_aem_v81C0HMR5vpAzpT02UQxqA
+
+
+## 🚨 Heads Up
+
+> 👀 This site is my creative playground where I blog about cool stuff and experiment with fun ideas! 🌈
+{: .prompt-info }
 
 > 💼 Looking for something work-related...? 💁‍♂️ Head over to my other website to see the ***[serious me](https://khoapham1002.github.io/)***! 🤓
 {: .prompt-tip }

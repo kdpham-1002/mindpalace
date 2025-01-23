@@ -11,10 +11,10 @@ layout:
 tabs:
   # format: <filename_without_extension>: <value>
   home: Home
-  about: About
   categories: Categories
   tags: Tags
   archives: Archives
+  about: About Me
 
 # the text displayed in the search bar & search results
 search:

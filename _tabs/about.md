@@ -19,11 +19,14 @@ order: 4
 
 ## 🚨 Heads Up
 
-> 👀 This site is my creative playground where I blog about cool stuff and experiment with fun ideas! 🌈
+> 🌈 This site is my creative playground where I blog about cool stuff and experiment with fun ideas! 👀
+{: .prompt-tip }
+
+> 🤓 Looking for the ***[serious me](https://khoapham1002.github.io/)***...? 💁‍♂️ Head over to my portfolio website! 💼
 {: .prompt-info }
 
-> 💼 Looking for something work-related...? 💁‍♂️ Head over to my other website to see the ***[serious me](https://khoapham1002.github.io/)***! 🤓
-{: .prompt-tip }
+<!-- > 💼 Looking for something work-related...? 💁‍♂️ Head over to my other website to see the ***[serious me](https://khoapham1002.github.io/)***! 🤓
+{: .prompt-tip } -->
 
 ![sherlock-meme1](/assets/img/sherlock-get-out-mindpalace-meme.jpeg){: width="700" height="400" }
 *Sherlock S02E03*

@@ -19,7 +19,7 @@ order: 4
 
 ## 🚨 Heads Up
 
-> 🌈 This site is my creative playground where I blog about cool stuff and experiment with fun ideas! 👀
+> 🌈 This site is my archive, my brain dump, and my creative playground.! 👀
 {: .prompt-info }
 
 > 💁‍♂️ Looking for the ***serious me***...? 🤓 Head over to my **[portfolio website](https://khoapham1002.github.io/)**! 💼

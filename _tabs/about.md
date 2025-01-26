@@ -4,10 +4,10 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-|  kdpham1002@gmail.com  | [LinkedIn][linkedin] |     714-858-7494    |
-|:------------------:|:--------------------:|:-------------------:|
-| [Tableau][tableau] |  [GitHub][gh-repos]  |   [Kaggle][kaggle]  |
-|   [Dance][dance]   |     [Blog][blog]     | [Photography][vsco] |
+| [LinkedIn][linkedin] | [GitHub][gh-repos] |
+|:--------------------:|:------------------:|
+| [Photography][vsco]  |   [Dance][dance]   |
+|     [Blog][blog]     |                    |
 
 [linkedin]: https://www.linkedin.com/in/kdpham1002/
 [gh-repos]: https://github.com/khoapham1002?tab=repositories

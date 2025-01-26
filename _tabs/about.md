@@ -4,18 +4,17 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-| [LinkedIn][linkedin] | [GitHub][gh-repos] |
-|:--------------------:|:------------------:|
-| [Photography][vsco]  |   [Dance][dance]   |
-|     [Blog][blog]     |                    |
+|   [LinkedIn][linkedin]   |    [GitHub][gh-repos]    |
+|:------------------------:|:------------------------:|
+|   [Photography][vsco]    |  [Dance/Filming][dance]  |
+| [Mindpalace][mindpalace] |    [First Blog][blog]    |
 
 [linkedin]: https://www.linkedin.com/in/kdpham1002/
 [gh-repos]: https://github.com/khoapham1002?tab=repositories
-[tableau]: https://public.tableau.com/app/profile/kdpham.umass/vizzes
-[kaggle]: https://www.kaggle.com/teenee3051
 [vsco]: https://vsco.co/teenee3051/gallery
 [dance]: https://www.instagram.com/teenee_archives/reels/
 [blog]: https://isenbergmarketing.wordpress.com/2023/06/12/netflix-and-learn/?fbclid=IwZXh0bgNhZW0CMTEAAR1hEqlSY2sZx2p6ysM-EFkoQkFC4r9FBFxAKLc-z-wHuv3fW_YzuziMpSc_aem_v81C0HMR5vpAzpT02UQxqA
+[mindpalace]: https://khoapham1002.github.io/mindpalace/categories/
 
 
 ## 🚨 Heads Up

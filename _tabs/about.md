@@ -22,7 +22,7 @@ order: 4
 > 🌈 This site is my creative playground where I blog about cool stuff and experiment with fun ideas! 👀
 {: .prompt-info }
 
-> 💁‍♂️ Looking for the serious me...? 🤓 Head over to my ***[portfolio website](https://khoapham1002.github.io/)***! 💼
+> 💁‍♂️ Looking for the ***serious me***...? 🤓 Head over to my ***[portfolio website](https://khoapham1002.github.io/)***! 💼
 {: .prompt-tip }
 
 <!-- > 💼 Looking for something work-related...? 💁‍♂️ Head over to my other website to see the ***[serious me](https://khoapham1002.github.io/)***! 🤓

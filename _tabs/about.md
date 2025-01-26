@@ -25,8 +25,6 @@ order: 4
 > 🤓 Looking for the ***serious me***...? Head over to my **[portfolio website](https://khoapham1002.github.io/)**! 💼
 {: .prompt-tip }
 
-<!-- > 💼 Looking for something work-related...? 💁‍♂️ Head over to my other website to see the ***[serious me](https://khoapham1002.github.io/)***! 🤓
-{: .prompt-tip } -->
 
 ![sherlock-meme1](/assets/img/sherlock-get-out-mindpalace-meme.jpeg){: width="700" height="400" }
 *Sherlock S02E03*

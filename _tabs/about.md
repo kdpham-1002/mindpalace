@@ -4,10 +4,10 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-|   [LinkedIn][linkedin]   |    [GitHub][gh-repos]    |
-|:------------------------:|:------------------------:|
-|   [Photography][vsco]    |  [Dance/Filming][dance]  |
-| [MindPalace][mindpalace] |    [First Blog][blog]    |
+|     [LinkedIn][linkedin]    |   [GitHub][gh-repos]   |
+|:---------------------------:|:----------------------:|
+|     [Photography][vsco]     | [Dance/Filming][dance] |
+| [My MindPalace][mindpalace] | [My First Blog][blog]  |
 
 [linkedin]: https://www.linkedin.com/in/kdpham1002/
 [gh-repos]: https://github.com/khoapham1002?tab=repositories
@@ -19,7 +19,7 @@ order: 4
 
 ## 🚨 Heads Up
 
-> 👀 This site is my archive, my brain dump, and my creative playground! 🌈
+> 👀 This site is my digital archive, my brain dump, and my creative playground! 🌈
 {: .prompt-info }
 
 > 🤓 Looking for the ***serious me***...? Head over to my **[portfolio website](https://khoapham1002.github.io/)**! 💼

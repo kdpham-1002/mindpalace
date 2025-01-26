@@ -17,7 +17,7 @@ order: 4
 [blog]: https://isenbergmarketing.wordpress.com/2023/06/12/netflix-and-learn/?fbclid=IwZXh0bgNhZW0CMTEAAR1hEqlSY2sZx2p6ysM-EFkoQkFC4r9FBFxAKLc-z-wHuv3fW_YzuziMpSc_aem_v81C0HMR5vpAzpT02UQxqA
 
 
-## 🚨 Heads Up
+## 🚨 **Heads Up**
 
 > 👀 This site is my digital archive, my brain dump, and my creative playground! 🌈
 {: .prompt-info }

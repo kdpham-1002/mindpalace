@@ -20,10 +20,10 @@ order: 4
 ## 🚨 Heads Up
 
 > 🌈 This site is my creative playground where I blog about cool stuff and experiment with fun ideas! 👀
-{: .prompt-tip }
+{: .prompt-info }
 
 > 🤓 Looking for the ***[serious me](https://khoapham1002.github.io/)***...? 💁‍♂️ Head over to my portfolio website! 💼
-{: .prompt-info }
+{: .prompt-tip }
 
 <!-- > 💼 Looking for something work-related...? 💁‍♂️ Head over to my other website to see the ***[serious me](https://khoapham1002.github.io/)***! 🤓
 {: .prompt-tip } -->

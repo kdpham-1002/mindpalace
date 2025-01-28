@@ -325,7 +325,7 @@ Where `URL` is a URL to a video file e.g. `/path/to/sample/video.mp4`.
 
 ## Links
 
-> Link to [Chirpy](https://chirpy.cotes.page)
+Link to [Chirpy](https://chirpy.cotes.page)
 
 ```markdown
 Link to [Chirpy](https://chirpy.cotes.page)

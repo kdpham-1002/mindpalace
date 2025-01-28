@@ -264,12 +264,6 @@ $$
 {% endraw %}
 ````
 
-## Links
-
-```markdown
-Link to [Chirpy](https://chirpy.cotes.page)
-```
-
 ## Images
 
 ![Doe_Patronus](assets/img/favicons/web-app-manifest-512x512.png)
@@ -329,28 +323,30 @@ Where `URL` is a URL to a video file e.g. `/path/to/sample/video.mp4`.
 {% endraw %}
 ````
 
+## Links
+
+> Link to [Chirpy](https://chirpy.cotes.page)
+
+```markdown
+Link to [Chirpy](https://chirpy.cotes.page)
+```
+
 ## Footnotes
 
 ```markdown
 Click the hook will locate the footnote[^footnote], and here is another footnote[^fn-nth-2].
-```
 
-```markdown
+
 [^footnote]: The footnote source
 [^fn-nth-2]: The 2nd footnote source
 ```
 
 ### Post's Footnotes
 
-> Link to [Chirpy](https://chirpy.cotes.page)
-
----
-[Writing a New Post](https://chirpy.cotes.page/posts/write-a-new-post/)[^fn1]
-
+[Writing a New Post](https://chirpy.cotes.page/posts/write-a-new-post/)[^fn1]   
 <https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_posts/2019-08-08-write-a-new-post.md?plain=1>
 
-[Text and Typography](https://chirpy.cotes.page/posts/text-and-typography/)[^fn2]
-
+[Text and Typography](https://chirpy.cotes.page/posts/text-and-typography/)[^fn2]   
 <https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_posts/2019-08-08-text-and-typography.md?plain=1>
 
 ---

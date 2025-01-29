@@ -5,7 +5,7 @@ date: 2025-01-16 15:03 -0800
 description: Recipe for Korean beef bulgogi
 author: khoa_pham
 categories: [4Foodie, KoaCanCook]
-tags: [recipes, korean-dishes]
+tags: [recipes, korean dishes]
 pin: false
 math: true
 mermaid: true

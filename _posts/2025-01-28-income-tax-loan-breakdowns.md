@@ -7,20 +7,20 @@ author: khoa_pham
 categories: [Learning Hub, Wealth Odyssey]
 tags: [financial literacy, learning]
 pin: false
-mermaid: true
 toc: true
 comments: true
 ---
 
 ## Income/Tax Summarizations
 
-Gross Annual Salary: $80,000
-Federal Income Tax:
+Gross Annual Salary: $80,000  
+Federal Income Tax:  
 * 10% on income up to $11,000 = $1,100
 * 12% on income between $11,000 and $44,725 = $4,047
 * 22% on income between $44,725 and $95,375
     * $80,000 - $44,725 = $35,275 * 22% = $7,760.5
 * 24% on income between $95,375 and $182,100
+
 > Total Federal Tax: $1,100 + $4,047 + $7,760.5 = $12,907.5
 
 State Income Tax Brackets (CA):
@@ -31,9 +31,10 @@ State Income Tax Brackets (CA):
 * 8% on income between $52,455 and $66,295 = $1,107.20
 * 9.3% on income between $66,295 and $338,639
     * $80,000 - $66,295 = $13,705 * 9.3% = $1,274.57
+
 > Total State Tax: $100.99 + $276.86 + $553.84 + $880.02 + $1,107.20 + $1,274.57 = $4,193.48
 
-> Social Security Tax: $80,000 * 6.2% = $4,960
+> Social Security Tax: $80,000 * 6.2% = $4,960  
 > Medicare Tax: $80,000 * 1.45% = $1,160
 
 > Total Taxes: $12,907.50 + $4,193.48 + $4,960 + $1,160 = $23,221

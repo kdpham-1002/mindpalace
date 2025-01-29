@@ -13,7 +13,7 @@ toc: true
 comments: true
 ---
 
-## Income/Tax Breakdowns
+## Income/Tax Summarizations
 
 Gross Annual Salary: $80,000
 Federal Income Tax:

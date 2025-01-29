@@ -7,7 +7,6 @@ author: khoa_pham
 categories: [Learning Hub, Wealth Odyssey]
 tags: [financial literacy, learning]
 pin: false
-math: true
 mermaid: true
 toc: true
 comments: true

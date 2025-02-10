@@ -25,7 +25,7 @@ order: 4
   </table>
 </div>
 
-|     [LinkedIn][linkedin]    |   [GitHub][gh-repos]   |
+<!-- |     [LinkedIn][linkedin]    |   [GitHub][gh-repos]   |
 |:---------------------------:|:----------------------:|
 |     [Photography][vsco]     | [Dance/Filming][dance] |
 | [My MindPalace][mindpalace] | [My First Blog][blog]  |
@@ -35,7 +35,7 @@ order: 4
 [vsco]: https://vsco.co/teenee3051/gallery
 [dance]: https://www.instagram.com/teenee_archives/reels/
 [mindpalace]: https://khoapham1002.github.io/mindpalace/categories/
-[blog]: https://isenbergmarketing.wordpress.com/2023/06/12/netflix-and-learn/?fbclid=IwZXh0bgNhZW0CMTEAAR1hEqlSY2sZx2p6ysM-EFkoQkFC4r9FBFxAKLc-z-wHuv3fW_YzuziMpSc_aem_v81C0HMR5vpAzpT02UQxqA
+[blog]: https://isenbergmarketing.wordpress.com/2023/06/12/netflix-and-learn/?fbclid=IwZXh0bgNhZW0CMTEAAR1hEqlSY2sZx2p6ysM-EFkoQkFC4r9FBFxAKLc-z-wHuv3fW_YzuziMpSc_aem_v81C0HMR5vpAzpT02UQxqA -->
 
 ## 🚨 **Heads Up**
 

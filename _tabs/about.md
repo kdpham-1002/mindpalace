@@ -4,6 +4,27 @@ icon: fas fa-info-circle
 order: 4
 ---
 
+<div style="width: 100%; text-align: center;">
+  <table style="margin: auto; width: 100%; max-width: 800px; border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th><a href="https://www.linkedin.com/in/kdpham1002/">LinkedIn</a></th>
+        <th><a href="https://github.com/khoapham1002?tab=repositories">GitHub</a></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="https://vsco.co/teenee3051/gallery">Photography</a></td>
+        <td><a href="https://www.instagram.com/teenee_archives/reels/">Dance/Filming</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://khoapham1002.github.io/mindpalace/categories/">My MindPalace</a></td>
+        <td><a href="https://isenbergmarketing.wordpress.com/2023/06/12/netflix-and-learn/?fbclid=IwZXh0bgNhZW0CMTEAAR1hEqlSY2sZx2p6ysM-EFkoQkFC4r9FBFxAKLc-z-wHuv3fW_YzuziMpSc_aem_v81C0HMR5vpAzpT02UQxqA">My First Blog</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 |     [LinkedIn][linkedin]    |   [GitHub][gh-repos]   |
 |:---------------------------:|:----------------------:|
 |     [Photography][vsco]     | [Dance/Filming][dance] |
@@ -15,7 +36,6 @@ order: 4
 [dance]: https://www.instagram.com/teenee_archives/reels/
 [mindpalace]: https://khoapham1002.github.io/mindpalace/categories/
 [blog]: https://isenbergmarketing.wordpress.com/2023/06/12/netflix-and-learn/?fbclid=IwZXh0bgNhZW0CMTEAAR1hEqlSY2sZx2p6ysM-EFkoQkFC4r9FBFxAKLc-z-wHuv3fW_YzuziMpSc_aem_v81C0HMR5vpAzpT02UQxqA
-
 
 ## 🚨 **Heads Up**
 

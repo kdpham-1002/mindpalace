@@ -13,6 +13,8 @@ toc: true
 comments: true
 ---
 
+> Link to [Use Jekyll](https://khoapham1002.github.io/mindpalace/posts/use-jekyll/)
+
 Jekyll is a static site generator that transforms plain text into static websites and blogs. When used together with Markdown, Jekyll allows users to write content in a simple, readable format that can be easily converted into HTML. Markdown's straightforward syntax makes it easy to format text, create lists, add links, and include code snippets, while Jekyll handles the layout and structure of the site. This combination provides a powerful yet user-friendly way to create and manage static websites.
 
 ## Headings
@@ -344,10 +346,10 @@ Click the hook will locate the footnote[^footnote], and here is another footnote
 ### Post's Footnotes
 
 [Writing a New Post](https://chirpy.cotes.page/posts/write-a-new-post/)[^fn1]   
-<https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_posts/2019-08-08-write-a-new-post.md?plain=1>
+> <https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_posts/2019-08-08-write-a-new-post.md?plain=1>
 
 [Text and Typography](https://chirpy.cotes.page/posts/text-and-typography/)[^fn2]   
-<https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_posts/2019-08-08-text-and-typography.md?plain=1>
+> <https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_posts/2019-08-08-text-and-typography.md?plain=1>
 
 ---
 

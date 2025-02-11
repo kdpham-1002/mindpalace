@@ -13,17 +13,16 @@ toc: true
 comments: true
 ---
 
-> Link to [Chirpy](https://chirpy.cotes.page)
-
-<!-- --- -->
-
-[Jekyll Compose](https://github.com/jekyll/jekyll-compose)
-
-[Jekyll & Ruby Setups](https://jekyllrb.com/docs/installation/)
+> Link to [Chirpy](https://chirpy.cotes.page)  
+> [Jekyll & Ruby Setups](https://jekyllrb.com/docs/installation/)  
 
 <!-- --- -->
 
 ## Running Locally
+
+> Links to test locally:  
+> <http://127.0.0.1:4000/>  
+> <http://127.0.0.1:4000/mindpalace/>  
 
 ```bash
 bundle install
@@ -33,13 +32,9 @@ bundle install
 bundle exec jekyll serve
 ```
 
-> _Links to test locally_
-
-<http://127.0.0.1:4000/>
-
-<http://127.0.0.1:4000/mindpalace/>
-
 ## Managing Posts
+
+> Link to [Jekyll Compose](https://github.com/jekyll/jekyll-compose)
 
 ### Create a Post
 
@@ -47,15 +42,12 @@ bundle exec jekyll serve
 bundle exec jekyll post "My New Post"
 ```
 
-— or —
-
 ```bash
 bundle exec jekyll compose "My New Post"
 ```
 
 ```bash
-bundle exec jekyll post "My New Post" --timestamp-format "%Y-%m-%d %H:%M:%S %z"
-
+bundle exec jekyll post "My New Post" --timestamp-format "%Y-%m-%d %H:%M:%S %z"  
 bundle exec jekyll compose "My New Post 1" --post
 bundle exec jekyll compose "My New Post 2" --collection "posts"
 ```
@@ -100,3 +92,6 @@ image:
 ---
 
 ```
+
+## Use Markdown 
+> Link to [Use Markdown](https://khoapham1002.github.io/mindpalace/posts/use-markdown/)  

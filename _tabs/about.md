@@ -42,7 +42,7 @@ order: 4
 > 👀 This site is my digital archive, my brain dump, and my creative playground! 🌈
 {: .prompt-info }
 
-> 🤓 Looking for the ***serious me***...? Head over to my **[portfolio website](https://khoapham1002.github.io/)**! 💼
+> 🧑‍💻 Looking for the ***serious me***...? 🤓 Head over to my **[portfolio website](https://khoapham1002.github.io/)**! 💼
 {: .prompt-tip }
 
 

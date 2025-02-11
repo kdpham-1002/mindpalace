@@ -18,9 +18,10 @@ title: KoaPam's 💭 Mindpalace  # the main title
 tagline: >
   🌙 A quiet place for endless thoughts. 🖋️ <br>
   ✨ A silent page for vibrant <br> tales. 📜 <br>
-  <br> 🧑‍💻  DS | DE | BA  💼  <br>
-  A little bit of everything <br> I love...❣️ <br>
-  💃 🕺 🎹 📸 🎞️ 🧑‍🍳 🍣 </br>
+
+  <br> A little bit of everything <br> I love...❣️
+  <br> 💃 🕺 🎹 📸 🎞️ 🧑‍🍳 🍣 <br>
+  <br> 🧑‍💻  DS | DE | BI | BA  💼
 
 description: >- # used by seo meta and the atom feed
   A platform showcasing my journey in Data Science, Business Analytics, and Data Engineering. Explore projects, insights, and creative content blending technical expertise with personal passions.
@@ -41,7 +42,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Khoa Pham
-  email: teenee3051@gmail.com # change to your email address
+  email: teenee3051@icloud.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://khoapham1002.github.io/

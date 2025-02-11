@@ -1,31 +1,33 @@
 #  The contact options.
 
-- type: github
-  icon: 'fab fa-github'
-
-- type: linkedin
-  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.linkedin.com/in/kdpham1002/'   # Fill with your Linkedin homepage
-
-- type: photography
-  icon: 'fa-solid fa-camera'
-  url: 'https://vsco.co/teenee3051/gallery'
-  
-- type: dance
-  icon: 'fa-solid fa-video'
-  url: 'https://www.instagram.com/teenee_archives/reels/'
-
 - type: website
-  icon: 'fa-solid fa-user'
+  icon: 'fa-solid fa-user' # icons powered by <https://fontawesome.com/>
   url: 'https://khoapham1002.github.io/'
+
+# - type: linkedin
+#   icon: 'fab fa-linkedin'
+#   url:  'https://www.linkedin.com/in/kdpham1002/'
+
+- type: email
+  icon: "fas fa-envelope"
+  noblank: true # open link in current tab
+  url: 'mailto:teenee3051@icloud.com'
+
+# - type: github
+#   icon: 'fab fa-github'
+
+# - type: photography
+#   icon: 'fa-solid fa-camera'
+#   url: 'https://vsco.co/teenee3051/gallery'
+  
+# - type: dance
+#   icon: 'fa-solid fa-video'
+#   url: 'https://www.instagram.com/teenee_archives/reels/'
 
 # - type: instagram
 #   icon: 'fab fa-instagram'
 #   url: 'https://www.instagram.com/mdcdance/'
 
-# - type: email
-#   icon: "fas fa-envelope"
-#   noblank: true # open link in current tab
 
 # Uncomment and complete the url below to enable more contact options
 #

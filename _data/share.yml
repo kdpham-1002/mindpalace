@@ -6,21 +6,21 @@ platforms:
     icon: "fab fa-linkedin"
     link: "https://www.linkedin.com/sharing/share-offsite/?url=URL"
 
-  # - type: Instagram
-  #   icon: "fab fa-instagram"
-  #   link: "https://www.instagram.com/"
+  # - type: Reddit
+  #   icon: "fa-brands fa-square-reddit"
+  #   link: "https://www.reddit.com/submit?url=URL&title=TITLE"
 
   - type: Threads
     icon: "fa-brands fa-square-threads"
     link: "https://www.threads.net/intent/post?text=TITLE%20URL"
 
-  - type: Facebook
-    icon: "fab fa-facebook-square"
-    link: "https://www.facebook.com/sharer/sharer.php?title=TITLE&u=URL"
+  # - type: Facebook
+  #   icon: "fab fa-facebook-square"
+  #   link: "https://www.facebook.com/sharer/sharer.php?title=TITLE&u=URL"
 
-  - type: Reddit
-    icon: "fa-brands fa-square-reddit"
-    link: "https://www.reddit.com/submit?url=URL&title=TITLE"
+  # - type: Instagram
+  #   icon: "fab fa-instagram"
+  #   link: "https://www.instagram.com/"
 
 
   # Uncomment below if you need to.

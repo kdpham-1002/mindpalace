@@ -69,7 +69,6 @@ def is_sorted(lst):
 """
 1. Compare the list with the sorted list.
 2. If the list is sorted, the two lists will be equal, return True.
-
 # O(nlogn) because sorted() creates a new list and sorts it.
 """
 def is_sorted(arr):

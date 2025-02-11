@@ -5,7 +5,7 @@ date: 2025-01-28 17:21 -0800
 description: Understand income, tax, and loan breakdowns
 author: khoa_pham
 categories: [Learning Hub, Wealth Odyssey]
-tags: [financial literacy, learning]
+tags: [finance, learning]
 pin: false
 toc: true
 comments: true

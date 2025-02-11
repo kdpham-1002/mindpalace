@@ -5,7 +5,7 @@ date: 2025-01-05 20:00 -0800
 description: Set up Python environments
 author: khoa_pham
 categories: [Coding Workspace, How-to]
-tags: [python, venv, coding, setups]
+tags: [python, coding, setups]
 pin: false
 math: true
 mermaid: true

@@ -5,7 +5,7 @@ date: 2025-01-17 08:45 -0800
 description: Data Engineering Recap
 author: khoa_pham
 categories: [Coding Workspace, Interview Preps]
-tags: [data engineering, interview, roadmaps]
+tags: [interview, roadmaps]
 pin: true
 math: true
 mermaid: true

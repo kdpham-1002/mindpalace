@@ -5,7 +5,7 @@ date: 2025-01-17 09:00 -0800
 description: Data Science Recap
 author: khoa_pham
 categories: [Coding Workspace, Interview Preps]
-tags: [data science, interview, roadmaps]
+tags: [interview, roadmaps]
 pin: false
 math: true
 mermaid: true

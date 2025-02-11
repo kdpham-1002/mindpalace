@@ -5,7 +5,7 @@ date: 2025-01-17 13:40 -0800
 description: Understand Amazon interview formats
 author: khoa_pham
 categories: [Coding Workspace, Interview Preps]
-tags: [interview]
+tags: [interview, data roles]
 pin: true
 math: true
 mermaid: true

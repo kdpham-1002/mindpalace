@@ -5,7 +5,7 @@ date: 2025-01-03 18:30 -0800
 description: MacOS shortcuts and settings
 author: khoa_pham
 categories: [Coding Workspace, How-to]
-tags: [workflows, setups]
+tags: [settings]
 pin: false
 math: true
 mermaid: true

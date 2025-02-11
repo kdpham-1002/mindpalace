@@ -46,7 +46,6 @@ def max_product(arr):
     return max(arr[-1] * arr[-2], arr[0] * arr[1])
 
 input = [3, 5, -2, -6, 4]
-print(input)
 print(max_product(input))  # 30
 ```
 
@@ -110,7 +109,6 @@ def find_missing_number(arr):
     return (n*(n+1) // 2) - sum(arr)
 
 input = [1, 2, 3, 5]
-print(input)
 print(find_missing_number(input))  # Output: 4
 ```
 
@@ -122,3 +120,59 @@ print(find_missing_number(input))  # Output: 4
 2. Swap the elements at the two pointers and move the pointers towards the center.
 3. Continue swapping until the two pointers meet.
 """
+def reverse_list(arr):
+    left, right = 0, len(arr) - 1
+    while left < right:
+        arr[left], arr[right] = arr[right], arr[left]
+        left += 1
+        right -= 1
+    return arr
+
+input = [1, 2, 3, 4, 5]
+print(reverse_list(input))  # Output: [5, 4, 3, 2, 1]
+```
+
+### 7. Find all Pairs with a Given Sum
+```python
+# Given a list of numbers and a target sum, find all unique pairs whose sum equals the target.
+"""
+1. Use a set to store the numbers seen so far.
+2. Iterate through the list and check if (target - current_number) is in the set.
+3. If it is, add the pair (current_number, target - current_number) to the result set.
+"""
+
+def find_pairs(arr, target):
+    seen = set()
+    result = []
+    for num in arr:
+        complement = target - num
+        if complement in seen:
+            result.append((complement, num))
+        seen.add(num)
+    return result
+
+print(find_pairs([2, 4, 3, 7, 1, 5, 9], 6))  # Output: [(4, 2), (3, 3), (1, 5)]
+```
+
+### 8. Find the Second Largest Number in a List
+```python
+# Find the second largest number in a list without sorting.
+"""
+1. Use two variables: largest and second_largest.
+2. Iterate through the list and update these variables accordingly.
+"""
+def second_largest(arr):
+    largest = second_largest = float('-inf')
+    for num in arr:
+        if num > largest:
+            second_largest = largest
+            largest = num
+        elif num > second_largest and num != largest:
+            second_largest = num
+    return second_largest if second_largest != float('-inf') else None
+
+input = [1, 3, 4, 2, 5]
+print(second_largest(input))  # Output: 4
+print(second_largest([10, 20, 4, 45, 99])) # Output: 45
+```
+

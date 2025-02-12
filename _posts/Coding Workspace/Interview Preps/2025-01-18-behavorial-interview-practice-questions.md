@@ -13,7 +13,8 @@ toc: true
 comments: true
 ---
 ## Citizens Bank HireVue
-### Category 1: Motivational & Personal Fit Questions:  
+
+### Category 1: Motivational & Personal Fit Questions  
 #### Q1: Why do you want to work for Citizens?  
 1. Background -> Citizens’ emphasis data-driven decision-making
 2. Alignment -> improve customer exp thru data insights

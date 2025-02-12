@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Supervised Learning with Scikit-learn
+title: Learn Supervised Learning
 date: 2025-02-11 18:36 -0800
-description: Learn Supervised Learning with scikit-learn for Data Science
+description: Supervised Learning with scikit-learn
 author: khoa_pham
 categories: [Coding Workspace, Skill Tracks]
 tags: [python, interview, coding]

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Data Structures & Algorithms with Python
+title: Learn Data Structures & Algorithms
 date: 2025-02-10 20:50 -0800
-description: Data Structures & Algorithms Preparation for Online Coding Interviews
+description: Data Structures & Algorithms Preparation in Python
 author: khoa_pham
 categories: [Coding Workspace, Skill Tracks]
 tags: [python, interview, coding]

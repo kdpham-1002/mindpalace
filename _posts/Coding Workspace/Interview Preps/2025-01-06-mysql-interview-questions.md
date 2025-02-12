@@ -6,7 +6,7 @@ description: Interview questions for MySQL
 author: khoa_pham
 categories: [Coding Workspace, Interview Preps]
 tags: [sql, interview, coding]
-pin: true
+pin: false
 math: true
 mermaid: true
 toc: true

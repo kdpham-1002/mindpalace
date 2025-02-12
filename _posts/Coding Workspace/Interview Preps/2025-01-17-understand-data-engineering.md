@@ -6,7 +6,7 @@ description: Data Engineering Recap
 author: khoa_pham
 categories: [Coding Workspace, Interview Preps]
 tags: [interview, data roles]
-pin: true
+pin: false
 math: true
 mermaid: true
 toc: true

@@ -6,7 +6,7 @@ description: Practice Amazon interview questions
 author: khoa_pham
 categories: [Coding Workspace, Interview Preps]
 tags: [interview, coding, sql, python]
-pin: true
+pin: false
 math: true
 mermaid: true
 toc: true

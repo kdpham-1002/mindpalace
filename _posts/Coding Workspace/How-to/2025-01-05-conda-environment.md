@@ -6,7 +6,7 @@ description: Set up Conda environments
 author: khoa_pham
 categories: [Coding Workspace, How-to]
 tags: [python, coding, settings]
-pin: true
+pin: false
 math: true
 mermaid: true
 toc: true

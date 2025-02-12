@@ -5,7 +5,7 @@ date: 2025-02-07 19:21 -0800
 description: Behavioral Interview Questions & Categorized Responses
 author: khoa_pham
 categories: [Coding Workspace, Interview Preps]
-tags: [python, interview, coding]
+tags: [interview]
 pin: false
 math: true
 mermaid: true

@@ -9,7 +9,7 @@ order: 4
     <thead>
       <tr>
         <th><a href="https://www.linkedin.com/in/kdpham1002/">LinkedIn</a></th>
-        <th><a href="https://github.com/khoapham1002?tab=repositories">GitHub</a></th>
+        <th><a href="https://github.com/khoapham1002">GitHub</a></th>
       </tr>
     </thead>
     <tbody>

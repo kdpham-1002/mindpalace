@@ -23,7 +23,7 @@ comments: true
 
 ### Key job responsibilities
 As a Business Intelligence Engineer intern, you will/may:  
-- Build smallto mid-size business intelligence (BI) solutions – data sets, queries, reports, dashboards, analyses – or components of larger solutions to answer business questions with data
+- Build small to mid-size business intelligence (BI) solutions – data sets, queries, reports, dashboards, analyses – or components of larger solutions to answer business questions with data
 - Use well-defined requirements to build a solution that enables effective, data-driven business decisions. Deliver end product on schedule
 - Create and populate data structures using one or more schema definition languages (e.g. DDL, SDL, XSD, RDF)
 - Write secure, stable, testable, and maintainable code with minimal defects, and automate manual processes where possible

@@ -320,9 +320,9 @@ plt.show()
 ### 3_Fine-tuning your model
 * Class imbalance: Uneven frequency of classes
 #### Confusion Matrix
-	                    | Actual: Positive (1) | Actual: Negative (0)
-Predicted: Positive (1)	| True Positive (TP) | False Positive (FP)
-Predicted: Negative (0) | False Negative (FN) | True Negative (TN)
+| 	                      | Actual: Positive (1) | Actual: Negative (0) |
+| Predicted: Positive (1) | True Positive (TP)   | False Positive (FP)  |
+| Predicted: Negative (0) | False Negative (FN)  | True Negative (TN)   |
 
 * **Accuracy** = (TP + TN) / (TP + TN + FP + FN)
     * Correct predictions out of all predictions

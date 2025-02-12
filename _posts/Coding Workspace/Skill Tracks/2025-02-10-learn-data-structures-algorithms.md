@@ -15,7 +15,7 @@ comments: true
 
 ## 1. Lists/Arrays
 
-### 1_Remove duplicates from a list
+#### 1_Remove duplicates from a list
 ```python
 # Given a list of integers, remove all duplicate elements and return the unique values.
 """
@@ -32,7 +32,7 @@ print(remove_duplicates(input)) # [1, 2, 3, 4, 5]
 
 
 
-### 2_Find the Maximum Product of Two Numbers in a List
+#### 2_Find the Maximum Product of Two Numbers in a List
 ```python
 # Find the maximum product that can be obtained by multiplying two numbers in a list.
 """
@@ -51,7 +51,7 @@ print(max_product(input))  # 20
 
 
 
-### 3_Check if List is Sorted
+#### 3_Check if List is Sorted
 ```python
 # Check whether a list is sorted in ascending order.
 ## Approach 1: Compare each element with the next element.
@@ -84,7 +84,7 @@ print(is_sorted(input2))  # Output: False
 
 
 
-### 4_Rotate a List by K Positions
+#### 4_Rotate a List by K Positions
 ```python
 # Given a list and an integer K, rotate the list rightward by K positions.
 """
@@ -103,7 +103,7 @@ print(rotate_list(input, 7))  # Output: [4, 5, 1, 2, 3]
 
 
 
-### 5_Find the Missing Number in a Sequence
+#### 5_Find the Missing Number in a Sequence
 ```python
 # Given a list of numbers from 1 to n with one number missing, find the missing number.
 """
@@ -122,7 +122,7 @@ print(find_missing_number(input))  # Output: 4
 
 
 
-### 6_Reverse a List
+#### 6_Reverse a List
 ```python
 # Reverse a list in-place.
 """
@@ -144,7 +144,7 @@ print(reverse_list(input))  # Output: [5, 4, 3, 2, 1]
 
 
 
-### 7_Find all Pairs with a Given Sum
+#### 7_Find all Pairs with a Given Sum
 ```python
 # Given a list of numbers and a target sum, find all unique pairs whose sum equals the target.
 """
@@ -169,7 +169,7 @@ print(find_pairs([2, 4, 3, 7, 1, 5, 9], 6))  # Output: [(4, 2), (1, 5)]
 
 
 
-### 8_Find the Second Largest Number in a List
+#### 8_Find the Second Largest Number in a List
 ```python
 # Find the second largest number in a list without sorting.
 """
@@ -199,7 +199,7 @@ print(second_largest([-10, -20, -30, -5]))  # Output: -10
 ```
 
 
-### 9_Move All Zeros to the End
+#### 9_Move All Zeros to the End
 ```python
 # Move all zeroes to the end of the list while maintaining the relative order of non-zero elements.
 """
@@ -231,7 +231,7 @@ print(move_zeros([0, 1, 0, 3, 12]))  # Output: [1, 3, 12, 0, 0]
 
 
 
-### 10_Find the Intersection of Two Lists
+#### 10_Find the Intersection of Two Lists
 ```python
 # Find common elements in two lists.
 """
@@ -255,7 +255,7 @@ print(find_intersection([1, 2, 3, 4], [2, 4, 6, 8]))  # Output: [2, 4]
 
 ## 2. Hash Tables
 
-### 1_Count Frequency of Elements
+#### 1_Count Frequency of Elements
 ```python
 # Count how many times each number appears in a list.
 """
@@ -273,7 +273,7 @@ print(count_frequency([2, 3, 2, 4, 3, 2, 5])) # Output: {2: 3, 3: 2, 4: 1, 5: 1}
 
 
 
-### 2_Find the First Non-Repeating Element
+#### 2_Find the First Non-Repeating Element
 ```python
 # Find the first character that appears only once in a given string.
 """
@@ -295,7 +295,7 @@ print(first_unique_char("swiss"))  # Output: "w"
 
 
 
-### 3_Two Sum Problem
+#### 3_Two Sum Problem
 ```python
 # Given a list of numbers and a target sum, find two numbers that add up to the target.
 """
@@ -317,7 +317,7 @@ print(two_sum([2, 6, 11, 7], 9))  # Output: (0, 1)
 
 
 
-### 4_Find Intersection of Two Lists
+#### 4_Find Intersection of Two Lists
 ```python
 # Find common elements in two lists.
 """
@@ -337,7 +337,7 @@ print(list_intersection([1, 2, 3, 4], [2, 4, 6, 8]))  # Output: [2, 4]
 ```
 
 
-### 5_Find Duplicates in a List
+#### 5_Find Duplicates in a List
 ```python
 # Find all duplicate elements in a list.
 """
@@ -372,3 +372,54 @@ print(find_duplicates([4, 2, 7, 4, 8, 2]))  # Output: [4, 2]
 
 
 ## 3. Stacks & Queues
+
+### Stacks (LIFO - Last In, First Out)
+#### 1_Reversing a String
+```python
+# Reverse a string using a stack.
+"""
+1. Create an empty stack to store characters.
+2. Push each character of the string onto the stack.
+3. Pop each character from the stack to get the reversed string.
+"""
+def reverse_string(s):
+    stack = []
+    for char in s:
+        stack.append(char)
+    reversed_str = ""
+    while stack:
+        reversed_str += stack.pop()
+    return reversed_str
+
+print(reverse_string("hello"))  # Output: "olleh"
+```
+
+#### 2_Check Balanced Parentheses
+```python
+# Given a string containing only (), {}, and [], determine if it is balanced.
+"""
+1. Create an empty stack to store opening parentheses.
+2. Iterate through the string and push opening parentheses onto the stack.
+3. If a closing parenthesis is encountered, pop the stack and check if it matches the closing parenthesis.
+4. If the stack is empty at the end, the parentheses are balanced.
+"""
+def is_balanced(s):
+    stack = []
+    pairs = {')': '(', ']': '[', '}': '{'}
+    
+    for char in s:
+        if char in pairs.values():  
+            stack.append(char)  
+        elif char in pairs.keys():  
+            if not stack or stack.pop() != pairs[char]:  
+                return False  
+    return len(stack) == 0  
+    # return not stack
+
+
+print(is_balanced("{[()]}"))  # Output: True
+print(is_balanced("{[(])}"))  # Output: False
+```
+
+### Queues (FIFO - First In, First Out)
+#### 3_Implement a Queue

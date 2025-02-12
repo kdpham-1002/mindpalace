@@ -4,8 +4,8 @@ title: Understand Data Science
 date: 2025-01-17 09:00 -0800
 description: Data Science Recap
 author: khoa_pham
-categories: [Coding Workspace, Interview Preps]
-tags: [interview, data roles]
+categories: [Coding Workspace, Job Preps]
+tags: [interview preps, data roles]
 pin: false
 math: true
 mermaid: true

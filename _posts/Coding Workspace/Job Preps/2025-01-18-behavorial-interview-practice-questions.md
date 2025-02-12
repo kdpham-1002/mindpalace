@@ -4,8 +4,8 @@ title: Behavioral Interview Practice Questions
 date: 2025-01-18 19:21 -0800
 description: Behavioral Interview Questions & Categorized Responses
 author: khoa_pham
-categories: [Coding Workspace, Interview Preps]
-tags: [interview]
+categories: [Coding Workspace, Job Preps]
+tags: [interview preps]
 pin: false
 math: true
 mermaid: true

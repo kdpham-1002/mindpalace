@@ -4,8 +4,8 @@ title: Amazon BIE/DE Practice Questions
 date: 2025-01-19 14:30 -0800
 description: Practice Amazon interview questions
 author: khoa_pham
-categories: [Coding Workspace, Interview Preps]
-tags: [interview, coding, sql, python]
+categories: [Coding Workspace, Job Preps]
+tags: [interview preps, coding, sql, python]
 pin: false
 math: true
 mermaid: true

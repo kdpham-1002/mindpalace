@@ -4,8 +4,8 @@ title: Python Technical Practice Questions
 date: 2025-01-06 21:13 -0800
 description: Interview questions for Python
 author: khoa_pham
-categories: [Coding Workspace, Interview Preps]
-tags: [python, interview, coding]
+categories: [Coding Workspace, Job Preps]
+tags: [python, interview preps, coding]
 pin: false
 math: true
 mermaid: true

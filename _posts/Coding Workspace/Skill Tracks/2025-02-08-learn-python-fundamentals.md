@@ -5,7 +5,7 @@ date: 2025-02-08 19:10 -0800
 description: Python Fundamentals and Pandas Basics
 author: khoa_pham
 categories: [Coding Workspace, Skill Tracks]
-tags: [python, interview, coding]
+tags: [python, interview preps, coding]
 pin: false
 math: true
 mermaid: true

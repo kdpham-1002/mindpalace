@@ -4,8 +4,8 @@ title: Amazon BIE/DE Requirements
 date: 2025-01-19 13:40 -0800
 description: Understand Amazon interview formats
 author: khoa_pham
-categories: [Coding Workspace, Interview Preps]
-tags: [interview, data roles]
+categories: [Coding Workspace, Job Preps]
+tags: [interview preps, data roles]
 pin: false
 math: true
 mermaid: true

@@ -596,7 +596,7 @@ print(confusion_matrix(y_test, y_pred))
 ```
 
 Centering and scaling for regression:
-```python:
+```python
 # Import StandardScaler
 from sklearn.preprocessing import StandardScaler
 
@@ -698,9 +698,9 @@ plt.boxplot(results, labels=models.keys())
 plt.show()
 
 
-
 """
-# Lasso regression is not a good model for this problem, while linear regression and ridge perform fairly equally"""
+# Lasso regression is not a good model for this problem, while linear regression and ridge perform fairly equally
+"""
 ```
 
 ```python

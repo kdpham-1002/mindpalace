@@ -6,7 +6,7 @@ description: Understand Amazon interview formats
 author: khoa_pham
 categories: [Coding Workspace, Interview Preps]
 tags: [interview, data roles]
-pin: flase
+pin: false
 math: true
 mermaid: true
 toc: true

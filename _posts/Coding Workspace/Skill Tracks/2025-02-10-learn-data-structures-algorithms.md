@@ -13,7 +13,8 @@ toc: true
 comments: true
 ---
 
-## 1. Lists (Arrays)
+## 1. Lists/Arrays
+
 ### 1_Remove duplicates from a list
 ```python
 # Given a list of integers, remove all duplicate elements and return the unique values.
@@ -22,16 +23,16 @@ comments: true
 2. Since `set()` does not keep the order, use `dict.fromkeys(arr)` to keep the order.
 3. Convert the dictionary keys back to a list using `list()`.
 """
-
 def remove_duplicates(arr):
     return list(dict.fromkeys(arr))
 
 input = [1, 2, 2, 3, 4, 4, 5]
-print(input)
 print(remove_duplicates(input)) # [1, 2, 3, 4, 5]
 ```
 
-### 2_Find the Maxiumum Product of Two Numbers in a List
+
+
+### 2_Find the Maximum Product of Two Numbers in a List
 ```python
 # Find the maximum product that can be obtained by multiplying two numbers in a list.
 """
@@ -39,15 +40,16 @@ print(remove_duplicates(input)) # [1, 2, 3, 4, 5]
 2. The maximum product is either the product of the two largest numbers or the two smallest numbers.
 3. Return the maximum of the two products -> max(20, 12) = 20
 """
-
 def max_product(arr):
     arr.sort()
     print(arr)
     return max(arr[-1] * arr[-2], arr[0] * arr[1])
 
 input = [3, 5, -2, -6, 4]
-print(max_product(input))  # 30
+print(max_product(input))  # 20
 ```
+
+
 
 ### 3_Check if List is Sorted
 ```python
@@ -80,6 +82,8 @@ print(is_sorted(input1))  # Output: True
 print(is_sorted(input2))  # Output: False
 ```
 
+
+
 ### 4_Rotate a List by K Positions
 ```python
 # Given a list and an integer K, rotate the list rightward by K positions.
@@ -97,6 +101,8 @@ print(rotate_list(input, 2))  # Output: [4, 5, 1, 2, 3]
 print(rotate_list(input, 7))  # Output: [4, 5, 1, 2, 3]
 ```
 
+
+
 ### 5_Find the Missing Number in a Sequence
 ```python
 # Given a list of numbers from 1 to n with one number missing, find the missing number.
@@ -106,11 +112,15 @@ print(rotate_list(input, 7))  # Output: [4, 5, 1, 2, 3]
 """
 def find_missing_number(arr):
     n = len(arr) + 1
-    return (n*(n+1) // 2) - sum(arr)
+    experted_sum = n * (n + 1) // 2
+    actual_sum = sum(arr)
+    return experted_sum - actual_sum
 
 input = [1, 2, 3, 5]
 print(find_missing_number(input))  # Output: 4
 ```
+
+
 
 ### 6_Reverse a List
 ```python
@@ -132,6 +142,8 @@ input = [1, 2, 3, 4, 5]
 print(reverse_list(input))  # Output: [5, 4, 3, 2, 1]
 ```
 
+
+
 ### 7_Find all Pairs with a Given Sum
 ```python
 # Given a list of numbers and a target sum, find all unique pairs whose sum equals the target.
@@ -145,14 +157,17 @@ def find_pairs(arr, target):
     seen = set()
     result = []
     for num in arr:
-        complement = target - num
-        if complement in seen:
-            result.append((complement, num))
+        diff = target - num
+        if diff in seen:
+            result.append((diff, num))
         seen.add(num)
     return result
 
-print(find_pairs([2, 4, 3, 7, 1, 5, 9], 6))  # Output: [(4, 2), (3, 3), (1, 5)]
+print(find_pairs([2, 4, 3, 7, 1, 5, 9], 6))  # Output: [(4, 2), (1, 5)]
+
 ```
+
+
 
 ### 8_Find the Second Largest Number in a List
 ```python

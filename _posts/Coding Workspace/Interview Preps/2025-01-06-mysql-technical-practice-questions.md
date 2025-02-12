@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MySQL Interview Practice Questions
+title: MySQL Technical Practice Questions
 date: 2025-01-06 21:13 -0800
 description: Interview questions for MySQL
 author: khoa_pham

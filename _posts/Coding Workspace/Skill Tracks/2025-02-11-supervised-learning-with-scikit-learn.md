@@ -2,6 +2,15 @@
 layout: post
 title: Supervised Learning with Scikit-learn
 date: 2025-02-11 18:36 -0800
+description: Learn Supervised Learning with scikit-learn for Data Science
+author: khoa_pham
+categories: [Coding Workspace, Skill Tracks]
+tags: [python, interview, coding]
+pin: false
+math: true
+mermaid: true
+toc: true
+comments: true
 ---
 
 ## Supervised Learning with scikit-learn
@@ -691,7 +700,7 @@ plt.show()
 
 
 """
-# Lasso regression is not a good model for this problem, while linear regression and ridge perform fairly equally """
+# Lasso regression is not a good model for this problem, while linear regression and ridge perform fairly equally"""
 ```
 
 ```python

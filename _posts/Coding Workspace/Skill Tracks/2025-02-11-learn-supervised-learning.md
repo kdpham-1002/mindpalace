@@ -13,7 +13,6 @@ toc: true
 comments: true
 ---
 
-## Supervised Learning with scikit-learn
 * Predicted values are known -> Predict the target values of unseen data, given the features
 * EDA (No missing values; Data in numeric format; Stored as Pandas df, NumPy arrays)
 * Feature = predictor variable = independent variable

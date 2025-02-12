@@ -14,7 +14,7 @@ comments: true
 ---
 
 ## 1. Lists (Arrays)
-### 1. Remove duplicates from a list
+### 1_Remove duplicates from a list
 ```python
 # Given a list of integers, remove all duplicate elements and return the unique values.
 """
@@ -31,7 +31,7 @@ print(input)
 print(remove_duplicates(input)) # [1, 2, 3, 4, 5]
 ```
 
-### 2. Find the Maxiumum Product of Two Numbers in a List
+### 2_Find the Maxiumum Product of Two Numbers in a List
 ```python
 # Find the maximum product that can be obtained by multiplying two numbers in a list.
 """
@@ -49,7 +49,7 @@ input = [3, 5, -2, -6, 4]
 print(max_product(input))  # 30
 ```
 
-### 3. Check if List is Sorted
+### 3_Check if List is Sorted
 ```python
 # Check whether a list is sorted in ascending order.
 ## Approach 1: Compare each element with the next element.
@@ -80,7 +80,7 @@ print(is_sorted(input1))  # Output: True
 print(is_sorted(input2))  # Output: False
 ```
 
-### 4. Rotate a List by K Positions
+### 4_Rotate a List by K Positions
 ```python
 # Given a list and an integer K, rotate the list rightward by K positions.
 """
@@ -97,7 +97,7 @@ print(rotate_list(input, 2))  # Output: [4, 5, 1, 2, 3]
 print(rotate_list(input, 7))  # Output: [4, 5, 1, 2, 3]
 ```
 
-### 5. Find the Missing Number in a Sequence
+### 5_Find the Missing Number in a Sequence
 ```python
 # Given a list of numbers from 1 to n with one number missing, find the missing number.
 """
@@ -112,7 +112,7 @@ input = [1, 2, 3, 5]
 print(find_missing_number(input))  # Output: 4
 ```
 
-### 6. Reverse a List
+### 6_Reverse a List
 ```python
 # Reverse a list in-place.
 """
@@ -132,7 +132,7 @@ input = [1, 2, 3, 4, 5]
 print(reverse_list(input))  # Output: [5, 4, 3, 2, 1]
 ```
 
-### 7. Find all Pairs with a Given Sum
+### 7_Find all Pairs with a Given Sum
 ```python
 # Given a list of numbers and a target sum, find all unique pairs whose sum equals the target.
 """
@@ -154,7 +154,7 @@ def find_pairs(arr, target):
 print(find_pairs([2, 4, 3, 7, 1, 5, 9], 6))  # Output: [(4, 2), (3, 3), (1, 5)]
 ```
 
-### 8. Find the Second Largest Number in a List
+### 8_Find the Second Largest Number in a List
 ```python
 # Find the second largest number in a list without sorting.
 """

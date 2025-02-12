@@ -13,7 +13,7 @@ toc: true
 comments: true
 ---
 
-## 1_Intro to Statistics in Python
+## 1. Intro to Statistics in Python
 ### 1_Summary Statistics
 * Descriptive and Inferential Statistics
     * Numeric (Quantitative) Data: Continuous (measured) vs Discrete (counted)

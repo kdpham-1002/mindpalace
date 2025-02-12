@@ -177,16 +177,78 @@ print(find_pairs([2, 4, 3, 7, 1, 5, 9], 6))  # Output: [(4, 2), (1, 5)]
 2. Iterate through the list and update these variables accordingly.
 """
 def second_largest(arr):
-    largest = second_largest = float('-inf')
+    largest = second = float('-inf')
     for num in arr:
         if num > largest:
-            second_largest = largest
+            second = largest
             largest = num
-        elif num > second_largest and num != largest:
-            second_largest = num
-    return second_largest if second_largest != float('-inf') else None
+        elif num > second and num != largest:
+            second = num
 
-input = [1, 3, 4, 2, 5]
-print(second_largest(input))  # Output: 4
-print(second_largest([10, 20, 4, 45, 99])) # Output: 45
+    # return second if second != float('-inf') else None
+    if second != float('-inf'):
+        return second
+    else:
+        return None
+
+print(second_largest([1, 2, 3, 4, 5]))  # Output: 4
+print(second_largest([10, 20, 20, 15, 10]))  # Output: 15
+print(second_largest([50, 10, 40, 20, 30]))  # Output: 40
+print(second_largest([5, 5, 5, 5]))  # Output: None
+print(second_largest([-10, -20, -30, -5]))  # Output: -10
 ```
+
+
+### 9_Move All Zeros to the End
+```python
+# Move all zeroes to the end of the list while maintaining the relative order of non-zero elements.
+"""
+1. Use two pointers: one to iterate through the list and another to keep track of the position to place the next non-zero element.
+2. Swap the non-zero element with the zero element.
+"""
+
+def move_zeros(arr):
+    insert_pos = 0
+    for num in arr:
+        if num != 0:
+            arr[insert_pos] = num
+            insert_pos += 1
+    while insert_pos < len(arr):
+        arr[insert_pos] = 0
+        insert_pos += 1
+    return arr
+
+# def move_zeros(arr):
+#     zero_pos = 0
+#     for i in range(len(arr)):
+#         if arr[i] != 0:
+#             arr[i], arr[zero_pos] = arr[zero_pos], arr[i]
+#             zero_pos += 1
+#     return arr
+
+print(move_zeros([0, 1, 0, 3, 12]))  # Output: [1, 3, 12, 0, 0]
+```
+
+
+
+### 10_Find the Intersection of Two Lists
+```python
+# Find common elements in two lists.
+"""
+1. Use a set to store the elements of the first list.
+2. Iterate through the second list and check if the element is in the set.
+3. If it is, add it to the result set.
+"""
+def find_intersection(arr1, arr2):
+    set1 = set(arr1)  
+    # return [num for num in arr2 if num in set1]
+    result = []
+    for num in arr2:
+        if num in set1: 
+            result.append(num)
+    return result
+
+print(find_intersection([1, 2, 3, 4], [2, 4, 6, 8]))  # Output: [2, 4]
+```
+
+## 2. Hash Tables

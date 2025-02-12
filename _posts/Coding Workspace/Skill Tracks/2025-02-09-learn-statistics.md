@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Learn Statistics
-date: 2025-02-11 19:14 -0800
+date: 2025-02-11 18:14 -0800
 description: Statistics Fundamentals with Python
 author: khoa_pham
 categories: [Coding Workspace, Skill Tracks]
@@ -25,7 +25,7 @@ comments: true
 * Measure of Spread
     * Variance, Standard Deviation, Mean Absolute Deviation, Quantiles
     * np.var(), np.std()
-        * `(, ddof = 1)` -> calculates sample 
+        - `(, ddof = 1)` -> calculates sample  
     * np.quantile(, np.linspace(start, stop, num)), plt.boxplot()
     * `from scipy.stats import iqr` -> iqr()
     * **All in One** -> .describe()

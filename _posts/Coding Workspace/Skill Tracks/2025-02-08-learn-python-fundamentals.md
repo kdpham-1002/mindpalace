@@ -85,7 +85,11 @@ comments: true
 * .groupby("type")[["unemployment", "fuel_pricel"]].agg([np.min, np.mean])
 * .pivot_table()
     * filling in any missing values with 0 and summing all rows and columns
+
+```python
 sales.pivot_table(values="weekly_sales", index="department", columns="type", fill_value=0, margins=True)
+```
+
 ### 3_Slicing and Indexing
 * Set and reset index
 * Subsetting with.loc[]

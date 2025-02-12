@@ -1,9 +1,17 @@
 ---
 layout: post
-title: Behavioral Practice Questions
-date: 2025-02-11 19:21 -0800
+title: Behavioral Interview Practice Questions
+date: 2025-02-07 19:21 -0800
+description: Behavioral Interview Questions & Categorized Responses
+author: khoa_pham
+categories: [Coding Workspace, Interview Preps]
+tags: [python, interview, coding]
+pin: false
+math: true
+mermaid: true
+toc: true
+comments: true
 ---
-
 ## Citizens Bank HireVue
 ### Category 1: Motivational & Personal Fit Questions:  
 #### Q1: Why do you want to work for Citizens?  

@@ -13,6 +13,8 @@ toc: true
 comments: true
 ---
 
+> Link to [Amazon BIE/DE Practice Questions][https://khoapham1002.github.io/mindpalace/posts/amazon-bie-de-practice/]
+
 ## What does a BIE do at Amazon?
 - Our business intelligence engineers (BIEs) build out a variety of analytics. As a BIE, you’ll define key performance indicators (KPIs), automate data pipelines, and create reports, dashboards, and visualizations.  
 - Our BIEs understand statistics, data warehousing, and Extract, Transform, and Load, (ETL), and they are proficient in SQL.  

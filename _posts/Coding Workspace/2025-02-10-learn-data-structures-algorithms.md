@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Learn Data Structures & Algorithms
+title: Data Structures & Algorithms with Python
 date: 2025-02-10 20:50 -0800
 description: Data Structures & Algorithms Preparation for Online Coding Interviews
 author: khoa_pham
-categories: [Coding Workspace, Interview Preps]
+categories: [Coding Workspace, Skill Tracks]
 tags: [python, interview, coding]
 pin: false
 math: true
@@ -175,4 +175,3 @@ input = [1, 3, 4, 2, 5]
 print(second_largest(input))  # Output: 4
 print(second_largest([10, 20, 4, 45, 99])) # Output: 45
 ```
-

@@ -4,7 +4,7 @@ title: Boston Places to Eat
 date: 2025-01-16 14:45 -0800
 description: Top places to eat in Boston
 author: khoa_pham
-categories: [4Foodie, Where2Eat]
+categories: [EatDaWorld, Where2Eat]
 tags: [traveling]
 pin: false
 math: true

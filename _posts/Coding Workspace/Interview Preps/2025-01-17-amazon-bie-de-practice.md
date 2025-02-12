@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Amazon BIE/DE Practice
+title: Amazon BIE/DE Practice Questions
 date: 2025-01-17 14:30 -0800
 description: Practice Amazon interview questions
 author: khoa_pham
@@ -13,10 +13,10 @@ toc: true
 comments: true
 ---
 
-## SQL
+> Link to [Amazon BIE/DE Requirements](https://khoapham1002.github.io/mindpalace/posts/amazon-bie-de-requirements/)
 
-### Joins
-
+## SQL  
+### Joins  
 **Tables:**
 - `Orders`: order_id, customer_id, order_date.
 - `Customers`: customer_id, name, city.

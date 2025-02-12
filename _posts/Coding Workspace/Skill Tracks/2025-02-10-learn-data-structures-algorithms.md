@@ -251,6 +251,8 @@ def find_intersection(arr1, arr2):
 print(find_intersection([1, 2, 3, 4], [2, 4, 6, 8]))  # Output: [2, 4]
 ```
 
+
+
 ## 2. Hash Tables
 
 ### 1_Count Frequency of Elements
@@ -365,3 +367,8 @@ def find_duplicates(arr):
 #     return duplicates
 
 print(find_duplicates([4, 2, 7, 4, 8, 2]))  # Output: [4, 2]
+```
+
+
+
+## 3. Stacks & Queues

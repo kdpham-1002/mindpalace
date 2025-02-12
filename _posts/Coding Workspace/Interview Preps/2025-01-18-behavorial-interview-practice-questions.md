@@ -16,14 +16,14 @@ comments: true
 
 ### Category 1: Motivational & Personal Fit Questions  
 #### Q1: Why do you want to work for Citizens?  
-1. Background -> Citizens’ emphasis data-driven decision-making
+1. Background -> Citizens' emphasis data-driven decision-making
 2. Alignment -> improve customer exp thru data insights
 3. Opportunity -> perfect env. to apply analytical skills while learning from professionals
 4. Long-term -> contribute financial data strategies, make banking more efficient 
 
-> With my background in data science, SQL, and financial analytics, I see a strong alignment with Citizens’ focus on improving customer experience through data insights. I am excited about the opportunity at Citizens because of its strong emphasis on data-driven decision-making in banking.  I also admire how Citizens integrates risk management and technology in banking operations. This internship provides the perfect environment to apply my analytical skills while learning from industry professionals. Long-term, I aspire to contribute to financial data strategies, making banking safer and more efficient.
+> With my background in data science, SQL, and financial analytics, I see a strong alignment with Citizens' focus on improving customer experience through data insights. I am excited about the opportunity at Citizens because of its strong emphasis on data-driven decision-making in banking.  I also admire how Citizens integrates risk management and technology in banking operations. This internship provides the perfect environment to apply my analytical skills while learning from industry professionals. Long-term, I aspire to contribute to financial data strategies, making banking safer and more efficient.
 
-> I am drawn to Citizens because of its strong commitment to data-driven decision-making in banking. The company’s focus on technology, financial analytics, and risk management aligns with my skills in data science, SQL, and financial modeling. Additionally, Citizens fosters an environment of innovation and learning, which excites me as someone eager to apply machine learning and cloud engineering to real-world banking challenges.
+> I am drawn to Citizens because of its strong commitment to data-driven decision-making in banking. The company's focus on technology, financial analytics, and risk management aligns with my skills in data science, SQL, and financial modeling. Additionally, Citizens fosters an environment of innovation and learning, which excites me as someone eager to apply machine learning and cloud engineering to real-world banking challenges.
 
 #### Q2: Walk me through your resume  
 1. Master/Bachelor 
@@ -32,7 +32,7 @@ comments: true
 4. Research Exp. predicting mental health risks (Random Forest)
 5. Beyond academics (Data Assistant and mentor for Data Science department)
 
-> I’m currently pursuing a Master’s in Business Analytics at UMass Amherst, with a strong foundation in Data Science. Throughout my studies, I’ve worked on various data projects, including an Online Retail Forecasting Model, where I developed an ETL pipeline using PySpark and SQL. Additionally, I optimized banking data pipelines in a project focused on credit card approvals and stock portfolio analysis. I also have research experience predicting mental health risks using Random Forest models. Beyond academics, I’ve worked as a Data Assistant and mentor, which has strengthened my teamwork and communication skills. Now, I’m eager to apply my analytical and technical expertise at Citizens to solve real-world financial challenges.
+> I'm currently pursuing a Master's in Business Analytics at UMass Amherst, with a strong foundation in Data Science. Throughout my studies, I've worked on various data projects, including an Online Retail Forecasting Model, where I developed an ETL pipeline using PySpark and SQL. Additionally, I optimized banking data pipelines in a project focused on credit card approvals and stock portfolio analysis. I also have research experience predicting mental health risks using Random Forest models. Beyond academics, I've worked as a Data Assistant and mentor, which has strengthened my teamwork and communication skills. Now, I'm eager to apply my analytical and technical expertise at Citizens to solve real-world financial challenges.
 
 #### Q3: Why did you choose this specific division (Data Science/Data Analyst, etc.)?  
 1. Uncovering insights from complex datasets to drive decision-making
@@ -43,12 +43,12 @@ comments: true
 
 ### Category 2: Behavioral Questions  
 #### Q1: A time when you faced substantial change and how you adapted  
-1. **S:** When transitioning from my undergraduate to the accelerated Master’s in Business Analytics, I had to quickly adjust to a heavier workload and advanced coursework.
+1. **S:** When transitioning from my undergraduate to the accelerated Master's in Business Analytics, I had to quickly adjust to a heavier workload and advanced coursework.
 2. **T:** I needed to efficiently manage the transition while maintaining academic performance and continuing extracurricular activities.
 3. **A:** I developed a structured study schedule, sought mentorship from professors, and actively engaged in hands-on projects to reinforce learning.
 4. **R:** Successfully adapted, maintaining a 3.97 GPA, excelling in advanced courses, and balancing my academic and professional commitments.
 
-Transitioning from my undergraduate to an accelerated Master’s program was a significant change, requiring me to adapt quickly to a more rigorous curriculum. I implemented a structured study plan, sought mentorship from professors, and applied hands-on projects to reinforce theoretical learning. This approach allowed me to maintain a 3.97 GPA, manage multiple responsibilities, and successfully navigate the transition.
+Transitioning from my undergraduate to an accelerated Master's program was a significant change, requiring me to adapt quickly to a more rigorous curriculum. I implemented a structured study plan, sought mentorship from professors, and applied hands-on projects to reinforce theoretical learning. This approach allowed me to maintain a 3.97 GPA, manage multiple responsibilities, and successfully navigate the transition.
 
 #### Q2: A time when you achieved a challenging goal, describing strategies, steps, processes, and approaches  
 1. **S:** In my Online Retail Data Pipeline and Forecasting Model project, I aimed to optimize an ETL pipeline and improve demand forecasting accuracy.
@@ -61,7 +61,7 @@ One challenging goal I set was improving the demand forecasting accuracy in my O
 #### Q3: A time you worked effectively with others to solve a problem  
 1. **S:** In my Banking and Investment Optimization Framework project, my team needed to improve data quality for financial modeling.
 2. **T:** The challenge was to clean and integrate banking data pipelines for better credit card approval accuracy.
-3. **A:** Collaborated with team members to identify inconsistencies in the dataset; Assigned tasks based on each person’s expertise (feature engineering, model validation, data visualization); Held weekly check-ins to ensure alignment and address bottlenecks.
+3. **A:** Collaborated with team members to identify inconsistencies in the dataset; Assigned tasks based on each person's expertise (feature engineering, model validation, data visualization); Held weekly check-ins to ensure alignment and address bottlenecks.
 4. **R:** Improved credit approval accuracy to 79.8% and successfully implemented data enhancements.
 
 While working on a banking data pipeline, my team faced issues with inconsistent financial data affecting model performance. We divided tasks based on expertise—some focused on feature engineering, others on model validation. Through structured collaboration and weekly check-ins, we improved data quality and boosted credit approval accuracy to 79.8%, demonstrating the power of teamwork in solving complex problems.
@@ -72,7 +72,7 @@ While working on a banking data pipeline, my team faced issues with inconsistent
 3. **A:** Researched feature engineering techniques, tuned hyper-parameters, and experimented with different data preprocessing methods to enhance model performance.
 4. **R:** Improved accuracy to 79.8%, making the model more reliable, and learned valuable lessons in iterative model improvement and debugging.
 
-During my Banking and Investment Optimization Framework project, I built a logistic regression model for credit card approvals. Initially, the model had an accuracy below 70%, making it unreliable for financial decision-making. I identified the issue as insufficient feature engineering, so I researched better ways to preprocess categorical variables and optimize hyper-parameters. After multiple iterations, I improved the model’s accuracy to 79.8%. This experience taught me the importance of experimentation, resilience, and continuous learning when solving complex data problems.
+During my Banking and Investment Optimization Framework project, I built a logistic regression model for credit card approvals. Initially, the model had an accuracy below 70%, making it unreliable for financial decision-making. I identified the issue as insufficient feature engineering, so I researched better ways to preprocess categorical variables and optimize hyper-parameters. After multiple iterations, I improved the model's accuracy to 79.8%. This experience taught me the importance of experimentation, resilience, and continuous learning when solving complex data problems.
 
 #### Q5: A time you had multiple tasks and limited time  
 1. **S:** As a Data Assistant at the Center for Teaching and Learning, I managed survey data while balancing coursework and other commitments.
@@ -115,12 +115,12 @@ My favorite project was the Online Retail Data Pipeline and Forecasting Model, w
 For ETL and data analysis, I primarily use Python (Pandas, NumPy) for data wrangling and SQL for querying structured data. I have worked with Apache Spark for processing large datasets efficiently and used AWS services like Redshift and Glue for data storage and transformation. For visualization, I am proficient in Tableau and QuickSight.
 
 ### Category 4: Situational & Ethical Questions  
-#### Q1: How would you respond if two VP’s ask you to complete different tasks, but you only have enough time to complete one?  
+#### Q1: How would you respond if two VP's ask you to complete different tasks, but you only have enough time to complete one?  
 1. Prioritize: Assess task urgency and impact.
 2. Communicate: Inform both VPs and suggest a timeline.
 3. Delegate: If possible, seek help from a colleague.
 
-I would evaluate both tasks’ urgency and business impact. Then, I’d communicate with both VPs to set expectations and negotiate a feasible deadline. If necessary, I’d seek assistance from a colleague to ensure all priorities are addressed.
+I would evaluate both tasks' urgency and business impact. Then, I'd communicate with both VPs to set expectations and negotiate a feasible deadline. If necessary, I'd seek assistance from a colleague to ensure all priorities are addressed.
 
 ### Category 5: Commercial & Industry Knowledge  
 #### Q1: What trends are impacting the financial and banking industry?  

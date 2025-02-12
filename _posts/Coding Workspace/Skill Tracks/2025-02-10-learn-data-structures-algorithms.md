@@ -252,3 +252,116 @@ print(find_intersection([1, 2, 3, 4], [2, 4, 6, 8]))  # Output: [2, 4]
 ```
 
 ## 2. Hash Tables
+
+### 1_Count Frequency of Elements
+```python
+# Count how many times each number appears in a list.
+"""
+1. Create an empty dictionary to store the frequency of each number.
+2. Iterate through the list and update the dictionary accordingly.
+"""
+def count_frequency(arr):
+    freq = {}
+    for num in arr:
+        freq[num] = freq.get(num, 0) + 1
+    return freq
+
+print(count_frequency([2, 3, 2, 4, 3, 2, 5])) # Output: {2: 3, 3: 2, 4: 1, 5: 1}
+```
+
+
+
+### 2_Find the First Non-Repeating Element
+```python
+# Find the first character that appears only once in a given string.
+"""
+1. Create an empty dictionary to store the frequency of each character.
+2. Iterate through the string and update the dictionary accordingly.
+3. Iterate through the string again and return the first character with a frequency of 1.
+"""
+def first_unique_char(s):
+    freq = {}
+    for char in s:
+        freq[char] = freq.get(char, 0) + 1
+    for char in s:
+        if freq[char] == 1:
+            return char
+    return None
+
+print(first_unique_char("swiss"))  # Output: "w"
+```
+
+
+
+### 3_Two Sum Problem
+```python
+# Given a list of numbers and a target sum, find two numbers that add up to the target.
+"""
+1. Create an empty dictionary to store the index of each number.
+2. Iterate through the list and check if the difference between the target and the current number is in the dictionary.
+3. If it is, return the indices of the two numbers.
+"""
+def two_sum(arr, target):
+    num_map = {}
+    for i, num in enumerate(arr):
+        diff = target - num
+        if diff in num_map:
+            return [num_map[diff], i]
+        num_map[num] = i
+    return None
+    
+print(two_sum([2, 6, 11, 7], 9))  # Output: (0, 1)
+```
+
+
+
+### 4_Find Intersection of Two Lists
+```python
+# Find common elements in two lists.
+"""
+1. Create a set from the first list.
+2. Iterate through the second list and check if the element is in the set.
+3. If it is, add it to the result set.
+"""
+def list_intersection(arr1, arr2):
+    set1 = set(arr1)
+    return [num for num in arr2 if num in set1]
+    # result = []
+    # for num in arr2: 
+    #     if num in set1: 
+    #         result.append(num)
+    # return result
+print(list_intersection([1, 2, 3, 4], [2, 4, 6, 8]))  # Output: [2, 4]
+```
+
+
+### 5_Find Duplicates in a List
+```python
+# Find all duplicate elements in a list.
+"""
+1. Create an empty set to store the unique elements.
+2. Create an empty list to store the duplicate elements.
+3. Iterate through the list and check if the element is in the set.
+4. If it is, add it to the duplicate list; otherwise, add it to the set.
+"""
+def find_duplicates(arr):
+    seen = set()
+    duplicates = []
+    for num in arr:
+        if num in seen:
+            duplicates.append(num)
+        else:
+            seen.add(num)
+    return duplicates
+
+# def find_duplicates(arr):
+#     freq = {}
+#     duplicates = []
+#     for num in arr:
+#         freq[num] = freq.get(num, 0) + 1
+#     for num, count in freq.items():
+#         if count > 1:
+#             duplicates.append(num)
+#     return duplicates
+
+print(find_duplicates([4, 2, 7, 4, 8, 2]))  # Output: [4, 2]

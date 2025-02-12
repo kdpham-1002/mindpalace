@@ -4,7 +4,7 @@ title: Understand Data Engineering
 date: 2025-01-17 08:45 -0800
 description: Data Engineering Recap
 author: khoa_pham
-categories: [Coding Workspace, Job Preps]
+categories: [Coding Workspace, Career Preps]
 tags: [interview preps, data roles]
 pin: false
 math: true

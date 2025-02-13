@@ -13,16 +13,15 @@ toc: true
 comments: true
 ---
 
-### Q1: Count the Employees
-
+### Q1: Count the Employees   
 The data for the number employed at several famous IT companies is maintained in the `COMPANY` table. Write a query to print the `ID`s of the companies that have more than **10,000** employees, in ascending order of `ID`.
 
 **Input Format:**   
 
-| Name      | Type    | Description |
-|-----------|--------|-------------|
-| `ID`      | Integer | A company ID in the inclusive range **[1,1000]**. This is the primary key. |
-| `NAME`    | String  | A company name. This field contains between **1 and 100** characters (inclusive). |
+| Name        | Type    | Description |
+|-------------|---------|-------------|
+| `ID`        | Integer | A company ID in the inclusive range **[1,1000]**. This is the primary key. |
+| `NAME`      | String  | A company name. This field contains between **1 and 100** characters (inclusive). |
 | `EMPLOYEES` | Integer | The total number of employees in the company. |
 
 **Output Format:**  
@@ -81,10 +80,10 @@ Given a number ***n***, for each integer ***i*** in the range from ***1 to n*** 
 **Function Description:**  
 Complete the function *fizzBuzz* in the editor below.
 *fizzBuzz* has the following parameter(s):  
-    `int n`: upper limit of values to test (inclusive)
+   - `int n`: upper limit of values to test (inclusive)
 
 ***Returns:*** NONE  
-***Prints:*** The function must print the appropriate response for each value **i** in the set {1, 2, ... n} in ascending order, each on a separate line.
+***Prints:*** The function must print the appropriate response for each value ***i*** in the set `{1, 2, ... n}` in ascending order, each on a separate line.
 
 
 
@@ -93,7 +92,7 @@ $$ 0 < n < 2 \times 10^5 $$
 
 **Input Format for Custom Testing:**   
 Input from stdin will be processed as follows and passed to the function.   
-The single integer **n**, the limit of the range to test: [1, 2, ... n].
+The single integer **n**, the limit of the range to test: `[1, 2, ... n]`.
 
 **Sample Case 0**   
 **Sample Input:**  
@@ -134,7 +133,6 @@ FizzBuzz
 ```python
 # Complete the 'fizzBuzz' function below.
 # The function accepts INTEGER n as parameter.
-
 def fizzBuzz(n):
     # Write your code here
     for i in range(1, n + 1):

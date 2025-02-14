@@ -4,7 +4,7 @@ title: Learn Supervised Learning
 date: 2025-02-11 18:36 -0800
 description: Supervised Learning with scikit-learn
 author: khoa_pham
-categories: [Coding Workspace, Skill Tracks]
+categories: [Coding Hub, Skill Tracks]
 tags: [python, interview preps, coding]
 pin: false
 math: true

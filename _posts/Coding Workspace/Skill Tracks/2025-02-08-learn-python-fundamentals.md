@@ -87,7 +87,8 @@ comments: true
     * filling in any missing values with 0 and summing all rows and columns
 
 ```python
-sales.pivot_table(values="weekly_sales", index="department", columns="type", fill_value=0, margins=True)
+sales.pivot_table(values="weekly_sales", index="department", 
+                    columns="type", fill_value=0, margins=True)
 ```
 
 ### Slicing and Indexing

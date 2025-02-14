@@ -4,7 +4,7 @@ title: Learn Statistics
 date: 2025-02-11 18:14 -0800
 description: Statistics Fundamentals with Python
 author: khoa_pham
-categories: [Coding Hub, Skill Tracks]
+categories: [Coding Workspace, Skill Tracks]
 tags: [python, interview preps, coding]
 pin: false
 math: true

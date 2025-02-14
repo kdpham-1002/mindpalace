@@ -4,7 +4,7 @@ title: Mock Coding Interview
 date: 2025-02-12 15:14 -0800
 description: Practice coding interview questions
 author: khoa_pham
-categories: [Coding Hub, Career Preps]
+categories: [Coding Workspace, Career Preps]
 tags: [python, sql, interview preps, coding]
 pin: false
 math: true

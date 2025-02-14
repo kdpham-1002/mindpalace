@@ -4,7 +4,7 @@ title: Understand Data Science
 date: 2025-01-17 09:00 -0800
 description: Data Science Recap
 author: khoa_pham
-categories: [Coding Hub, Skill Tracks]
+categories: [Coding Workspace, Skill Tracks]
 tags: [interview preps, data roles]
 pin: false
 math: true

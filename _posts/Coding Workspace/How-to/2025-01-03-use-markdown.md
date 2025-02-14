@@ -4,7 +4,7 @@ title: Use Markdown
 date: 2025-01-03 10:00 -0800
 description: Examples of using Markdown
 authors: [cotes, khoa_pham]
-categories: [Coding Hub]
+categories: [Coding Workspace, How-to]
 tags: [blogging, settings]
 pin: false
 math: true

@@ -2,7 +2,7 @@
 layout: post
 title: Health & Diet
 date: 2025-02-14 21:06 -0800
-description: Personal stats for health and diet
+description: Personal stats for tracking health and diet
 author: khoa_pham
 categories: [Brainfeed]
 tags: [diet, food4thought]

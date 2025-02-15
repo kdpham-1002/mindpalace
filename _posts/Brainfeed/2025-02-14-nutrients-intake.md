@@ -13,36 +13,29 @@ toc: true
 comments: true
 ---
 
-## Personal Stats:
-**Weight:** 68kg = 150lbs  
-**Height:** 172cm = 5’7”  
-
-**Protein:** 120 - 140g  
-**Carbs:** 250 - 315g  
-**Fats:** 50 - 75g  
-
-**Fiber:**  25 - 35g  
-**Sodium:** 2.3 - 4g  
-**Sugar:** <25 - 33g  
-
-
 ## Nutrients & Daily Intake:
-
-**Calories:** 2,400 – 2900kcal  
-**Protein:** 140g $$\times$$ 4 = 560 kcal (20%)  
-**Carbs:** 315g $$\times$$ 4 = 1260 kcal (60%)  
-**Fat:** 50g $$\times$$ 9 = 450 kcal (20%)  
-
 **Mifflin-St Jeor Equation:**
 ```
-Age = 24, Z = 1.55, W = 68, H = 172
+Age = 24, Z = 1.55, W = 63, H = 171
 
 BMR = (10 x W) + (6.25 x H) - (5 x Age) + 5
-BMR = 1,640
+BMR = 1,579
 
 TDEE =  BMR x Z = 2,542
-TDEE = 2,542
+TDEE = 2,448
 ```
+
+**Weight:** 63kg = 139lbs  
+**Height:** 171cm = 5’7”  
+
+**Calories:** 2,650 – 2,850 kcal  
+**Protein:** 135 - 150g × 4 = 540 - 600 kcal (20-22%)  
+**Carbs:** 340 - 370g × 4 = 1,360 - 1,480 kcal (50-55%)  
+**Fat:** 75 - 85g × 9 = 675 - 765 kcal (25-28%)  
+
+**Fiber:** 25 - 35g  
+**Sodium:** 2.3 - 4g  
+**Sugar:** <25 - 33g  
 
 ## Meal Plan:
 > 1 lbs = 16oz = 454g = 454ml
@@ -54,6 +47,6 @@ TDEE = 2,542
 * 142g Canned Tuna: 33g
 
 * 255g/9oz Salmon: 50g
-* 285g/10oz Ground Beef (75%): 50g
-* 200g/7oz Steak: 50g
+* 300g/10.5oz Ground Beef (75%): 50g
+* 215g/7.5oz Steak: 50g
 * 225g/8oz Chicken Thighs: 50g

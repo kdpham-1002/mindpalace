@@ -53,10 +53,12 @@ comments: true
 - [ ] Bench Press: 20lbs x 20
 - [ ] Inclined Press: 20lbs x 20
 - [ ] Chest Fly: 50lbs x 20   
+
 **Shoulders:**
 - [ ] Overhead Press: 20lbs x 20
 - [ ] Leaning Lat Raises: 8lbs x 20
-- [ ] Front Delt Raises: 8lbs x 20   
+- [ ] Front Delt Raises: 8lbs x 20  
+ 
 **Triceps:**
 - [ ] Cable Pushdowns: 30lbs x 20
 - [ ] Overhead Extensions: 12lbs x 20
@@ -68,10 +70,12 @@ comments: true
 - [ ] Pull Downs: 50lbs x 18
 - [ ] Pull Ups: 70lbs x 40
 - [ ] Dumbbell Rows: 15lbs x 20   
+
 **Biceps:**
 - [ ] Isolation Curls: 15lbs x 20
 - [ ] Ez Bar Curls: 20lbs x 20
 - [ ] Hammer Curls: 20lbs x 25  
+
 **Trapezius & Rear Delt:**
 - [ ] Rear Delt Flies: 40lbs x 40
 - [ ] Shrugs: 40lbs x 50
@@ -83,6 +87,7 @@ comments: true
 - [ ] Leg Press: 90lbs x 30
 - [ ] Calves Raise: 90lbs x 150
 - [ ] Leg Extensions: 40lbs x 15  
+
 **Hamstrings & Glutes:**
 - [ ] Romanian Deadlift: 0lbs x 30
 - [ ] Hip Thrust: 40lbs x 40

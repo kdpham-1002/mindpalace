@@ -4,7 +4,7 @@ title: My First Blog
 date: 2025-02-13 03:00 -0800
 description: Netflix and… Learn?
 author: khoa_pham
-categories: [Brainfeed]
+categories: [BrainFeed]
 tags: [food4thought, blogging]
 pin: false
 math: true

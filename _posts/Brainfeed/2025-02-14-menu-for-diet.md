@@ -4,7 +4,7 @@ title: Menu for Diet
 date: 2025-02-14 21:43 -0800
 description: Quick meal plan for diet
 author: khoa_pham
-categories: [Brainfeed]
+categories: [BrainFeed]
 tags: [health & diet]
 pin: false
 math: true

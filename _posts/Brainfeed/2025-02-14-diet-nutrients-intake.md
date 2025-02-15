@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Diet Stats & Nutrients Intake
+title: Diet & Nutrients Intake
 date: 2025-02-14 21:06 -0800
 description: Personal stats for tracking diet
 author: khoa_pham

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Use Jekyll
-date: 2025-01-03 09:00 -0800
+date: 2025-01-02 09:00 -0800
 description: Examples of using Jekyll
 authors: [cotes, khoa_pham]
 categories: [Coding Workspace, How-to]

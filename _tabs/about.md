@@ -16,7 +16,7 @@ order: 4
     <tbody>
       <tr>
         <td><a href="https://public.tableau.com/app/profile/kdpham.umass/vizzes">Tableau</a></td>
-        <td><a href="https://khoapham1002.github.io/mindpalace/categories/">My MindPalace</a></td>
+        <td><a href="https://khoapham1002.github.io/mindpalace/categories/">MindPalace</a></td>
         <td><a href="https://vsco.co/teenee3051/gallery">Photography</a></td>
       </tr>
       <tr>

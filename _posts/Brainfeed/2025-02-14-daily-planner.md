@@ -4,7 +4,7 @@ title: Daily Planner
 date: 2025-02-14 21:59 -0800
 description: Personal schedule & fitness tracker
 author: khoa_pham
-categories: [Brainfeed]
+categories: [BrainFeed]
 tags: [health & diet]
 pin: false
 math: true
@@ -58,7 +58,7 @@ comments: true
 - [ ] Overhead Press: 20lbs x 20
 - [ ] Leaning Lat Raises: 8lbs x 20
 - [ ] Front Delt Raises: 8lbs x 20  
- 
+
 **Triceps:**
 - [ ] Cable Pushdowns: 30lbs x 20
 - [ ] Overhead Extensions: 12lbs x 20

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Income/Tax/Loan Breakdowns
+title: Understand Income, Tax, and Loan
 date: 2025-01-25 17:21 -0800
-description: Understand income, tax, and loan breakdowns
+description: Income/Tax/Loan Breakdowns
 author: khoa_pham
 categories: [Learning Hub, Finance & Investing]
 tags: [learning, Wealth Odyssey]

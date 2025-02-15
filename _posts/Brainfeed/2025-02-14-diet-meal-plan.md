@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Diet Menu
+title: Diet Meal Plan
 date: 2025-02-14 21:43 -0800
-description: Quick meal plan for diet
+description: Quick menu for diet
 author: khoa_pham
 categories: [BrainFeed]
 tags: [health & diet]

@@ -16,15 +16,16 @@ timezone: America/Los_Angeles
 
 title: KoaPam's 💭 Mindpalace  # the main title
 tagline: >
-  🌙 A quiet place for endless thoughts. 🖋️ <br>
-  ✨ A silent page for vibrant <br> tales. 📜 <br>
+  🌙 A quiet place for <br> endless thoughts. 🖋️ <br>
+  ✨ A silent page for <br> vibrant tales. 📜 <br>
 
-  <br> A little bit of everything <br> I love...❣️
+  <br> Lil' bit of everything I luv❣️
   <br> 💃 🕺 🎹 📸 🎞️ 🧑‍🍳 🍣 <br>
-  <br> 🧑‍💻  DS | DE | BI | BA  💼
+  <br> 🧑‍💻 <em> DS | DE | BI | BA </em> 💼
 
 description: >- # used by seo meta and the atom feed
-  A platform showcasing my journey in Data Science, Business Analytics, and Data Engineering. Explore projects, insights, and creative content blending technical expertise with personal passions.
+  🌙 A quiet place for endless thoughts. 🖋️ <br>
+  ✨ A silent page for vibrant tales. 📜 <br>
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.

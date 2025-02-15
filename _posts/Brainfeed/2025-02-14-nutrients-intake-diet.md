@@ -45,7 +45,7 @@ TDEE = 2,542
 ```
 
 ## Meal Plan:
-1 lbs = 16oz = 454g = 454ml
+> 1 lbs = 16oz = 454g = 454ml
 
 * 3 Eggs: 18g 
 * 200g Greek Yogurt: 20g

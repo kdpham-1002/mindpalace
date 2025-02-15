@@ -4,7 +4,7 @@ title: VSCode Settings
 date: 2025-01-03 19:00 -0800
 description: VSCode shortcuts and settings
 author: khoa_pham
-categories: [Coding Workspace, How-to]
+categories: [Programming Hub, How-to]
 tags: [coding, settings]
 pin: false
 math: true

@@ -4,7 +4,7 @@ title: Conda Environment
 date: 2025-01-05 20:30 -0800
 description: Set up Conda environments
 author: khoa_pham
-categories: [Coding Workspace, How-to]
+categories: [Programming Hub, How-to]
 tags: [python, coding, settings]
 pin: false
 math: true

@@ -4,7 +4,7 @@ title: Mac Settings
 date: 2025-01-03 18:30 -0800
 description: MacOS shortcuts and settings
 author: khoa_pham
-categories: [Coding Workspace, How-to]
+categories: [Programming Hub, How-to]
 tags: [settings]
 pin: false
 math: true

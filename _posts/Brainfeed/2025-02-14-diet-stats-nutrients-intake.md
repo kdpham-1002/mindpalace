@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Health & Diet
+title: Diet Stats & Nutrients Intake
 date: 2025-02-14 21:06 -0800
-description: Personal stats for tracking health and diet
+description: Personal stats for tracking diet
 author: khoa_pham
 categories: [Brainfeed]
-tags: [diet, food4thought]
+tags: [health & diet, food4thought]
 pin: false
 math: true
 mermaid: true

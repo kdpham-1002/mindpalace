@@ -28,7 +28,7 @@ comments: true
 
 ## Nutrients & Daily Intake:
 
-**Calories:** 2,400 - 2900kcal  
+**Calories:** 2,400 – 2900kcal  
 **Protein:** 140g $$\times$$ 4 = 560 kcal (20%)  
 **Carbs:** 315g $$\times$$ 4 4 = 1260 kcal (60%)  
 **Fat:** 50g $$\times$$ 4 9 = 450 kcal (20%)  

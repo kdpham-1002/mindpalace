@@ -1,7 +1,4 @@
 ---
-
----
----
 layout: post
 title: Daily Planner
 date: 2025-02-13 21:59 -0800

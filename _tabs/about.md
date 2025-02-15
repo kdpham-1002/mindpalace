@@ -21,7 +21,7 @@ order: 4
       </tr>
       <tr>
         <td><a href="https://www.kaggle.com/teenee3051">Kaggle</a></td>
-        <td><a href="https://isenbergmarketing.wordpress.com/2023/06/12/netflix-and-learn/?fbclid=IwZXh0bgNhZW0CMTEAAR1hEqlSY2sZx2p6ysM-EFkoQkFC4r9FBFxAKLc-z-wHuv3fW_YzuziMpSc_aem_v81C0HMR5vpAzpT02UQxqA">My First Blog</a></td>
+        <td><a href="https://isenbergmarketing.wordpress.com/2023/06/12/netflix-and-learn/?fbclid=IwZXh0bgNhZW0CMTEAAR1hEqlSY2sZx2p6ysM-EFkoQkFC4r9FBFxAKLc-z-wHuv3fW_YzuziMpSc_aem_v81C0HMR5vpAzpT02UQxqA">First Blog</a></td>
         <td><a href="https://www.instagram.com/teenee_archives/reels/">Dance/Filming</a></td>
       </tr>
     </tbody>

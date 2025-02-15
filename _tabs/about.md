@@ -5,37 +5,50 @@ order: 4
 ---
 
 <div style="width: 100%; text-align: center;">
-  <table style="margin: auto; width: 100%; max-width: 800px; border-collapse: collapse;">
-    <thead>
+  <table style="margin: auto; width: 100%; border-collapse: collapse; border: none; table-layout: fixed;">
+    <thead style="border: none;">
       <tr>
-        <th><a href="https://www.linkedin.com/in/kdpham1002/">LinkedIn</a></th>
-        <th><a href="https://github.com/khoapham1002">GitHub</a></th>
+        <th style="font-weight: normal;"><a href="https://github.com/khoapham1002?tab=repositories">GitHub</a></th>
+        <th style="font-weight: normal;"><a href="https://www.linkedin.com/in/kdpham1002/">LinkedIn</a></th>
+        <th style="font-weight: normal;"><a href="https://www.instagram.com/teenee_archives/">Insta/Inspo</a></th>
       </tr>
     </thead>
     <tbody>
       <tr>
+        <td><a href="https://public.tableau.com/app/profile/kdpham.umass/vizzes">Tableau</a></td>
+        <td><a href="https://khoapham1002.github.io/mindpalace/categories/">My MindPalace</a></td>
         <td><a href="https://vsco.co/teenee3051/gallery">Photography</a></td>
-        <td><a href="https://www.instagram.com/teenee_archives/reels/">Dance/Filming</a></td>
       </tr>
       <tr>
+        <td><a href="https://www.kaggle.com/teenee3051">Kaggle</a></td>
         <td><a href="https://isenbergmarketing.wordpress.com/2023/06/12/netflix-and-learn/?fbclid=IwZXh0bgNhZW0CMTEAAR1hEqlSY2sZx2p6ysM-EFkoQkFC4r9FBFxAKLc-z-wHuv3fW_YzuziMpSc_aem_v81C0HMR5vpAzpT02UQxqA">My First Blog</a></td>
-        <td><a href="https://khoapham1002.github.io/mindpalace/categories/">My MindPalace</a></td>
+        <td><a href="https://www.instagram.com/teenee_archives/reels/">Dance/Filming</a></td>
       </tr>
     </tbody>
   </table>
 </div>
 
-<!-- |     [LinkedIn][linkedin]    |   [GitHub][gh-repos]   |
+<!-- | [GitHub][gh-repos] | [LinkedIn][linkedin]        | [Insta/Inspo][ins]     |
+|:------------------:|:---------------------------:|:----------------------:|
+| [Tableau][tableau] | [My MindPalace][mindpalace] | [Photography][vsco]    |
+| [Kaggle][kaggle]   | [My First Blog][blog]       | [Dance/Filming][reels] |
+
+|     [LinkedIn][linkedin]    |   [GitHub][gh-repos]   |
 |:---------------------------:|:----------------------:|
 |     [Photography][vsco]     | [Dance/Filming][dance] |
 | [My MindPalace][mindpalace] | [My First Blog][blog]  |
+|     [Tableau][tableau]      |   [Kaggle][kaggle]     |
 
 [linkedin]: https://www.linkedin.com/in/kdpham1002/
 [gh-repos]: https://github.com/khoapham1002?tab=repositories
+[tableau]: https://public.tableau.com/app/profile/kdpham.umass/vizzes
+[kaggle]: https://www.kaggle.com/teenee3051
 [vsco]: https://vsco.co/teenee3051/gallery
-[dance]: https://www.instagram.com/teenee_archives/reels/
+[reels]: https://www.instagram.com/teenee_archives/reels/
+[ins]: https://www.instagram.com/teenee_archives/
 [mindpalace]: https://khoapham1002.github.io/mindpalace/categories/
 [blog]: https://isenbergmarketing.wordpress.com/2023/06/12/netflix-and-learn/?fbclid=IwZXh0bgNhZW0CMTEAAR1hEqlSY2sZx2p6ysM-EFkoQkFC4r9FBFxAKLc-z-wHuv3fW_YzuziMpSc_aem_v81C0HMR5vpAzpT02UQxqA -->
+
 
 ## 🚨 **Heads Up**
 

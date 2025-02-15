@@ -5,7 +5,7 @@ date: 2025-02-14 21:06 -0800
 description: Personal stats for tracking diet
 author: khoa_pham
 categories: [Brainfeed]
-tags: [health & diet, food4thought]
+tags: [health & diet]
 pin: false
 math: true
 mermaid: true

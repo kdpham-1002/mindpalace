@@ -5,7 +5,7 @@ date: 2025-02-14 21:43 -0800
 description: Quick meal plan for diet
 author: khoa_pham
 categories: [Brainfeed]
-tags: [health & diet, food4thought]
+tags: [health & diet]
 pin: false
 math: true
 mermaid: true

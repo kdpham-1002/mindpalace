@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Daily Planner
-date: 2025-02-13 21:59 -0800
-description: Personal planner for the day
+date: 2025-02-14 21:59 -0800
+description: Personal schedule & fitness tracker
 author: khoa_pham
 categories: [Brainfeed]
-tags: [health & diet, food4thought]
+tags: [health & diet]
 pin: false
 math: true
 mermaid: true

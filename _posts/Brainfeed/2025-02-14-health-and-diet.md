@@ -4,8 +4,8 @@ title: Health & Diet
 date: 2025-02-14 21:06 -0800
 description: Personal stats for health and diet
 author: khoa_pham
-categories: [Learning Hub, Health & Diet]
-tags: [recipes]
+categories: [Brainfeed]
+tags: [diet, food4thought]
 pin: false
 math: true
 mermaid: true

@@ -5,7 +5,7 @@ date: 2025-02-13 03:00 -0800
 description: Netflix and… Learn?
 author: khoa_pham
 categories: [Brainfeed]
-tags: [food4thought]
+tags: [food4thought, blogging]
 pin: false
 math: true
 mermaid: true

@@ -5,7 +5,7 @@ date: 2025-01-19 14:30 -0800
 description: Practice Amazon interview questions
 author: khoa_pham
 categories: [Programming Hub, Career Preps]
-tags: [interview preps, coding, sql, python]
+tags: [interview preps, coding, SQL, python]
 pin: false
 math: true
 mermaid: true

@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Mock Coding Interview
+title: IBM Mock Coding Interview
 date: 2025-02-12 15:14 -0800
-description: Practice coding interview questions
+description: IBM mock coding interview questions
 author: khoa_pham
 categories: [Programming Hub, Career Preps]
-tags: [python, sql, interview preps, coding]
+tags: [python, SQL, interview preps, coding]
 pin: false
 math: true
 mermaid: true

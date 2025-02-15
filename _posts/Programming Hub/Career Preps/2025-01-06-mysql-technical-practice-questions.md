@@ -5,7 +5,7 @@ date: 2025-01-06 21:13 -0800
 description: Interview questions for MySQL
 author: khoa_pham
 categories: [Programming Hub, Career Preps]
-tags: [sql, interview preps, coding]
+tags: [SQL, interview preps, coding]
 pin: false
 math: true
 mermaid: true

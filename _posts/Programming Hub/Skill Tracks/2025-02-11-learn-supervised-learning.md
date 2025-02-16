@@ -259,6 +259,7 @@ print(np.quantile(cv_results, [0.025, 0.975]))
 # R-squared for each fold ranged between 0.74 and 0.77. 
 # By using cross-validation, we can see how performance varies depending on how the data is split!
 # An average score of 0.75 with a low standard deviation is pretty good for a model out of the box.
+"""
 ```
 
 #### Regularized regression: Ridge
@@ -314,6 +315,7 @@ plt.show()
 [ 3.56256962 -0.00397035  0.00496385]
 
 # Expenditure on TV advertising is the most important feature in the dataset to predict sales values.
+"""
 ```
 
 ### 3_Fine-tuning your model

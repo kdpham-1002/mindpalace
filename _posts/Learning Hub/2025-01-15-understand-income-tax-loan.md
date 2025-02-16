@@ -15,7 +15,7 @@ comments: true
 ### Expense	Estimated Cost (Monthly)
 
 | Expense Category                | Cost Range ($)      |
-|---------------------------------|---------------------|
+|:-------------------------------:|:-------------------:|
 | Rent (shared housing)           | $1,500 - $2,500     |
 | Utilities & Internet            | $150 - $250         |
 | Groceries                       | $300 - $600         |

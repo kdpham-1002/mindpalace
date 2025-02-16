@@ -11,6 +11,39 @@ toc: true
 comments: true
 ---
 
+## Salary Overview
+
+### Expense	Estimated Cost (Monthly)
+
+| Expense Category                | Cost Range ($)      |
+|---------------------------------|---------------------|
+| Rent (shared housing)           | $1,500 - $2,500     |
+| Utilities & Internet            | $150 - $250         |
+| Groceries                       | $300 - $600         |
+| Transportation (Public/Car)     | $150 - $400         |
+| Health Insurance                | $100 - $300         |
+| Miscellaneous                   | $300 - $600         |
+|---------------------------------|---------------------|
+| **Total**                       | **$2,500 - $4,500** |
+
+To break even, you’d need around $3,500 - $5,000/month ($42,000 - $60,000/year) before taxes.
+> In tech (Google, Meta, etc.) offer $35-$50/hr ($70K-$100K/year), while banks and midsize firms pay $25-$35/hr ($50K-$70K/year).
+> For California, aim for $25-$28/hour ($4,500/month or $50K-$60K/year).
+> For San Francisco or Los Angeles, aim for $30-$35/hr ($5,000-$6,000/month or $60K-$70K/year).
+
+| Hourly Rate | Annual Salary | Monthly Salary (Pre-Tax) |
+|:-----------:|:-------------:|:------------------------:|
+| $20/hr      | $41,600       | $3,467                   |
+| $25/hr      | $52,000       | $4,333                   |
+| $30/hr      | $62,400       | $5,200                   |
+| $35/hr      | $72,800       | $6,067                   |
+| $40/hr      | $83,200       | $6,933                   |
+| $55/hr      | $114,000      | $9,533                   |
+
+**Salary Negotiation:**
+> "Thank you so much for this offer, I'm excited to join [Company],My experience with X and Y will allow me to onboard quickly and provide value right away, and my high level of proficiency in Z will make me a great asset in [relevant things for the job]. For these reasons, I’d like to propose a salary of $80k. Is this something you'd be able to accommodate?"
+
+
 ## Income/Tax Summarizations
 **Gross Annual Salary:** $80,000  
 **Federal Income Tax:**  

@@ -26,9 +26,9 @@ comments: true
 | **Total**                       | **$2,500 - $4,500** |
 
 To break even, you’d need around $3,500 - $5,000/month ($42,000 - $60,000/year) before taxes.
-> In tech (Google, Meta, etc.) offer $35-$50/hr ($70K-$100K/year), while banks and midsize firms pay $25-$35/hr ($50K-$70K/year).
-> For California, aim for $25-$28/hour ($4,500/month or $50K-$60K/year).
-> For San Francisco or Los Angeles, aim for $30-$35/hr ($5,000-$6,000/month or $60K-$70K/year).
+> In tech (Google, Meta, etc.) offer $35-$50/hr ($70K-$100K/year), while banks and midsize firms pay $25-$35/hr ($50K-$70K/year).   
+> For California, aim for $25-$28/hour ($4,500/month or $50K-$60K/year).   
+> For San Francisco or Los Angeles, aim for $30-$35/hr ($5,000-$6,000/month or $60K-$70K/year).   
 
 | Hourly Rate | Annual Salary | Monthly Salary (Pre-Tax) |
 |:-----------:|:-------------:|:------------------------:|
@@ -68,9 +68,9 @@ To break even, you’d need around $3,500 - $5,000/month ($42,000 - $60,000/year
 **Social Security Tax:** $80,000 * 6.2% = $4,960  
 **Medicare Tax:** $80,000 * 1.45% = $1,160
 
-> Total Taxes: $12,907.50 + $4,193.48 + $4,960 + $1,160 = $23,221
-> Net Annual Salary: $80,000 - $23,221 = $56,779
-> Net Monthly Salary: $56,779 / 12 = $4,731.58
+> Total Taxes: $12,907.50 + $4,193.48 + $4,960 + $1,160 = $23,221    
+> Net Annual Salary: $80,000 - $23,221 = $56,779    
+> Net Monthly Salary: $56,779 / 12 = $4,731.58   
 
 **Total Expenses:**   
 * Student Loan: $300

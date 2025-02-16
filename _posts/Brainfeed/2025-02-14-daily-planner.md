@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Daily Planner
+title: Daily Planner ⏰🏋️‍♂️
 date: 2025-02-14 21:59 -0800
-description: Personal schedule & fitness tracker
+description: Personal daily schedule & fitness training program
 author: khoa_pham
 categories: [BrainFeed]
 tags: [health & diet]

@@ -43,7 +43,7 @@ To break even, you’d need around $3,500 - $5,000/month ($42,000 - $60,000/year
 > "Thank you so much for this offer, I'm excited to join [Company],My experience with X and Y will allow me to onboard quickly and provide value right away, and my high level of proficiency in Z will make me a great asset in [relevant things for the job]. For these reasons, I’d like to propose a salary of $80k. Is this something you'd be able to accommodate?"
 
 
-## Income/Tax Summarizations
+## Tax Summarizations
 **Gross Annual Salary:** $80,000  
 **Federal Income Tax:**  
 * 10% on income up to $11,000 = $1,100

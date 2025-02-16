@@ -12,7 +12,6 @@ comments: true
 ---
 
 ## Salary Overview
-
 ### Expense	Estimated Cost (Monthly)
 
 | Expense Category                | Cost Range ($)      |

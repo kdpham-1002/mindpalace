@@ -2,7 +2,7 @@
 layout: post
 title: Citizens Behavioral Practice Questions
 date: 2025-01-18 19:21 -0800
-description: (Citizens) Behavioral Interview Questions & Categorized Responses
+description: Citizens Behavioral Interview Questions & Categorized Responses
 author: khoa_pham
 categories: [Programming Hub, Career Preps]
 tags: [interview preps]

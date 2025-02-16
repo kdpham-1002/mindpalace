@@ -2,7 +2,7 @@
 layout: post
 title: Amazon BIE/DE Practice Questions
 date: 2025-01-19 14:30 -0800
-description: Practice Amazon interview questions
+description: Practice Amazon technical interview questions
 author: khoa_pham
 categories: [Programming Hub, Career Preps]
 tags: [interview preps, coding, SQL, python]

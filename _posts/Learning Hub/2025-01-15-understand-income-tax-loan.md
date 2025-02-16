@@ -15,7 +15,7 @@ comments: true
 ### Expense	Estimated Cost (Monthly)
 
 | **Expense Category**            | **Cost Range ($)**  |
-|:-------------------------------:|:-------------------:|
+|:--------------------------------|:--------------------|
 | Rent (shared housing)           | $1,500 - $2,500     |
 | Utilities & Internet            | $150 - $250         |
 | Groceries                       | $300 - $600         |
@@ -31,7 +31,7 @@ To break even, you’d need around $3,500 - $5,000/month ($42,000 - $60,000/year
 > For San Francisco or Los Angeles, aim for $30-$35/hr ($5,000-$6,000/month or $60K-$70K/year).   
 
 | Hourly Rate | Annual Salary | Monthly Salary (Pre-Tax) |
-|:-----------:|:-------------:|:------------------------:|
+|:------------|:--------------|:-------------------------|
 | $20/hr      | $41,600       | $3,467                   |
 | $25/hr      | $52,000       | $4,333                   |
 | $30/hr      | $62,400       | $5,200                   |

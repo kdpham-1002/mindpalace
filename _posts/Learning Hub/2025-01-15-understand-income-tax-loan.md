@@ -79,6 +79,7 @@ To break even, you’d need around $3,500 - $5,000/month ($42,000 - $60,000/year
 * Housing: $2,000
 * Utilities: $250
 * Grocery: $500
+
 > Total Expenses: $5,050
 
 
@@ -89,8 +90,8 @@ To break even, you’d need around $3,500 - $5,000/month ($42,000 - $60,000/year
 - **Tax Bracket**: 22%
 
 If your modified adjusted gross income (MAGI) is within the income limits for the full deduction:
-- You would reduce your taxable income from $45,000 to $42,500 ($45,000 - $2,500).
-- At a 22% tax rate, this deduction would save you $550 in taxes ($2,500 x 0.22).
+> You would reduce your taxable income from $45,000 to $42,500 ($45,000 - $2,500).  
+> At a 22% tax rate, this deduction would save you $550 in taxes ($2,500 x 0.22).   
 
 **Example 2: Partial Deduction with Phase-Out**
 - **Gross Income**: $70,000
@@ -98,8 +99,8 @@ If your modified adjusted gross income (MAGI) is within the income limits for th
 - **Tax Bracket**: 22%
 
 If your MAGI is within the phase-out range, you wouldn't be eligible for the full $2,500 deduction. Instead, you might only be able to deduct a portion. Suppose you're allowed a reduced deduction of $1,250 after the phase-out calculation:
-- Your taxable income would be reduced from $70,000 to $68,750 ($70,000 - $1,250).
-- At a 22% tax rate, your tax savings would be $275 ($1,250 x 0.22).
+> Your taxable income would be reduced from $70,000 to $68,750 ($70,000 - $1,250).   
+> At a 22% tax rate, your tax savings would be $275 ($1,250 x 0.22).   
 
 **Example 3: No Deduction Above Income Limits**
 - **Gross Income**: $85,000
@@ -107,9 +108,9 @@ If your MAGI is within the phase-out range, you wouldn't be eligible for the ful
 - **Tax Bracket**: 22%
 
 If your MAGI is above the eligibility limit for the deduction:
-- You wouldn't be able to deduct any of the student loan interest paid.
-- Your taxable income would remain at $85,000.
-- You would not receive any tax savings from the student loan interest deduction.
+> You wouldn't be able to deduct any of the student loan interest paid.    
+> Your taxable income would remain at $85,000.   
+> You would not receive any tax savings from the student loan interest deduction.   
 
 **Example 4: Deduction When Not in the Highest Tax Bracket**
 - **Gross Income**: $35,000
@@ -117,7 +118,7 @@ If your MAGI is above the eligibility limit for the deduction:
 - **Tax Bracket**: 12%
 
 Even if you don't pay the full $2,500 in interest, you can still deduct what you do pay:
-- You can deduct the $1,000 you paid in interest from your gross income, making your taxable income $34,000.
-- At a 12% tax rate, your tax savings would be $120 ($1,000 x 0.12).
+> You can deduct the $1,000 you paid in interest from your gross income, making your taxable income $34,000.    
+> At a 12% tax rate, your tax savings would be $120 ($1,000 x 0.12).   
 
 Remember, the deduction is beneficial even if it doesn't result in a dollar-for-dollar tax credit; it still reduces the overall taxable income, which subsequently lowers the amount of tax owed. These examples are simplified, and the actual calculation may involve more variables based on your complete tax situation.

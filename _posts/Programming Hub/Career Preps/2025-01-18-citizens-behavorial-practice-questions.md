@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Behavioral Interview Practice Questions
+title: Citizens Behavioral Practice Questions
 date: 2025-01-18 19:21 -0800
-description: Behavioral Interview Questions & Categorized Responses
+description: (Citizens) Behavioral Interview Questions & Categorized Responses
 author: khoa_pham
 categories: [Programming Hub, Career Preps]
 tags: [interview preps]
@@ -12,6 +12,7 @@ mermaid: true
 toc: true
 comments: true
 ---
+
 ## Citizens Bank HireVue
 
 ### Category 1: Motivational & Personal Fit Questions  

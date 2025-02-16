@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Amazon BIE/DE Requirements
+title: Amazon BIE/DE Description Requirements
 date: 2025-01-19 13:40 -0800
 description: Understand Amazon interview formats
 author: khoa_pham

@@ -20,7 +20,7 @@ comments: true
 * Series is one-dimensional, while DataFrame is two-dimensional
 * Series can be seen as a single column of data, while DataFrame is a combination of multiple Series.
 
-Bonus: When working with DataFrames you'll often select a single Series to manipulate and join back to the original DataFrame.
+**Bonus:** When working with DataFrames you'll often select a single Series to manipulate and join back to the original DataFrame.
 
 ### Q2: loc vs iloc
 
@@ -57,7 +57,7 @@ DataFrame itself
 3. Fill missing Values with computer values (mean, median, mode) using "fillna().mean()"
 4. Using the Interopolation with interopolatel() method
 
-Bonus: Interopolation is especially useful with time series data and estimates values between two known values
+**Bonus:** Interopolation is especially useful with time series data and estimates values between two known values
 
 ### Q6: Large data sets
 

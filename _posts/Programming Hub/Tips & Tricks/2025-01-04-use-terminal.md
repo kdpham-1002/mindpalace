@@ -4,7 +4,7 @@ title: Use Terminal
 date: 2025-01-04 06:00 -0800
 description: Examples of Terminal/Bash commands
 author: khoa_pham
-categories: [Programming Hub, How-to]
+categories: [Programming Hub, Tips & Tricks]
 tags: [settings, coding]
 pin: false
 math: true

@@ -4,7 +4,7 @@ title: Use Jekyll
 date: 2025-01-02 09:00 -0800
 description: Examples of using Jekyll
 authors: [cotes, khoa_pham]
-categories: [Programming Hub, How-to]
+categories: [Programming Hub, Tips & Tricks]
 tags: [blogging, settings]
 pin: false
 math: true

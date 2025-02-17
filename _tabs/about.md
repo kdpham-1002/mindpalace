@@ -5,7 +5,7 @@ order: 4
 ---
 
 <div style="width: 100%; text-align: center;">
-  <table style="margin: auto; width: 100%; border-collapse: collapse; border: none; table-layout: auto; ">
+  <table style="margin: auto; width: 100%; border-collapse: collapse; border: none; table-layout: fixed; ">
     <thead style="border: none;">
       <tr>
         <th style="font-weight: normal;"><a href="https://github.com/khoapham1002?tab=repositories">GitHub</a></th>

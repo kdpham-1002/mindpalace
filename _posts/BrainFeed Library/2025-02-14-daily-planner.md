@@ -36,60 +36,60 @@ comments: true
 ***
 
 ## Fitness Tracker
-### Footwork:
+### Footwork
 - [ ] Jump Rope: 100
 - [ ] High-knees: 100
 - [ ] Crossed-leg Jumps: 100
 - [ ] Front Kicks: 100
 
-### Core & Back:
+### Core & Back
 - [ ] Sit Up: 20
 - [ ] Back Extensions: 20
 - [ ] Plank: 2 min
 - [ ] Leg Raises: 15
 - [ ] Crunches: 30lbs x 15
 
-### Push:
-**Chest:**
+### Push
+#### Chest
 - [ ] Bench Press: 20lbs x 20
 - [ ] Inclined Press: 20lbs x 20
 - [ ] Chest Fly: 50lbs x 20
 
-**Shoulders:**
+#### Shoulders
 - [ ] Overhead Press: 20lbs x 20
 - [ ] Leaning Lat Raises: 8lbs x 20
 - [ ] Front Delt Raises: 8lbs x 20
 
-**Triceps:**
+#### Triceps
 - [ ] Cable Pushdowns: 30lbs x 20
 - [ ] Overhead Extensions: 12lbs x 20
 - [ ] Dips: 70lbs x 20
 
-### Pull:
-**Back:**
+### Pull
+#### Back
 - [ ] Machine Rows: 50lbs x 18
 - [ ] Pull Downs: 50lbs x 18
 - [ ] Pull Ups: 70lbs x 40
 - [ ] Dumbbell Rows: 15lbs x 20
 
-**Biceps:**
+#### Biceps
 - [ ] Isolation Curls: 15lbs x 20
 - [ ] Ez Bar Curls: 20lbs x 20
 - [ ] Hammer Curls: 20lbs x 25
 
-**Trapezius & Rear Delt:**
+#### Trapezius & Rear Delt
 - [ ] Rear Delt Flies: 40lbs x 40
 - [ ] Shrugs: 40lbs x 50
 
-### Lower:
-**Quads & Calves:**
+### Lower
+#### Quads & Calves
 - [ ] Squat: 30lbs x 20
 - [ ] Lunges: 30lbs x 20
 - [ ] Leg Press: 90lbs x 30
 - [ ] Calves Raise: 90lbs x 90
 - [ ] Leg Extensions: 40lbs x 15
 
-**Hamstrings & Glutes:**
+#### Hamstrings & Glutes
 - [ ] Romanian Deadlift: 80lbs x 30
 - [ ] Hip Thrust: 40lbs x 40
 - [ ] Hamstring Curls: 40lbs x 15

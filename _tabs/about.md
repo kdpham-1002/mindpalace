@@ -10,14 +10,14 @@ order: 4
       <tr>
         <th><a href="https://github.com/khoapham1002?tab=repositories">GitHub</a></th>
         <th><a href="https://www.linkedin.com/in/kdpham1002/">LinkedIn</a></th>
-        <th><a href="https://www.instagram.com/teenee_archives/">Insta/Inspo</a></th>
+        <th><a href="https://vsco.co/teenee3051/gallery">VSCO/Inspo</a></th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><a href="https://public.tableau.com/app/profile/kdpham.umass/vizzes">Tableau</a></td>
         <td><a href="https://khoapham1002.github.io/mindpalace/categories/">MindPalace</a></td>
-        <td><a href="https://vsco.co/teenee3051/gallery">Photography</a></td>
+        <td><a href="https://www.instagram.com/teenee_archives/">Photography</a></td>
       </tr>
       <tr>
         <td><a href="https://www.kaggle.com/teenee3051">Kaggle</a></td>

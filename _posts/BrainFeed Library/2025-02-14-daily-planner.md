@@ -4,7 +4,7 @@ title: Daily Planner ⏰🏋️‍♂️
 date: 2025-02-14 21:59 -0800
 description: Personal daily schedule & fitness training program
 author: khoa_pham
-categories: [BrainFeed]
+categories: [BrainFeed Library]
 tags: [health & diet]
 pin: false
 math: true
@@ -12,7 +12,6 @@ mermaid: true
 toc: true
 comments: true
 ---
-
 
 ## My Schedule
 - [ ] 6:00 - 7:00: 1st Meal (1hr)

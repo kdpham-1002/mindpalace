@@ -13,8 +13,14 @@ toc: true
 comments: true
 ---
 
-> Link to [Use Jekyll](https://khoapham1002.github.io/mindpalace/posts/use-jekyll/)
+[Writing a New Post](https://chirpy.cotes.page/posts/write-a-new-post/)[^fn1]   
+> <https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_posts/2019-08-08-write-a-new-post.md?plain=1>
 
+[Text and Typography](https://chirpy.cotes.page/posts/text-and-typography/)[^fn2]   
+> <https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_posts/2019-08-08-text-and-typography.md?plain=1>
+
+<br>
+Link to [Use Jekyll](https://khoapham1002.github.io/mindpalace/posts/use-jekyll/)   
 Jekyll is a static site generator that transforms plain text into static websites and blogs. When used together with Markdown, Jekyll allows users to write content in a simple, readable format that can be easily converted into HTML. Markdown's straightforward syntax makes it easy to format text, create lists, add links, and include code snippets, while Jekyll handles the layout and structure of the site. This combination provides a powerful yet user-friendly way to create and manage static websites.
 
 ## Headings
@@ -129,21 +135,19 @@ This is <strong>bold</strong> text using HTML syntax. <br>
 ## Block Quote
 
 > This line shows the _block quote_.  
-> This line shows the _block quote_.  
 >> This line shows the _nested block quote_.  
 >>> This line shows the _nested block quote_.
 
 >>>> This line shows the _nested block quote_.  
->>>> This line shows the _nested block quote_.  
+>> This line shows the _nested block quote_.  
 
 ```markdown
 > This line shows the _block quote_.  
-> This line shows the _block quote_.  
 >> This line shows the _nested block quote_.  
 >>> This line shows the _nested block quote_.
 
 >>>> This line shows the _nested block quote_.  
->>>> This line shows the _nested block quote_.  
+>> This line shows the _nested block quote_.  
 ```
 
 ## Prompts
@@ -196,30 +200,29 @@ else:
 ```{% endraw %}
 ````
 
-## Mathematics
+## Math & LaTeX
 
 The mathematics powered by [**MathJax**](https://www.mathjax.org/):
 
-When $$a \ne 0$$, there are two solutions to $$ax^2 + bx + c = 0$$ and they are
-
+When $$a \ne 0$$, there are two solutions to $$ax^2 + bx + c = 0$$ and they are:    
 $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 $$ x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} $$
 
 ```markdown
-When $$a \ne 0$$, there are two solutions to $$ax^2 + bx + c = 0$$ and they are
-
+When $$a \ne 0$$, there are two solutions to $$ax^2 + bx + c = 0$$ and they are:    
 $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 $$ x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} $$
+
 ```
 
-1. For markdown, LaTex inline equation: $$E = mc^2$$
+1. For markdown, LaTex inline equation: $$E = m \times c^2$$
 2. For HTML rendering inline equation: \\( E = mc^2 \\)
 3. \$$E = mc^2$$
 
 ```markdown
-1. For markdown, LaTex inline equation: $$E = mc^2$$
+1. For markdown, LaTex inline equation: $$E = m \times c^2$$
 2. For HTML rendering inline equation: \\( E = mc^2 \\)
 3. \$$E = mc^2$$
 ```
@@ -230,6 +233,7 @@ a^2 + b^2 = c^2
 $$
 
 ```markdown
+This is a displayed equation:
 $$
 a^2 + b^2 = c^2
 $$
@@ -255,15 +259,14 @@ $$
 ```{% endraw %}
 ````
 
+## Liquid
 
 ````markdown
-{% raw %}
-```liquid
+{% raw %}```liquid
 {% if product.title contains 'Pack' %}
   This product's title contains the word Pack.
 {% endif %}
-```
-{% endraw %}
+```{% endraw %}
 ````
 
 ## Images
@@ -344,12 +347,6 @@ Click the hook will locate the footnote[^footnote], and here is another footnote
 ```
 
 ### Post's Footnotes
-
-[Writing a New Post](https://chirpy.cotes.page/posts/write-a-new-post/)[^fn1]   
-> <https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_posts/2019-08-08-write-a-new-post.md?plain=1>
-
-[Text and Typography](https://chirpy.cotes.page/posts/text-and-typography/)[^fn2]   
-> <https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_posts/2019-08-08-text-and-typography.md?plain=1>
 
 ---
 

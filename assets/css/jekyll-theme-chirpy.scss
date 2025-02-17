@@ -9,10 +9,50 @@
 
 /* append your custom style below */
 
+#sidebar .site-subtitle {
+  font-style: normal !important;
+}
+
 // #sidebar .site-subtitle.fst-italic.mb-0 {
 //   font-style: italic !important;
 // }
 
-#sidebar .site-subtitle {
-  font-style: normal !important;
+/* 'About Me' custom table */
+.custom-table-container {
+  width: 100%;
+  margin: 0 auto; // Centers the container
+  // overflow-x: auto; // Enables horizontal scrolling if necessary
+}
+
+.custom-table {
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border: none;
+  margin: 0 auto; /* Centers the table */
+  table-layout: auto; /* Ensures equal column width */
+  // white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.custom-table thead {
+  border-bottom: none !important;
+}
+
+.custom-table th, .custom-table td {
+  text-align: center;
+  font-weight: normal;
+  // border: none !important;
+}
+
+.custom-table a {
+  // border-bottom: none !important;
+  // text-decoration: none !important;
+  // box-shadow: none !important; /* In case it's using box-shadow for underline */
+  // color: inherit; /* Keeps text color consistent */
+}
+
+.custom-table a:hover {
+  // text-decoration: underline !important;
+  // border-bottom: underline !important;
 }

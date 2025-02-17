@@ -4,13 +4,13 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-<div style="width: 100%; text-align: center;">
-  <table style="margin: auto; width: 100%; border-collapse: collapse; border: none; table-layout: fixed; ">
-    <thead style="border: none;">
+<div class="custom-table-container">
+  <table class="custom-table">
+    <thead>
       <tr>
-        <th style="font-weight: normal;"><a href="https://github.com/khoapham1002?tab=repositories">GitHub</a></th>
-        <th style="font-weight: normal;"><a href="https://www.linkedin.com/in/kdpham1002/">LinkedIn</a></th>
-        <th style="font-weight: normal;"><a href="https://www.instagram.com/teenee_archives/">Insta/Inspo</a></th>
+        <th><a href="https://github.com/khoapham1002?tab=repositories">GitHub</a></th>
+        <th><a href="https://www.linkedin.com/in/kdpham1002/">LinkedIn</a></th>
+        <th><a href="https://www.instagram.com/teenee_archives/">Insta/Inspo</a></th>
       </tr>
     </thead>
     <tbody>

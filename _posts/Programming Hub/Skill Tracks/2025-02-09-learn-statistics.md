@@ -20,28 +20,30 @@ comments: true
     * Categorical (Qualitative) Data: Nominal (unordered) vs Ordinal (ordered)
 * Measure of Center
     * Mean vs Median vs Mode
-    * .agg([np.mean, np.median, statistics.mode])
-    * When skewed, use **median**
+    * When skewed, use **median** because it’s resistant to outliers
 * Measure of Spread
-    * Variance, Standard Deviation, Mean Absolute Deviation, Quantiles
-    * np.var(), np.std()
-        - `(, ddof = 1)` -> calculates sample  
-    * np.quantile(, np.linspace(start, stop, num)), plt.boxplot()
-    * `from scipy.stats import iqr` -> iqr()
-    * **All in One** -> .describe()
+    * IQR, Variance, Standard Deviation, Mean Absolute Deviation, Quantiles
+* **All in One** -> .describe()
 
 ### 2_Probability and Distributions
 * Independent -> Sampling with replacement
+    * E.g: flipping a coin 3 times, rolling a die twice
 * Dependent -> Sampling without replacement
-    * np.random.seed(123), .sample()
-* Discrete Distributions, Law of Large Numbers
-    * If coin is flipped 1000 times, p is getting closer to 0.5
+    * E.g: randomly selecting 5 products from the assembly line to test for quality assurance
+
+* Discrete Uniform Distributions
+    * E.g: the outcome of rolling a die
+    * Law of Large Numbers
+        * E.g: If coin is flipped 1000 times, p is getting closer to 0.5
 * Continuous Uniform Distribution
+    * E.g: the time it takes to wait for a bus
     * P(4 < wait ≤ 7) = P(wait ≤ 7) - P(wait ≤ 4)
         * uniform.cdf(7, 0, 12) - uniform.cdf(4, 0, 12)
     * Genereate 10 random wait times of between 0 to 5min
         * uniform.rvs(0, 5, size=10)
+
 * Binomial Distribution
+    * E.g: the number of heads when flipping a coin 10 times
     * Don’t work with dependent trials!
     * Flip 3 coins with 50% chance of success 10 times
         * binom.rvs(3, 0.5, size=10)
@@ -61,6 +63,7 @@ comments: true
 * Central Limit Theorem
     * Sampling distribution becomes closer to the normal distribution as n increases
 * Poisson Distribution
+    * E.g: number of products sold each week
     * Lambda (λ) is the distribution’s peak
     * In terms of rate (Poisson): λ = 8 adoptions per week
     * Avg # of adoptions per week is 8, P(adt = 5) = ?
@@ -68,10 +71,11 @@ comments: true
     * Avg # of adoptions per week is 8, P(adt <= 5) = ?
         * poisson.cdf(5, 8)
 * Exponential Distribution
+    * E.g: amount of time until the nextcustomer makes a purchase
     * On average, one customer service ticket is created every 2 minutes
     * λ = 0.5 customer service tickets created each minute
     * In terms of time between events (exponential): 1/λ = 1/0.5 = 2
-        * P (wait > 4 min) = 1- expon.cdf(4, scale=2)
+        * P (wait > 4 min) = 1 - expon.cdf(4, scale=2)
         * P (1 min < wait < 4 min) = expon.cdf(4, scale=2) - expon.cdf(1, scale=2)
 * (Student's) t-distribution
 * Log-normal distribution

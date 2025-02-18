@@ -13,6 +13,8 @@ toc: true
 comments: true
 ---
 
+> Link to [Diet Menu 🍽️😋](https://khoapham1002.github.io/mindpalace/posts/diet-menu/)
+
 ## My Schedule
 - [ ] 6:00 - 7:00: 1st Meal (1hr)
     - [ ] Coffee

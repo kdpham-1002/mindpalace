@@ -25,12 +25,11 @@
 }
 
 .custom-table {
-  margin: auto;
+  margin: 0 auto; /* Centers the table */
   width: 100%;
-  max-width: 100%;
+  // max-width: 100%;
   border-collapse: collapse;
   border: none;
-  margin: 0 auto; /* Centers the table */
   table-layout: auto; /* Ensures equal column width */
   // white-space: nowrap; /* Prevents text from wrapping */
 }

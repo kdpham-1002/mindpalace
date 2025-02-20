@@ -13,84 +13,250 @@ toc: true
 comments: true
 ---
 
-## 1. Intro to Statistics
+## 1) Intro to Statistics
 
 ### Summary Statistics
-* Descriptive and Inferential Statistics
-    * Numeric (Quantitative) Data: Continuous (measured) vs Discrete (counted)
-    * Categorical (Qualitative) Data: Nominal (unordered) vs Ordinal (ordered)
-* Measure of Center
-    * Mean vs Median vs Mode
-    * When skewed, use **median** because it’s resistant to outliers
-* Measure of Spread
-    * IQR, Variance, Standard Deviation, Mean Absolute Deviation, Quantiles
-* **All in One** -> .describe()
+Types of Statistics:   
+* Descriptive Statistics: Summarizes and describes data (e.g., mean, median, mode).   
+* Inferential Statistics: Uses a sample to make predictions about a larger population.   
+
+Types of Data:
+1. Numeric (Quantitative):  
+    * Continuous: Measured values (e.g., speed, height).
+    * Discrete: Counted values (e.g., number of pets).
+2. Categorical (Qualitative):  
+    * Nominal: No inherent order (e.g., country, gender).
+    * Ordinal: Ordered categories (e.g., survey ratings: disagree, neutral, agree).
+
+
+Measures of Center:
+* Mean (Average)
+    * The sum of values divided by count.
+    * Sensitive to outliers.
+    * Normal Distribution? → Use mean.
+    * Formula: $$ \text{Mean} = \frac{\sum X}{N} $$
+```python
+np.mean(msleep['sleep_total'])
+```
+
+* Median
+    * The middle value when data is sorted.
+    * Less sensitive to outliers than the mean.
+    * Skewed Data? → Use median.
+```python
+np.median(msleep['sleep_total'])
+```
+
+* Mode
+    * The most frequent value in the dataset.
+    * Categorical Data? → Use mode.
+```python
+statistics.mode(msleep['vore'])
+```
+
+Measures of Spread:
+* Variance
+	* Measures how far data points are from the mean.
+	* Formula: $$ \sigma^2 = \frac{\sum (X - \bar{X})^2}{N-1} $$
+```python
+np.var(msleep['sleep_total'], ddof=1)
+```
+
+* Standard Deviation (SD)
+	* Square root of variance, representing spread in original units.
+    * Formula: $$ \sigma = \sqrt{\frac{\sum (X - \bar{X})^2}{N-1}} $$
+```python
+np.std(msleep['sleep_total'], ddof=1)
+```
+
+* Mean Absolute Deviation (MAD)
+	* Measures absolute differences from the mean.
+	* Difference from SD: MAD treats all deviations equally, while SD gives larger weight to extreme values.
+    * Formula: $$ \text{MAD} = \frac{\sum |X - \bar{X}|}{N} $$
+```python
+np.mean(np.abs(msleep['sleep_total'] - np.mean(msleep['sleep_total'])))
+```
+
+* Quantiles & Interquartile Range (IQR)
+	* Quantiles: Divide data into equal parts (e.g., median = 50th percentile).
+	* IQR: Difference between Q3 (75th percentile) and Q1 (25th percentile).
+    * Formula: $$ \text{IQR} = Q3 - Q1 $$
+```python
+from scipy.stats import iqr
+iqr(msleep['sleep_total'])
+```
+
+* Outliers Dectection
+    * Lower Bound: Q1 - 1.5 * IQR
+    * Upper Bound: Q3 + 1.5 * IQR
+```python
+Q1 = msleep['sleep_total'].quantile(0.25)
+Q3 = msleep['sleep_total'].quantile(0.75)
+IQR = Q3 - Q1
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
+```
+
+**All in One** -> .describe()
+```python
+msleep['sleep_total'].describe()
+```
 
 ### Probability and Distributions
-* Independent -> Sampling with replacement
-    * E.g: flipping a coin 3 times, rolling a die twice
-* Dependent -> Sampling without replacement
-    * E.g: randomly selecting 5 products from the assembly line to test for quality assurance
+Probability of an event: $$ P(\text{event}) = \frac{\text{# of ways event can happen}}{\text{total # of possible outcomes}} $$
+* E.g: Coin flip -> $$  P(\text{Heads}) = \frac{1}{2} = 50\% $$
 
-* Discrete Uniform Distributions
-    * E.g: the outcome of rolling a die
-    * Law of Large Numbers
-        * E.g: If coin is flipped 1000 times, p is getting closer to 0.5
-* Continuous Uniform Distribution
-    * E.g: the time it takes to wait for a bus
-    * P(4 < wait ≤ 7) = P(wait ≤ 7) - P(wait ≤ 4)
-        * uniform.cdf(7, 0, 12) - uniform.cdf(4, 0, 12)
-    * Genereate 10 random wait times of between 0 to 5min
-        * uniform.rvs(0, 5, size=10)
+Independent -> Sampling with replacement
+* E.g: flipping a coin 3 times, rolling a die twice
 
-* Binomial Distribution
-    * E.g: the number of heads when flipping a coin 10 times
-    * Don’t work with dependent trials!
-    * Flip 3 coins with 50% chance of success 10 times
-        * binom.rvs(3, 0.5, size=10)
-    * binom.pmf(num heads, num trials, prob of heads)
-        * binom.pmf(7, 10, 0.5)
-    * Probability of more than 7 heads
-        * 1 - binom.cdf(7, 10, 0.5)
+Dependent -> Sampling without replacement
+* E.g: randomly selecting 5 products from the assembly line to test for quality assurance
+
+Discrete Uniform Distributions
+* Describe probabilities of different possible outcomes.
+* Expected Value (Mean of a probability distribution): $$ E(X) = \sum P(X) \times X $$
+
+* E.g: the outcome of rolling a fair die -> $$ E(X) = (1 \times \frac{1}{6}) + (2 \times \frac{1}{6}) + … + (6 \times \frac{1}{6}) = 3.5 $$
+
+Law of Large Numbers
+* As the number of trials increases, the sample mean gets closer to the population mean.
+* E.g: If coin is flipped 1000 times, p is getting closer to 0.5
+
+Continuous Uniform Distribution
+* Equal probability for all values in a range.
+* E.g: the time it takes to wait for a bus
+
+```python
+from scipy.stats import uniform
+# Probability of waiting between 4 and 7 minutes
+# P(4 < wait ≤ 7) = P(wait ≤ 7) - P(wait ≤ 4)
+uniform.cdf(7, 0, 12) - uniform.cdf(4, 0, 12)
+
+# Generate 10 random wait times between 0 and 12 minutes
+uniform.rvs(0, 12, size=10)
+```
+
+Binomial Distribution
+* Models the number of successes in repeated trials.
+* Don’t work with dependent trials!
+* Formula: $$ P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k} $$
+* Expected Value: $$ E(X) = n \times p $$
+
+```python
+from scipy.stats import binom
+# Probability of 7 heads in 10 flips
+# binom.pmf(num heads, num trials, prob of heads)
+binom.pmf(7, 10, 0.5)
+
+# Probability of more than 7 heads
+1 - binom.cdf(7, 10, 0.5)
+
+# Flip 3 coins with 50% chance of success 10 times
+binom.rvs(3, 0.5, size=10)
+```
 
 ### More Distributions and CLT
-* (Standard) Normal Distribution
-    * Percent of women are 154 - 157cm (mean = 161, SD = 7)
-        * norm.cdf(157, 161, 7) - norm.cdf(154, 161, 7)
-    * What height are 90% of women taller than?
-        * norm.ppf((1-0.9), 161, 7)
-    * Generate 10 random heights
-        * norm.rvs(161, 7, size=10)
-* Central Limit Theorem
-    * Sampling distribution becomes closer to the normal distribution as n increases
-* Poisson Distribution
-    * E.g: number of products sold each week
-    * Lambda (λ) is the distribution’s peak
+(Standard) Normal Distribution
+* A symmetric, bell-shaped curve that represents a probability distribution.
+* Total area under the curve = 1, the curve extends infinitely but never reaches 0.
+* Empirical Rule:
+    * 68% of data falls within 1σ.
+    * 95% of data falls within 2σ.
+    * 99.7% of data falls within 3σ.
+
+```python
+from scipy.stats import norm
+# norm.cdf(x, mean, std) → Finds probability P(X ≤ x).
+# Probability that a woman’s height is less than 154 cm, given µ=161, σ=7)
+norm.cdf(154, 161, 7)
+
+# Percent of women are 154 - 157cm (mean = 161, SD = 7)
+norm.cdf(157, 161, 7) - norm.cdf(154, 161, 7)
+
+# norm.ppf(prob, mean, std) → Finds X for given probability.
+# What height are 90% of women taller than?
+norm.ppf((1-0.9), 161, 7)
+
+# norm.rvs(mean, std, size=n) → Generates random samples.
+# Generate 10 random heights
+norm.rvs(161, 7, size=10)
+```
+
+Central Limit Theorem
+* The sampling distribution of the mean approaches a normal distribution as sample size increases, regardless of population distribution.
+    * Large enough sample size (n ≥ 30)
+    * Random & independent sampling.
+
+
+
+Poisson Distribution
+* Models the number of events occurring in a fixed interval of time or space.
+* E.g: number of products sold each week, customer service requests per hour, website visits per minute
+* Lambda (λ) is the distribution’s peak
     * In terms of rate (Poisson): λ = 8 adoptions per week
     * Avg # of adoptions per week is 8, P(adt = 5) = ?
         * poisson.pmf(5, 8)
     * Avg # of adoptions per week is 8, P(adt <= 5) = ?
         * poisson.cdf(5, 8)
-* Exponential Distribution
-    * E.g: amount of time until the nextcustomer makes a purchase
-    * On average, one customer service ticket is created every 2 minutes
-    * λ = 0.5 customer service tickets created each minute
-    * In terms of time between events (exponential): 1/λ = 1/0.5 = 2
-        * P (wait > 4 min) = 1 - expon.cdf(4, scale=2)
-        * P (1 min < wait < 4 min) = expon.cdf(4, scale=2) - expon.cdf(1, scale=2)
-* (Student's) t-distribution
-* Log-normal distribution
+
+```python
+from scipy.stats import poisson
+# In terms of rate (Poisson): λ = 8 adoptions per week
+# Avg # of adoptions per week is 8, P(adt = 5) = ?
+poisson.pmf(5, 8)
+
+# Avg # of adoptions per week is 8, P(adt <= 5) = ?
+poisson.cdf(5, 8)
+
+# Generate 10 random adoptions per week
+poisson.rvs(8, size=10)
+```
+
+Exponential Distribution
+* Models waiting times between Poisson events.
+* E.g: time until the next customer makes a purchase, time between bus arrivals, time between earthquakes
+
+```python
+from scipy.stats import expon
+# On average, one customer service ticket is created every 2 minutes
+# λ = 0.5 customer service tickets created each minute
+# In terms of time between events (exponential): 1/λ = 1/0.5 = 2
+
+# P (wait > 4 min) = 
+1 - expon.cdf(4, scale=2)
+# P (1 min < wait < 4 min) = 
+expon.cdf(4, scale=2) - expon.cdf(1, scale=2)
+```
+
+(Student's) t-distribution
+* Similar to the normal distribution but with heavier tails.
+* Used when the sample size is small or the population standard deviation is unknown.
+* Lower df → thicker tails, higher df → closer to normal distribution.
+
+
+Log-normal distribution
+* The logarithm of the data follows a normal distribution.
+* E.g: stock prices, income, sales, population of cities, blood pressure
+
 
 ### Correlation and Experimental Design
-* sns.scatterplot(), sns.lmplot(), .corr()
+
+Correlation
+* Measures the strength and direction of a linear relationship between two variables.
 * Pearson, Kendall, Spearman Correlation
+
+```python
+df['X'].corr(df['Y'])
+```
+
 * When rely on linear regression and it’s highly skewed, use transformations:
     * log transformation -> np.log()
-    * square root transformation
-    * reciprocal transformation
-* Confounding variables
-    * Holidays (x) -> Retail Sales (y)
-    * Special Deals (confounder)
+    * square root transformation -> np.sqrt()
+    * reciprocal transformation -> 1 / x
+
+Confounding variables
+* Holidays (x) -> Retail Sales (y)
+* Special Deals (confounder)
 
 
 ## 2. Intro to Regression 

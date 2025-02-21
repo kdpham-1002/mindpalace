@@ -13,7 +13,7 @@ toc: true
 comments: true
 ---
 
-## 1. Intro to Python
+## 1) Intro to Python
 ### Python basics
 * Calculations
 * Variables and types (int, float, str, bool)
@@ -62,11 +62,12 @@ comments: true
     * Loop over DataFrame
     * Add column; .apply(str.upper)
 
-## 2. Functions in Python
+## 2) Functions in Python
 ### User-defined Functions
 ### Arguments and Scope
 ### Lambda Functions and Error-handling
-## 3. Data Manipulation with Pandas
+
+## 3) Data Manipulation with Pandas
 ### Sorting and Subsetting
 * .head(), .info(), .shape, .describe()
 * .values, .columns, .index

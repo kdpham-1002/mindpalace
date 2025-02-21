@@ -13,7 +13,7 @@ toc: true
 comments: true
 ---
 
-## 1) Intro to Statistics
+## Intro to Statistics
 
 ### Summary Statistics
 Types of Statistics:   
@@ -259,7 +259,7 @@ Confounding variables
 * Special Deals (confounder)
 
 
-## 2. Intro to Regression 
+## Intro to Regression 
 
 ### Linear Regression
 Predict a continuous numerical value based on one or more input features. It finds a straight-line relationship between the input and output.      

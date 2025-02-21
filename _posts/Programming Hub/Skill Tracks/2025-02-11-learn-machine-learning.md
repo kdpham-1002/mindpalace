@@ -223,9 +223,9 @@ print(mean_squared_error(y_test, y_pred, squared=False))  # RMSE
 #### Cross-validation
 Splitting data once may not reflect true model performance -> Prevent overfitting.       
 * Perform k-fold cross-validation:   
-	1.	Split data into k equal parts.
-	2.	Train on (k-1) parts and test on 1 part.
-	3.	Repeat for all k parts.
+    1.	Split data into k equal parts.
+    2.	Train on (k-1) parts and test on 1 part.
+    3.	Repeat for all k parts.
 
 ```python
 from sklearn.model_selection import cross_val_score, KFold
@@ -262,28 +262,32 @@ plt.show()
 ```
 
 ### Fine-tuning your model
-* Class imbalance: Uneven frequency of classes
+**Class imbalance:** Uneven frequency of classes
+
 #### Confusion Matrix
 
 | 	                   | Predicted: Positive (1) | Predicted: Negative (0) |
 | Actual: Positive (1) | True Positive (TP)      | False Negative (FN)     |
 | Actual: Negative (0) | False Positive (FP)     | True Negative (TN)      |
 
-* **Accuracy** = (TP + TN) / (TP + TN + FP + FN)
-    * Correct predictions out of all predictions
-    * Best for for balanced datasets
-* **Precision** = TP / (TP + FP) 
-    * How many of the predicted positives are actually positive
-    * High precision means fewer false positives
-    * Useful when false positives are costly (e.g., detecting diseases, fraud detection)
-* **Recall** = TP / (TP + FN)
-    * How many actual positives are correctly identified
-    * High recall means fewer false negatives
-    * Useful when false negatives are costly (e.g., cancer detection)
-* **F1 Score** = 2 * (Precision * Recall) / (Precision + Recall)
-    * High F1 score means a good balance between precision and recall.
-    * Useful when both false positives and false negatives are costly
-    * Best for imbalanced datasets
+**Accuracy** = (TP + TN) / (TP + TN + FP + FN)   
+* Correct predictions out of all predictions
+* Best for for balanced datasets
+
+**Precision** = TP / (TP + FP)    
+* How many of the predicted positives are actually positive
+* High precision means fewer false positives
+* Useful when false positives are costly (e.g., detecting diseases, fraud detection)
+
+**Recall** = TP / (TP + FN)
+* How many actual positives are correctly identified
+* High recall means fewer false negatives
+* Useful when false negatives are costly (e.g., cancer detection)
+
+**F1 Score** = 2 * (Precision * Recall) / (Precision + Recall)
+* High F1 score means a good balance between precision and recall.
+* Useful when both false positives and false negatives are costly
+* Best for imbalanced datasets
 
 ```python
 from sklearn.metrics import classification_report, confusion_matrix
@@ -313,7 +317,7 @@ plt.show()
 
 Area under the ROC curve (ROC AUC):
 Measures model performance across all classification thresholds
-* 1 = perfect model, 0.5 = random guessing
+* 1 = perfect model; 0.5 = random guessing
 
 ```python
 from sklearn.metrics import roc_auc_score
@@ -323,7 +327,7 @@ print(roc_auc_score(y_test, y_pred_probs))
 #### Hyperparameter tuning 
 Hyperparameters are model settings chosen before training that affect performance (e.g., k in KNN, alpha in Ridge/Lasso)
 
-* GridSearchCV: Tests all combinations (best for small parameter sets)
+**GridSearchCV:** Tests all combinations (best for small parameter sets)
 
 ```python
 from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
@@ -334,7 +338,7 @@ ridge_cv.fit(X_train, y_train)
 print(ridge_cv.best_params_, ridge_cv.best_score_)
 ```
 
-* RandomizedSearchCV: Randomly selects parameter combinations (faster for large sets)
+**RandomizedSearchCV:** Randomly selects parameter combinations (faster for large sets)
 
 ```python
 from sklearn.model_selection import RandomizedSearchCV
@@ -350,13 +354,13 @@ print(ridge_cv.best_params_, ridge_cv.best_score_)
 Machine learning models require numeric data. Some features are text-based (e.g., “Male”, “Female”)   
 Convert categorical data using:
 
-* One-Hot Encoding (Dummy Variables): creates binary columns for each category (e.g., “Male” → [1,0], “Female” → [0,1])
+**One-Hot Encoding (Dummy Variables):** creates binary columns for each category (e.g., “Male” → [1,0], “Female” → [0,1])
 
 ```python
 pd.get_dummies(df['category'], drop_first=True)
 ```
 
-* Scikit-learn OneHotEncoder: Converts text categories to integers
+**Scikit-learn OneHotEncoder:** Converts text categories to integers
 
 ```python
 from sklearn.preprocessing import OneHotEncoder
@@ -365,15 +369,15 @@ encoder.fit_transform(df[['category']])
 ```
 
 #### Handling Missing Data
-* Drop missing values: Remove rows with missing data
+**Drop missing values:** Remove rows with missing data
 
 ```python
 df.dropna(subset=["column_name"])
 ```
 
-* Imputation: Fill missing values
-    * Numeric data: Replace with mean/median.
-	* Categorical data: Replace with most frequent value.
+**Imputation:** Fill missing values
+* Numeric data: Replace with mean/median.
+* Categorical data: Replace with most frequent value.
 
 ```python
 from sklearn.impute import SimpleImputer
@@ -382,10 +386,10 @@ X_train = imp.fit_transform(X_train)
 X_test = imp.transform(X_test)
 ```
 
-#### Standardization & Normalization
+#### Scaling: Standardization & Normalization
 Features with different scales (e.g., income vs. age) can cause models to behave poorly. For example, KNN, Logistic Regression, and Neural Networks require scaled data.
 
-* Standardization: Centers data at 0 with unit variance.
+**Standardization:** Centers data at 0 with unit variance.
 
 ```python
 from sklearn.preprocessing import StandardScaler
@@ -394,7 +398,7 @@ X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 ```
 
-* Normalization: Scales data to a fixed range (e.g., 0 to 1)
+**Normalization:** Scales data to a fixed range (e.g., 0 to 1)
 
 ```python
 from sklearn.preprocessing import MinMaxScaler
@@ -403,7 +407,7 @@ X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 ```
 
-#### Pipelines
+#### Building Pipelines
 * Pipelines automate preprocessing & modeling.   
 * Prevents data leakage (ensures transformations apply to test data properly).
 

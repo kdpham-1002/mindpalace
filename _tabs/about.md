@@ -73,6 +73,10 @@ order: 4
 
 {% include embed/youtube.html id='OcCkAG_LO9Y' %}
 
+*A romance in disguise...*
+
+{% include embed/youtube.html id='_epl4M8A0nU' %}
+
 *Juxtapositions I like...*
 
 > ⚖️ Delicate balance of calm and chaos 🔥 <br>

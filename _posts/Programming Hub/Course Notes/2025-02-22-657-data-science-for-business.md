@@ -29,7 +29,8 @@ comments: true
 Q1: True or False: Determining the statistical significance of a linear regression model is an objective of classical statistics, but not of predictive modeling.
 
 1. Classical Statistics: Focus on Explanation & Inference   
-	In classical statistics, regression models are used to understand relationships between variables and test hypotheses.     
+	In classical statistics, regression models are used to understand relationships between variables and test hypotheses.    
+
 	**Suppose you build a linear regression model:** Testing the Effect of Advertising on Sales
 	$$ \text{Sales} = \beta_0 + \beta_1 (\text{Advertising Spend}) + \epsilon $$
 
@@ -42,6 +43,7 @@ Q1: True or False: Determining the statistical significance of a linear regressi
 
 2. Predictive Modeling: Focus on Accuracy & Performance   
     In predictive modeling, the primary goal is making accurate predictions rather than interpreting relationships.   
+
     **Suppose you build a predictive model using multiple features:** Predicting House Prices   
     $$ \text{House Price} = f(\text{Size}, \text{Location}, \text{Bedrooms}, \text{Bathrooms}, \text{Year Built}) $$
 
@@ -72,7 +74,8 @@ Profiling
 * Similarity Matching identifies similar customers but does not determine UI impact on purchasing.
 * Profiling describes customer behaviors but does not infer causal effects.
 
-The question seeks to understand the cause-and-effect relationship between different user interface (UI) designs and customer purchase behavior.   
+The question seeks to understand the cause-and-effect relationship between different user interface (UI) designs and customer purchase behavior. 
+
 **Causal modeling** helps determine whether changes in the UI directly influence the likelihood of a purchase.    
 Example Approach:     
 * A/B Testing: Show different UI designs to different user groups and compare purchase rates.   
@@ -93,7 +96,8 @@ Clustering
 * Co-occurrence Grouping: Identifies items frequently purchased together but does not predict churn.
 * Clustering: Groups customers based on similarities but does not classify or estimate churn probability directly. However, it can be a preprocessing step to segment customers before applying classification.
 
-The goal is to predict which customers are likely to switch wireless providers, making this a supervised learning problem with a clearly defined target variable (churn or no churn).    
+The goal is to predict which customers are likely to switch wireless providers, making this a supervised learning problem with a clearly defined target variable (churn or no churn).  
+
 **Classification** models estimate the probability of churn based on customer attributes and behaviors.    
 Example Approach:     
 * Logistic Regression or Decision Trees to classify customers into “likely to churn” vs. “not likely to churn.”
@@ -131,6 +135,7 @@ Predictive Modeling
 * Predictive Modeling: Forecasts future profits but does not determine significance of past trends.
 
 The question asks whether store profits in December are significantly higher than the rest of the year, which requires statistical inference to compare two groups (December vs. other months).     
+
 **Hypothesis testing** helps determine if the observed difference in profits is statistically significant or due to random variation.   
 Example Approach:
 * Two-sample t-test: Compare average profits in December vs. other months.

@@ -30,7 +30,7 @@
   // max-width: 100%;
   border-collapse: collapse;
   border: none;
-  table-layout: auto; /* Ensures equal column width */
+  table-layout: fixed; /* Ensures equal column width */
   // white-space: nowrap; /* Prevents text from wrapping */
 }
 
@@ -54,4 +54,10 @@
 .custom-table a:hover {
   // text-decoration: underline !important;
   // border-bottom: underline !important;
+}
+
+@media print, screen and (max-width: 480px) {
+  .custom-table {
+    table-layout: auto; /* Ensures equal column width */
+  }
 }

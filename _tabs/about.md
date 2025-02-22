@@ -60,10 +60,14 @@ order: 4
 
 
 ![sherlock-meme1](/assets/img/sherlock-get-out-mindpalace-meme.jpeg){: width="700" height="400" }
-*Sherlock S02E03*
+*Sherlock S02E02*
 
 ![sherlock-meme2](assets/img/sherlock-use-your-mindpalace-meme.jpeg){: width="600" height="400" }
 *Sherlock S03E01*
+
+*A romance in disguise...*
+
+{% include embed/youtube.html id='_epl4M8A0nU' %}
 
 *A dance that inspired...*
 
@@ -72,10 +76,6 @@ order: 4
 *A song that touched...*
 
 {% include embed/youtube.html id='OcCkAG_LO9Y' %}
-
-*A romance in disguise...*
-
-{% include embed/youtube.html id='_epl4M8A0nU' %}
 
 *Juxtapositions I like...*
 

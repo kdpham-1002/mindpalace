@@ -121,9 +121,9 @@ This question involves grouping customers based on their characteristics without
 ### 5) Hypothesis Testing
 Q5: Are store profits significantly higher during the month of December than during the rest of the year?
 
-Clustering
-Database querying
-Predictive Modeling
+Clustering   
+Database querying   
+Predictive Modeling   
 **Hypothesis Testing** ✅
 
 * Clustering: Groups data based on similarities but does not test significance.
@@ -142,4 +142,4 @@ Example Approach:
 
 ## Supervised Segmentation
 
-### 
+### 1) Entropy

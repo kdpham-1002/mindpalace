@@ -42,3 +42,10 @@ comments: true
 
 
 ```
+
+
+### Converting Jupyter notebook
+
+```
+jupyter nbconvert --to html notebook.ipynb
+```

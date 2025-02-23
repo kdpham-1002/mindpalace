@@ -39,8 +39,6 @@ comments: true
 
 ```
 - Opt + Z                    // Toggle word wrap
-
-
 ```
 
 

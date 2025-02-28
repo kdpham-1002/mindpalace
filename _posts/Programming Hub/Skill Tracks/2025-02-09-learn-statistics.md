@@ -494,3 +494,231 @@ Receiver Operating Characteristic (ROC) curve is a graphical representation of t
     * Model overfits by learning useless patterns.
     * No real improvement over Model 2.    
     * Conclusion: Adding unnecessary features does not improve performance and can make the model more complex without benefits.
+
+
+## 3) Regression with statsmodels
+### Simple Linear Regression Modeling
+#### What is Regression?
+* Explores the relationship between a response (dependent) variable and one or more explanatory (independent) variables.
+* Used for prediction and understanding relationships.
+
+```python
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load dataset
+df = pd.read_csv("swedish_motor_insurance.csv")
+
+# Scatter plot with trend line
+sns.regplot(x="n_claims", y="total_payment_sek", data=df, ci=None)
+plt.show()
+```
+
+> n_claims (explanatory) predicts total_payment_sek (response).   
+> A positive correlation suggests more claims lead to higher total payments.   
+
+#### Fitting a Linear Model
+
+Equation of a Simple Linear Regression Model:   
+$$ Y = \text{Intercept} + (\text{Slope} \times X) $$
+
+```python
+from statsmodels.formula.api import ols
+
+# Fit model
+model = ols("total_payment_sek ~ n_claims", data=df).fit()
+print(model.params)
+
+# Output:
+# Intercept    19.99
+# n_claims      3.41
+```
+
+> Intercept (19.99): The base payment when there are zero claims.
+> Slope (3.41): For each additional claim, total payment increases by 3.41 SEK.
+
+
+### Predictions and Model Objects
+#### Making Predictions
+```python
+import numpy as np
+
+# New data to predict
+explanatory_data = pd.DataFrame({"n_claims": np.arange(10, 101, 10)})
+
+# Predict using model
+prediction_data = explanatory_data.assign(
+    total_payment=model.predict(explanatory_data)
+)
+
+print(prediction_data)
+```
+
+> The model predicts total payments based on the number of claims.
+
+#### Checking Model Attributes
+```python
+print(model.fittedvalues)  # Predictions on the original dataset
+print(model.resid)         # Residuals (errors)
+print(model.summary())     # Full model report
+```
+
+Interpreting Model Output:   
+> R-squared → Measures how well the model explains the variance.
+> P-value → Checks if the explanatory variable significantly predicts the response.
+
+
+### Assessing Model Fit
+#### Coefficient of Determination (R-squared)
+```python
+print(model.rsquared)
+
+# Output: 0.64
+```
+
+> 64% of the variance in total_payment_sek is explained by n_claims.   
+> Ranges from 0 to 1; Higher R² → Better model fit.
+
+#### Residual Standard Error (RSE)
+```python
+mse = model.mse_resid
+rse = np.sqrt(mse)
+print("RSE:", rse)
+
+# Output: RSE: 74.15
+```
+
+> RSE indicates the average distance between observed and predicted values.   
+> Lower RSE → Better model predictions. 
+
+#### Root Mean Squared Error (RMSE)
+```python
+rmse = np.sqrt(np.mean(model.resid**2))
+print("RMSE:", rmse)
+
+# Output: RMSE: 72.01
+```
+
+> RMSE indicates the average error in predictions.
+> Lower RMSE → Better model predictions.
+
+#### Residual Diagnostics
+```python
+import statsmodels.api as sm
+
+# Residual plot
+sns.residplot(x=model.fittedvalues, y=model.resid, lowess=True)
+plt.xlabel("Fitted values")
+plt.ylabel("Residuals")
+plt.show()
+
+# Q-Q Plot (normality check)
+sm.qqplot(model.resid, line="45")
+plt.show()
+```
+
+> Random scatter in residuals plot → Good model.
+> Straight line in Q-Q plot → Residuals are normally distributed.
+
+### Simple Logistic Regression Modeling
+#### Why Logistic Regression?
+* Used when the response variable is binary (e.g., Churn: 1 = Yes, 0 = No).    
+* Predicts probabilities instead of continuous values.
+
+#### Fitting a Logistic Model
+```python
+from statsmodels.formula.api import logit
+
+# Fit logistic model
+log_model = logit("has_churned ~ time_since_last_purchase", data=churn).fit()
+print(log_model.params)
+
+# Output:
+# Intercept                   -0.035
+# time_since_last_purchase     0.269
+```
+
+> Intercept: Log-odds of churn when time since last purchase is zero.   
+
+> Slope: For each additional day since the last purchase, the log-odds of churn increases by 0.269.
+> * Positive coefficient (0.269) → Higher recency increases churn probability.
+
+#### Making Predictions
+```python
+explanatory_data = pd.DataFrame({"time_since_last_purchase": np.arange(-1, 6.25, 0.25)})
+
+prediction_data = explanatory_data.assign(
+    has_churned = log_model.predict(explanatory_data)
+)
+print(prediction_data)
+```
+> The model predicts the probability of churn based on the time since the last purchase.
+
+#### Odds Ratio
+```python
+prediction_data["odds_ratio"] = prediction_data["has_churned"] / (1 - prediction_data["has_churned"])
+print(prediction_data)
+```
+> Odds Ratio: Probability of churn vs. not churn.
+> Odds Ratio > 1 → Higher probability of churn.
+
+#### Model Evaluation
+##### Confusion Matrix
+```python
+import numpy as np
+
+actual = churn["has_churned"]
+predicted = np.round(log_model.predict())
+
+conf_matrix = pd.crosstab(actual, predicted)
+print(conf_matrix)
+```
+
+| Actual \ Predicted | No Churn (0) | Churn (1) |
+|--------------------|--------------|-----------|
+| No Churn (0)       | TN = 141     | FP = 59   |
+| Churn (1)          | FN = 111     | TP = 89   |
+
+* True Positives (TP): Correctly predicted churn cases.
+* False Positives (FP): Predicted churn but no churn occurred.
+* False Negatives (FN): Missed actual churn cases.
+* True Negatives (TN): Correctly predicted no churn cases.
+
+##### Accuracy
+
+$$ \frac{\text{TP} + \text{TN}}{\text{Total Predictions}} $$
+
+```python
+accuracy = (conf_matrix.iloc[0, 0] + conf_matrix.iloc[1, 1]) / conf_matrix.values.sum()
+print("Accuracy:", accuracy)
+
+# Output: Accuracy: 0.55
+```
+> Accuracy: 55% of predictions were correct.
+
+##### Sensitivity (Recall)
+$$ \frac{\text{TP}}{\text{TP} + \text{FN}} $$
+
+```python
+sensitivity = conf_matrix.iloc[1, 1] / (conf_matrix.iloc[1, 0] + conf_matrix.iloc[1, 1])
+print("Sensitivity:", sensitivity)
+
+# Output: Sensitivity: 0.44
+```
+
+> Sensitivity: 44% of actual churn cases were correctly predicted.
+> Higher sensitivity → Fewer missed churn cases.
+
+##### Specificity
+$$ \frac{\text{TN}}{\text{TN} + \text{FP}} $$
+
+```python
+specificity = conf_matrix.iloc[0, 0] / (conf_matrix.iloc[0, 0] + conf_matrix.iloc[0, 1])
+print("Specificity:", specificity)
+
+# Output: Specificity: 0.70
+```
+
+> Specificity: 70% of actual non-churn cases were correctly predicted.
+> Higher specificity → Fewer false alarms.

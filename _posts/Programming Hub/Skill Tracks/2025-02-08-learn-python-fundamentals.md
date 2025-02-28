@@ -583,35 +583,68 @@ print(list(file.keys()))  # List datasets inside the file
 ### Querying Databases with SQL
 #### Connecting to a Database
 ```python
+# Import packages
 from sqlalchemy import create_engine
+import pandas as pd
 
-engine = create_engine('sqlite:///Northwind.sqlite')
-connection = engine.connect()
+# Create engine: engine
+engine = create_engine('sqlite:///Chinook.sqlite')
 
-print(engine.table_names())
+# Save the table names to a list: table_names
+table_names = engine.table_names()
+print(table_names)
 ```
 
 #### Querying the Database
 ```python
-import pandas as pd
+# Open engine connection
+con = engine.connect()
 
-df = pd.read_sql_query("SELECT * FROM Orders LIMIT 5", engine)
+# Perform query: rs
+rs = con.execute("SELECT * FROM Album")
+
+# Save results of the query to DataFrame: df
+df = pd.DataFrame(rs.fetchall())
+
+# Close connection
+con.close()
+
+# Print head of DataFrame df
 print(df.head())
 ```
 
 ```python
-# Querying with a filter
+### Querying with a filter
+# Create engine: engine
+engine = create_engine('sqlite:///Chinook.sqlite')
 
-df = pd.read_sql_query("SELECT * FROM Orders WHERE EmployeeID = 5", engine)
+# Open engine in context manager
+# Perform query and save results to DataFrame: df
+with engine.connect() as con:
+    rs = con.execute("SELECT * FROM Employee WHERE EmployeeId >= 6")
+    df = pd.DataFrame(rs.fetchall())
+    df.columns = rs.keys()
+
+# Print the head of the DataFrame df
+print(df.head())
+```
+
+#### Querying with Pandas
+```python
+# Execute query and store records in DataFrame: df
+df = pd.read_sql_query(
+    "SELECT * FROM Employee WHERE EmployeeId >= 6 ORDER BY BirthDate",
+    engine
+)
 print(df.head())
 ```
 
 ```python
 # Joining tables (INNER JOIN)
-
 query = """
-SELECT OrderID, CompanyName FROM Orders
-INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID
+SELECT * FROM PlaylistTrack 
+INNER JOIN Track ON PlaylistTrack.TrackId = Track.TrackId 
+WHERE Milliseconds < 250000
 """
 df = pd.read_sql_query(query, engine)
 print(df.head())

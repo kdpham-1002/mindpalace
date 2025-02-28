@@ -519,3 +519,100 @@ print(list(result))
 ```
 
 > Even though you can only fetch one element at a time, you can iterate over the generator just like a list. Use case example: Reading a file line by line without loading everything into memory.
+
+
+
+
+## 5) Importing Data
+
+### Importing Flat Files (.csv, .txt)
+#### Reading Text Files
+```python
+filename = 'huck_finn.txt'
+with open(filename, mode='r') as file: # 'r' is to read, 'w' is to write
+    text = file.read()
+print(text[:500])  # Print first 500 characters
+```
+
+#### Reading numerical data with NumPy
+```python
+import numpy as np
+data = np.loadtxt('MNIST.txt', delimiter=',', skiprows=1, usecols=[0, 1, 2])
+print(data[:5])
+```
+
+#### Reading CSV Files with Pandas
+```python
+import pandas as pd
+df = pd.read_csv('titanic.csv', sep=',', skiprows=1, usecols=['Name', 'Survived'])
+print(df.head())
+```
+
+### Importing other file formats
+#### Excel Files (.xlsx)
+```python
+df = pd.read_excel('urbanpop.xlsx', sheet_name='1960-1966')
+print(df.head())
+```
+
+#### MATLAB Files (.mat)
+```python
+import scipy.io
+mat = scipy.io.loadmat('workspace.mat')
+print(mat.keys()) # List variables inside the file
+
+# Data is stored as a dictionary
+```
+
+#### SAS Files (.sas7bdat) and Stata Files (.dta)
+```python
+df_sas = pd.read_sas('data.sas7bdat')
+df_stata = pd.read_stata('data.dta')
+```
+
+#### HDF5 Files
+```python
+import h5py
+file = h5py.File('data.hdf5', 'r')
+print(list(file.keys()))  # List datasets inside the file
+
+# Used for big data and scalable data storage
+```
+
+
+### Querying Databases with SQL
+#### Connecting to a Database
+```python
+from sqlalchemy import create_engine
+
+engine = create_engine('sqlite:///Northwind.sqlite')
+connection = engine.connect()
+
+print(engine.table_names())
+```
+
+#### Querying the Database
+```python
+import pandas as pd
+
+df = pd.read_sql_query("SELECT * FROM Orders LIMIT 5", engine)
+print(df.head())
+```
+
+```python
+# Querying with a filter
+
+df = pd.read_sql_query("SELECT * FROM Orders WHERE EmployeeID = 5", engine)
+print(df.head())
+```
+
+```python
+# Joining tables (INNER JOIN)
+
+query = """
+SELECT OrderID, CompanyName FROM Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID
+"""
+df = pd.read_sql_query(query, engine)
+print(df.head())
+```

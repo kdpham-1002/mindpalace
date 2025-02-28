@@ -515,7 +515,7 @@ sns.regplot(x="n_claims", y="total_payment_sek", data=df, ci=None)
 plt.show()
 ```
 
-> n_claims (explanatory) predicts total_payment_sek (response).   
+> n_claims (explanatory) predicts total_payment_sek (response).    
 > A positive correlation suggests more claims lead to higher total payments.   
 
 #### Fitting a Linear Model
@@ -535,7 +535,7 @@ print(model.params)
 # n_claims      3.41
 ```
 
-> Intercept (19.99): The base payment when there are zero claims.
+> Intercept (19.99): The base payment when there are zero claims.   
 > Slope (3.41): For each additional claim, total payment increases by 3.41 SEK.
 
 
@@ -600,7 +600,7 @@ print("RMSE:", rmse)
 # Output: RMSE: 72.01
 ```
 
-> RMSE indicates the average error in predictions.
+> RMSE indicates the average error in predictions.   
 > Lower RMSE → Better model predictions.
 
 #### Residual Diagnostics
@@ -618,7 +618,7 @@ sm.qqplot(model.resid, line="45")
 plt.show()
 ```
 
-> Random scatter in residuals plot → Good model.
+> Random scatter in residuals plot → Good model.   
 > Straight line in Q-Q plot → Residuals are normally distributed.
 
 ### Simple Logistic Regression Modeling
@@ -642,7 +642,7 @@ print(log_model.params)
 > Intercept: Log-odds of churn when time since last purchase is zero.   
 
 > Slope: For each additional day since the last purchase, the log-odds of churn increases by 0.269.
-> * Positive coefficient (0.269) → Higher recency increases churn probability.
+>> Positive coefficient (0.269) → Higher recency increases churn probability.
 
 #### Making Predictions
 ```python
@@ -698,6 +698,7 @@ print("Accuracy:", accuracy)
 > Accuracy: 55% of predictions were correct.
 
 ##### Sensitivity (Recall)
+
 $$ \frac{\text{TP}}{\text{TP} + \text{FN}} $$
 
 ```python
@@ -707,10 +708,11 @@ print("Sensitivity:", sensitivity)
 # Output: Sensitivity: 0.44
 ```
 
-> Sensitivity: 44% of actual churn cases were correctly predicted.
+> Sensitivity: 44% of actual churn cases were correctly predicted.   
 > Higher sensitivity → Fewer missed churn cases.
 
 ##### Specificity
+
 $$ \frac{\text{TN}}{\text{TN} + \text{FP}} $$
 
 ```python
@@ -720,5 +722,5 @@ print("Specificity:", specificity)
 # Output: Specificity: 0.70
 ```
 
-> Specificity: 70% of actual non-churn cases were correctly predicted.
+> Specificity: 70% of actual non-churn cases were correctly predicted.   
 > Higher specificity → Fewer false alarms.

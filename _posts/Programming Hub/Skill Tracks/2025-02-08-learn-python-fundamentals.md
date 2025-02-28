@@ -503,8 +503,8 @@ print(list(even_nums))
 ```
 
 ```python
-# Creating Generator Functions with `yield`
-# yield instead of return → Saves memory by generating values one at a time.
+# Creating Generator Functions with `yield`   
+# yield instead of return → Saves memory by generating values one at a time.   
 
 def num_sequence(n):
     """Generate values from 0 to n."""

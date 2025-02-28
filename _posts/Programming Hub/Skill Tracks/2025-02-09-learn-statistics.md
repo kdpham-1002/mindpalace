@@ -565,7 +565,7 @@ print(model.summary())     # Full model report
 ```
 
 Interpreting Model Output:   
-> R-squared → Measures how well the model explains the variance.
+> R-squared → Measures how well the model explains the variance.   
 > P-value → Checks if the explanatory variable significantly predicts the response.
 
 

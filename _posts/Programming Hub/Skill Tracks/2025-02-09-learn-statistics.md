@@ -259,9 +259,11 @@ Confounding variables
 * Special Deals (confounder)
 
 
-## 2) Intro to Regression 
 
-### Linear Regression
+
+## 2) Regression with statsmodels
+### Intro to Regression
+#### Linear Regression
 Predict a continuous numerical value based on one or more input features. It finds a straight-line relationship between the input and output.      
 For example:
 * Predicting sales revenue based on advertising spend.
@@ -288,7 +290,7 @@ where:
 
 > If β₁ = 100, then a 1000 sq ft house → $200,000
 
-#### R-squared (R^2)
+##### R-squared (R^2)
 Measures how much of the variation in the target variable is explained by the model.
 
 * `R^2 = 1` → Overfitting (the model is too specific to training data and won’t work well on new data).
@@ -297,34 +299,34 @@ Measures how much of the variation in the target variable is explained by the mo
 * If `R^2 = 0.90` → 90% of house price changes can be explained just by knowing the house size. The remaining 10% might be due to other factors like location, age, etc.
 * If  `R^2 = 0.30` → The model explains only `30%`, meaning it’s not very reliable.
 
-#### Adjusted R-squared
+##### Adjusted R-squared
 Penalizes adding more features to the model. It’s useful when comparing models with different numbers of features.
 * Use Adjusted R^2 to check for overfitting, since adding useless variables can inflate R^2 but lower Adjusted R^2 
 
 * `Adjusted R^2 = 1` → The model is perfect.
 * `Adjusted R^2 = 0` → The model is as good as a random guess.
 
-#### Residual Standard Error (RSE)
+##### Residual Standard Error (RSE)
 Measures the average difference between actual and predicted values.
 * Use RSE when comparing models with different predictors, because it tells us if adding variables improves predictions.
 * Use RMSE for general error interpretation, since it is easier to understand.
 
-#### Mean Squared Error (MSE)
+##### Mean Squared Error (MSE)
 Measures the average squared difference between actual and predicted values.
 * Comparing models with different predictors
 
-#### Root Mean Squared Error (RMSE)
+##### Root Mean Squared Error (RMSE)
 Measures the average error in the same unit as the target variable 
 * Used when large errors are more problematic (e.g., House prices, stock market, medical cost predictions).
     * A $20,000 error increases RMSE much more than a $5,000 error.
 
-#### Mean Absolute Error (MAE)
+##### Mean Absolute Error (MAE)
 Takes the absolute value of errors
 * Used when all errors are equally bad (e.g., Delivery times, customer waiting times, forecasting demand).
     * A 2-minute delay is just as annoying as a 10-minute delay
 
 
-#### Models Comparison
+##### Models Comparison
 
 | Model | RSE (Lower = Better) | RMSE (Lower = Better) | MAE (Lower = Better) | R^2 Score (Higher = Better) | Adjusted R^2 (Higher = Better) |
 |-------|----------------------|-----------------------|----------------------|-----------------------------|--------------------------------|
@@ -363,7 +365,7 @@ Takes the absolute value of errors
 
 
 
-### Logistic Regression
+#### Logistic Regression
 Predict a categorical (binary) outcome, such as “Yes/No”. It estimates the probability of an event happening.   
 For example:
 * Email spam detection (Spam vs. Not Spam).
@@ -390,7 +392,7 @@ where:
 
 > If β₀ = -5, β₁ = 0.01, then a credit score of 700 → P(Approved) ≈ 0.8 (Likely Approved)
 
-#### Confusion Matrix
+##### Confusion Matrix
 A table that describes the performance of a classification model. It shows the number of True Positives, True Negatives, False Positives, and False Negatives.
 
 | Actual/Predicted | Predicted ✅ | Predicted ❌ |
@@ -403,12 +405,12 @@ A table that describes the performance of a classification model. It shows the n
 * False Positive (FP): Predicted Yes, but the actual outcome is No (Type I Error).
 * False Negative (FN): Predicted No, but the actual outcome is Yes (Type II Error).
 
-#### Accuracy
+##### Accuracy
 Measures the proportion of correct predictions.   
 `Accuracy = (TP + TN) / (TP + TN + FP + FN)`
 * High accuracy doesn’t always mean a good model. It can be misleading if the classes are imbalanced.
 
-#### Precision
+##### Precision
 Measures the proportion of true positive predictions among all positive predictions (e.g, the proportion of actual spam emails among all emails predicted as spam).   
 `Precision = TP / (TP + FP)`
 * High precision means fewer false positives.
@@ -424,7 +426,7 @@ Measures the proportion of true positive predictions among all positive predicti
 * A False Positive (FP) means an innocent person is sent to jail (BAD!).
 * A False Negative (FN) means a guilty person is wrongly released (still bad, but not as bad as FP in this case).
 
-#### Recall (Sensitivity)
+##### Recall (Sensitivity)
 Measures the proportion of true positive predictions among all actual positive instances (e.g, the proportion of actual spam emails among all emails that are actually spam).   
 `Recall = TP / (TP + FN)`
 * High recall means fewer false negatives.
@@ -440,19 +442,19 @@ Measures the proportion of true positive predictions among all actual positive i
 * A False Positive (FP) means a healthy person is wrongly told they have cancer (bad, but they will take more tests to confirm).
 * A False Negative (FN) means a cancer patient is wrongly told they are healthy (VERY BAD – could lead to death).
 
-#### F1 Score
+##### F1 Score
 It balances precision and recall, especially when classes are imbalanced.    
 `F1 Score = 2 * (Precision * Recall) / (Precision + Recall)`
 * Use F1 Score when both False Positives and False Negatives are bad (e.g, fraud detection, spam filtering, rare diseases).
 
-#### ROC Curve
+##### ROC Curve
 Receiver Operating Characteristic (ROC) curve is a graphical representation of the model’s performance at various thresholds.
 * It plots the True Positive Rate (Recall) against the False Positive Rate (1 - Specificity).
 * The Area Under the Curve (AUC) measures the model’s ability to distinguish between classes.
     * AUC = 1 → Perfect model
     * AUC = 0.5 → Random guessing
 
-#### Models Comparison
+##### Models Comparison
 
 | Model                                      | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
 |--------------------------------------------|----------|-----------|--------|----------|---------|
@@ -496,7 +498,6 @@ Receiver Operating Characteristic (ROC) curve is a graphical representation of t
     * Conclusion: Adding unnecessary features does not improve performance and can make the model more complex without benefits.
 
 
-## 3) Regression with statsmodels
 ### Simple Linear Regression Modeling
 #### What is Regression?
 * Explores the relationship between a response (dependent) variable and one or more explanatory (independent) variables.

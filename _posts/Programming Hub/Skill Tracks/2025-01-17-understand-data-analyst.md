@@ -13,7 +13,7 @@ toc: true
 comments: true
 ---
 
-## Exploratory Data Analysis (EDA)
+## 1) Exploratory Data Analysis (EDA)
 ### Data Exploration
 #### Checking Data Types & Missing Values
 ```python
@@ -172,4 +172,3 @@ salaries["salary_level"] = pd.cut(salaries["Salary_USD"],
 sns.countplot(data=salaries, x="Company_Size", hue="salary_level")
 plt.show()
 ```
-

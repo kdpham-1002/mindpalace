@@ -650,4 +650,207 @@ df = pd.read_sql_query(query, engine)
 print(df.head())
 ```
 
-### 
+## 6) Cleaning Data
+### Common Data Cleaning Issues
+1.	Data Type Constraints – Ensuring correct formats (string, integer, datetime, etc.).
+2.	Data Range Constraints – Handling out-of-range values.
+3.	Uniqueness Constraints – Identifying and fixing duplicate data.
+4.	Text & Categorical Data Issues – Standardizing formats and fixing inconsistencies.
+5.	Uniformity Issues – Standardizing units, currencies, and date formats.
+6.	Cross-Field Validation – Ensuring logical relationships between fields.
+7.	Missing Values – Handling and imputing missing data.
+8.	Record Linkage – Matching similar records across datasets.
+
+### Handling Data Type Constraints
+#### Incorrect Data Types
+
+```python
+ride_sharing = pd.read_csv('ride_sharing.csv')
+
+# Convert user_type from integer to category
+ride_sharing['user_type_cat'] = ride_sharing['user_type'].astype('category')
+assert ride_sharing['user_type_cat'].dtype == 'category' # Verify conversion
+```
+
+#### Convert String to Numeric
+```python
+# Strip "minutes" from duration column and convert to integer
+ride_sharing['duration_trim'] = ride_sharing['duration'].str.strip('minutes')
+ride_sharing['duration_time'] = ride_sharing['duration_trim'].astype(int)
+
+# Validate conversion
+assert ride_sharing['duration_time'].dtype == 'int'
+```
+
+### Handling Data Range Constraints
+#### Out-of-Range Values
+```python
+# Ensure tire sizes are within an acceptable range
+ride_sharing.loc[ride_sharing['tire_sizes'] > 27, 'tire_sizes'] = 27
+
+# Convert back to category
+ride_sharing['tire_sizes'] = ride_sharing['tire_sizes'].astype('category')
+```
+
+#### Correcting Future Dates
+```python
+import datetime as dt
+
+# Convert ride_date to datetime
+ride_sharing['ride_dt'] = pd.to_datetime(ride_sharing['ride_date']).dt.date
+
+# Set future dates to today's date
+today = dt.date.today()
+ride_sharing.loc[ride_sharing['ride_dt'] > today, 'ride_dt'] = today
+```
+
+### Handling Duplicates
+#### Identifying Duplicates
+```python
+# Find duplicates based on ride_id
+duplicates = ride_sharing.duplicated(subset='ride_id', keep=False)
+
+# Display duplicate rows
+print(ride_sharing[duplicates])
+
+# Drop exact duplicates
+ride_sharing = ride_sharing.drop_duplicates()
+```
+
+#### Aggregating Duplicates
+```python
+# Define aggregation rules
+statistics = {'user_birth_year': 'min', 'duration': 'mean'}
+
+# Group by ride_id and compute new statistics
+ride_sharing = ride_sharing.groupby('ride_id').agg(statistics).reset_index()
+
+# Verify no duplicates
+assert ride_sharing.duplicated(subset='ride_id').sum() == 0
+```
+
+### Handling Text & Categorical Data
+#### Inconsistent Categories
+```python
+# Find inconsistent categories
+cat_clean = set(airlines['cleanliness']).difference(categories['cleanliness'])
+
+# Remove inconsistent categories
+clean_rows = airlines['cleanliness'].isin(cat_clean)
+airlines = airlines[~clean_rows]
+```
+
+#### Standardizing Categorical Data
+```python
+# Convert dest_region to lowercase and standardize names
+airlines['dest_region'] = airlines['dest_region'].str.lower()
+airlines['dest_region'] = airlines['dest_region'].replace({'eur': 'europe'})
+
+# Remove extra spaces
+airlines['dest_size'] = airlines['dest_size'].str.strip()
+```
+
+#### Collapsing Categories
+```python
+# Group wait times into categories
+label_ranges = [0, 60, 180, float('inf')]
+label_names = ['short', 'medium', 'long']
+
+airlines['wait_type'] = pd.cut(airlines['wait_min'], bins=label_ranges, labels=label_names)
+```
+
+#### Removing Titles
+```python
+# Remove titles from names
+airlines['full_name'] = airlines['full_name'].str.replace("Dr.|Mr.|Miss|Ms.", "", regex=True)
+
+# Ensure removal
+assert airlines['full_name'].str.contains('Ms.|Mr.|Miss|Dr.').any() == False
+```
+
+### Handling Uniformity Issues
+#### Standardizing Currencies
+```python
+# Convert account amounts from Euro to Dollars
+acct_eu = banking['acct_cur'] == 'euro'
+banking.loc[acct_eu, 'acct_amount'] *= 1.1  # Assuming 1 Euro = 1.1 USD
+
+# Standardize currency
+banking.loc[acct_eu, 'acct_cur'] = 'dollar'
+
+# Validate conversion
+assert banking['acct_cur'].unique() == ['dollar']
+```
+
+#### Standardizing Dates
+```python
+# Convert to datetime format
+banking['account_opened'] = pd.to_datetime(banking['account_opened'], infer_datetime_format=True, errors='coerce')
+banking['acct_year'] = banking['account_opened'].dt.strftime('%Y')
+```
+
+### Cross-Field Validation
+```python
+# Ensure sum of investments matches total amount
+fund_columns = ['fund_A', 'fund_B', 'fund_C', 'fund_D']
+sum_funds = banking[fund_columns].sum(axis=1)
+
+# Identify inconsistencies
+inconsistent_inv = banking[sum_funds != banking['inv_amount']]
+print("Inconsistent investments:", inconsistent_inv.shape[0])
+```
+
+### Handling Missing Data
+#### Visualizing Missing Data
+```python
+import missingno as msno
+import matplotlib.pyplot as plt
+
+# Visualize missing data
+msno.matrix(banking)
+plt.show()
+```
+
+#### Imputing Missing Data
+```python
+# Fill missing investment amounts with estimated values
+acct_imp = banking['inv_amount'] * 5
+banking['acct_amount'].fillna(acct_imp, inplace=True)
+
+# Verify no missing values
+assert banking['acct_amount'].isna().sum() == 0
+```
+
+### Record Linkage (Matching Similar Records)
+#### Similar Text Entries
+```python
+from thefuzz import process
+
+# Find similar categories
+print(process.extract('asian', restaurants['cuisine_type'], limit=5))
+
+# Standardize spelling variations
+matches = process.extract('italian', restaurants['cuisine_type'], limit=len(restaurants))
+for match in matches:
+    if match[1] >= 80:
+        restaurants.loc[restaurants['cuisine_type'] == match[0], 'cuisine_type'] = 'italian'
+```
+
+#### Matching Records across Datasets
+```python
+import recordlinkage
+
+# Generate possible pairs
+indexer = recordlinkage.Index()
+indexer.block('cuisine_type')
+pairs = indexer.index(restaurants, restaurants_new)
+
+# Compare fields
+comp = recordlinkage.Compare()
+comp.exact('city', 'city')
+comp.string('rest_name', 'rest_name', threshold=0.8)
+
+# Find strong matches
+potential_matches = comp.compute(pairs, restaurants, restaurants_new)
+matches = potential_matches[potential_matches.sum(axis=1) >= 3]
+```

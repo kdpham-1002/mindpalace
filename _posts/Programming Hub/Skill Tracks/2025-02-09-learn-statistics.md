@@ -660,7 +660,7 @@ print(prediction_data)
 prediction_data["odds_ratio"] = prediction_data["has_churned"] / (1 - prediction_data["has_churned"])
 print(prediction_data)
 ```
-> Odds Ratio: Probability of churn vs. not churn.
+> Odds Ratio: Probability of churn vs. not churn.   
 > Odds Ratio > 1 → Higher probability of churn.
 
 #### Model Evaluation

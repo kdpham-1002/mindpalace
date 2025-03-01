@@ -640,7 +640,6 @@ print(log_model.params)
 ```
 
 > Intercept: Log-odds of churn when time since last purchase is zero.   
-
 > Slope: For each additional day since the last purchase, the log-odds of churn increases by 0.269.
 >> Positive coefficient (0.269) → Higher recency increases churn probability.
 
